@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/127/trunk/fuseboxCS/lexicon/cf
+END
+case.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/127/trunk/fuseboxCS/lexicon/cf/case.cfm
+END
+try.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/127/trunk/fuseboxCS/lexicon/cf/try.cfm
+END
+trace.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/127/trunk/fuseboxCS/lexicon/cf/trace.cfm
+END
+timer.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/127/trunk/fuseboxCS/lexicon/cf/timer.cfm
+END
+defaultcase.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/127/trunk/fuseboxCS/lexicon/cf/defaultcase.cfm
+END
+switch.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/127/trunk/fuseboxCS/lexicon/cf/switch.cfm
+END
+catch.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/127/trunk/fuseboxCS/lexicon/cf/catch.cfm
+END
+throw.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/127/trunk/fuseboxCS/lexicon/cf/throw.cfm
+END
+dump.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/127/trunk/fuseboxCS/lexicon/cf/dump.cfm
+END
+abort.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/127/trunk/fuseboxCS/lexicon/cf/abort.cfm
+END
+lock.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/127/trunk/fuseboxCS/lexicon/cf/lock.cfm
+END
+cookie.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/127/trunk/fuseboxCS/lexicon/cf/cookie.cfm
+END

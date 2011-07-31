@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-lazy="false">
+    <class name="litepost.model.Category" table="categories">
+        <id name="categoryID" type="integer">
+            <column name="categoryID" />
+            <generator class="identity"></generator>
+        </id>
+	    <property name="category" type="string">
+            <column name="category" not-null="true" />
+        </property>
+
+		<set name="entries" inverse="true" cascade="none">
+			<key column="categoryID"/>
+			<one-to-many
+				class="litepost.model.Entry"
+				not-found="ignore"
+			/>
+		</set>
+    </class>
+</hibernate-mapping>

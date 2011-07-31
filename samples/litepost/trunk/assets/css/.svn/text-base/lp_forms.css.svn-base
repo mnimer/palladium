@@ -1,0 +1,55 @@
+/*********************************
+litePost
+FORM LAYOUT RULES
+**********************************/
+
+form {
+	width: auto;
+	background-color: #f9e9c2; /* beige */
+	color: #32230b;
+	padding: 2em;
+}
+
+label {
+	display: block;
+	margin: 1em 0;
+}
+
+input, select, textarea {
+	width: 45em;
+}
+
+textarea.entry {
+	height: 50em;
+}
+
+textarea.comment {
+	height: 10em;
+}
+
+.button {
+	width: 10em;
+}
+
+.adminbutton {
+	background-color: #9b5c20; /* light golden brown */
+	color: #FFF!important;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 4px;
+	margin: .5em 0;
+	font-size: .8em;
+	line-height: 1em;
+	display: block;
+	width: 10em;
+	height: 2.2em;
+	text-align: center;
+	border: 2px outset #9b5c20;
+}
+
+form#login {
+	width: 30em;
+}
+form#login input {
+	width: 20em;
+}

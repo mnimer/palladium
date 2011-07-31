@@ -1,0 +1,303 @@
+<!--
+	  
+  Copyright (c) 2006, Chris Scott, Matt Woodward, Adam Wayne Lehman, Dave Ross
+  All rights reserved.
+	
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+       http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+	$Id: $
+-->
+
+<modelglue>
+
+	<!-- PROPERTIES -->
+	<config>
+		<setting name="beanMappings" value="/litepost/config/litepost-services.xml" />
+		<setting name="viewMappings" value="/litepost/mg/views" />
+		<setting name="applicationMapping" value="/litepost/mg" />
+		<setting name="modelGlueMapping" value="/litepost" />
+		<setting name="beanFactoryLoader" value="ModelGlue.Core.ColdSpringLoader" />
+	  	<setting name="autowireControllers" value="true" />
+		
+		<setting name="defaultEvent" value="home" />
+		<setting name="defaultExceptionHandler" value="exceptionEvent" />
+
+		<setting name="reload" value="false" />
+		<setting name="debug" value="false" />
+		
+		<!-- for RSS -->
+		<setting name="blogName" value="LitePost - Model-Glue Edition" />
+		<setting name="blogURL" value="http://localhost/litepost/mg" />
+		<setting name="blogDescription" value="The Model-Glue Edition of LitePost" />
+		<setting name="blogLanguage" value="en_US" />
+		<setting name="numEntriesOnHomePage" value="20" />
+		<setting name="authorEmail" value="chris.scott.one@gmail.com" />
+		<setting name="webmasterEmail" value="chris.scott.one@gmail.com" />
+	</config>
+
+	<!-- CONTROLLERS -->
+	<controllers>
+		<controller name="security" type="litepost.mg.controller.SecurityController">
+			<message-listener message="OnRequestStart" function="checkAuthentication" />
+			<message-listener message="authenticateUser" function="authenticateUser" />
+			<message-listener message="logoutUser" function="logoutUser" />
+		</controller>
+		<controller name="blog" type="litepost.mg.controller.BlogController">
+			<message-listener message="OnRequestStart" function="getBookmarks" />
+			<message-listener message="OnRequestStart" function="getCategories" />
+			<message-listener message="getEntries" function="getEntries" />
+			<message-listener message="getEntryBean" function="getEntryBean" />
+			<message-listener message="getEntry" function="getEntry" />
+			<message-listener message="saveEntry" function="saveEntry" />
+			<message-listener message="getCommentsForEntry" function="getEntryWithComments" />
+			<message-listener message="getCommentBean" function="getCommentBean" />
+			<message-listener message="saveComment" function="saveComment" />
+			<message-listener message="getCategoryBean" function="getCategoryBean" />
+			<message-listener message="getCategory" function="getCategory" />
+			<message-listener message="saveCategory" function="saveCategory" />
+			<message-listener message="getBookmarkBean" function="getBookmarkBean" />
+			<message-listener message="getBookmark" function="getBookmark" />
+			<message-listener message="saveBookmark" function="saveBookmark" />
+		</controller>
+		<controller name="rss" type="litepost.mg.controller.RssController">
+			<message-listener message="getRSS" function="getRSS" />
+		</controller>
+	</controllers>
+
+	<!-- EVENT-HANDLERS -->
+	<event-handlers>
+	
+		<!-- login form event -->
+		<event-handler name="loginForm">
+			<views>
+				<include name="content" template="loginForm.cfm">
+					<value name="submitEvent" value="login" overwrite="true" />
+				</include>
+			</views>
+			<results>
+				<result do="layoutPage" />
+			</results>
+		</event-handler>
+		
+		<!-- login -->
+		<event-handler name="login">
+			<broadcasts>
+				<message name="authenticateUser" />
+			</broadcasts>
+			<results>
+				<result do="loginForm"/>
+			</results>
+		</event-handler>
+		
+		<!-- logout -->
+		<event-handler name="logout">
+			<broadcasts>
+				<message name="logoutUser" />
+			</broadcasts>
+		</event-handler>
+		
+		<!-- home (main blog page) -->
+		<event-handler name="home">
+			<broadcasts>
+				<message name="getEntries" />
+			</broadcasts>
+			<views>
+				<include name="content" template="entries.cfm" />
+			</views>
+			<results>
+				<result do="layoutPage" />
+			</results>
+		</event-handler>
+		
+		<!-- add / edit entries -->
+		<event-handler name="addEntry">
+			<broadcasts>
+				<message name="getEntryBean" />
+			</broadcasts>
+			<results>
+				<result do="entryForm" />
+			</results>
+		</event-handler>
+		
+		<event-handler name="editEntry">
+			<broadcasts>
+				<message name="getEntry" />
+			</broadcasts>
+			<results>
+				<result do="entryForm" />
+			</results>
+		</event-handler>
+		
+		<event-handler name="saveEntry">
+			<broadcasts>
+				<message name="saveEntry"/>
+			</broadcasts>
+			<results>
+				<result name="goEntryForm" do="entryForm"/>
+				<result name="goHome" do="home" redirect="true"/>
+			</results>
+		</event-handler>
+		
+		<event-handler name="entryForm">
+			<views>
+				<include name="content" template="entryForm.cfm">
+					<value name="submitEvent" value="saveEntry" overwrite="true" />
+				</include>
+			</views>
+			<results>
+				<result do="layoutPage" />
+			</results>
+		</event-handler>
+		
+		<!-- comments -->
+		<event-handler name="comments">
+			<broadcasts>
+				<message name="getCommentsForEntry"/>
+				<message name="getCommentBean"/>
+			</broadcasts>
+			<views>
+				<include name="content" template="comments.cfm" />
+			</views>
+			<results>
+				<result do="layoutPage" />
+			</results>
+		</event-handler>
+		
+		<event-handler name="saveComment">
+			<broadcasts>
+				<message name="saveComment"/>
+			</broadcasts>
+			<results>
+				<result name="goComments" do="comments"/>
+				<result name="goHome" do="home" redirect="true"/>
+			</results>
+		</event-handler>
+		
+		<!-- add / edit categories -->
+		<event-handler name="addCategory">
+			<broadcasts>
+				<message name="getCategoryBean" />
+			</broadcasts>
+			<results>
+				<result do="categoryForm" />
+			</results>
+		</event-handler>
+		
+		<event-handler name="editCategory">
+			<broadcasts>
+				<message name="getCategory" />
+			</broadcasts>
+			<results>
+				<result do="categoryForm" />
+			</results>
+		</event-handler>
+		
+		<event-handler name="saveCategory">
+			<broadcasts>
+				<message name="saveCategory"/>
+			</broadcasts>
+			<results>
+				<result name="goCategoryForm" do="categoryForm"/>
+				<result name="goHome" do="home" redirect="true"/>
+			</results>
+		</event-handler>
+		
+		<event-handler name="categoryForm">
+			<views>
+				<include name="content" template="categoryForm.cfm" />
+			</views>
+			<results>
+				<result do="layoutPage" />
+			</results>
+		</event-handler>
+		
+		<!-- add / edit bookmarks -->
+		<event-handler name="addBookmark">
+			<broadcasts>
+				<message name="getBookmarkBean" />
+			</broadcasts>
+			<results>
+				<result do="bookmarkForm" />
+			</results>
+		</event-handler>
+		
+		<event-handler name="editBookmark">
+			<broadcasts>
+				<message name="getBookmark" />
+			</broadcasts>
+			<results>
+				<result do="bookmarkForm" />
+			</results>
+		</event-handler>
+		
+		<event-handler name="saveBookmark">
+			<broadcasts>
+				<message name="saveBookmark"/>
+			</broadcasts>
+			<results>
+				<result name="goBookmarkForm" do="bookmarkForm"/>
+				<result name="goHome" do="home" redirect="true"/>
+			</results>
+		</event-handler>
+		
+		<event-handler name="bookmarkForm">
+			<views>
+				<include name="content" template="bookmarkForm.cfm" />
+			</views>
+			<results>
+				<result do="layoutPage" />
+			</results>
+		</event-handler>
+		
+		<!-- rss-related events -->
+		<event-handler name="blogRSS">
+			<broadcasts>
+				<message name="getRSS"/>
+			</broadcasts>
+			<views>
+				<include name="main" template="rss.cfm" />
+			</views>
+		</event-handler>
+
+		<event-handler name="categoryRSS">
+			<broadcasts>
+				<message name="getRSS">
+					<argument name="category" value="true"/>
+				</message>
+			</broadcasts>
+			<views>
+				<include name="main" template="rss.cfm" />
+			</views>
+		</event-handler>
+		
+		<!-- main layout event -->
+		<event-handler name="layoutPage">
+			<views>
+				<include name="contentRight" template="categories.cfm" />
+				<include name="contentRight" template="bookmarks.cfm" append="true" />
+				<include name="main" template="mainLayout.cfm" />
+			</views>
+		</event-handler>
+	
+		<event-handler name="exceptionEvent">
+			<views>
+				<include name="content" template="exception.cfm" />
+			</views>
+			<results>
+				<result do="layoutPage" />
+			</results>
+		</event-handler>
+		
+	</event-handlers>
+
+</modelglue>

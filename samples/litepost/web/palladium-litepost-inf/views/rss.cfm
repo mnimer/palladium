@@ -1,0 +1,1 @@
+<cfcontent type="#request['feedMimeType']#"><cfoutput>#request['feedXml']#</cfoutput>

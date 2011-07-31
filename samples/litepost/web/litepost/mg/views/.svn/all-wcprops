@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/!svn/ver/125/trunk/mg/views
+END
+loginForm.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/116/trunk/mg/views/loginForm.cfm
+END
+mainLayout.bkp.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/116/trunk/mg/views/mainLayout.bkp.cfm
+END
+exception.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/2/trunk/mg/views/exception.cfm
+END
+categoryForm.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/116/trunk/mg/views/categoryForm.cfm
+END
+mainLayout.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/116/trunk/mg/views/mainLayout.cfm
+END
+entries.bkp.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/116/trunk/mg/views/entries.bkp.cfm
+END
+categories.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/125/trunk/mg/views/categories.cfm
+END
+entryForm.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/125/trunk/mg/views/entryForm.cfm
+END
+comments.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/125/trunk/mg/views/comments.cfm
+END
+rss.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/125/trunk/mg/views/rss.cfm
+END
+bookmarks.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/116/trunk/mg/views/bookmarks.cfm
+END
+entries.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/125/trunk/mg/views/entries.cfm
+END
+bookmarkForm.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/125/trunk/mg/views/bookmarkForm.cfm
+END

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/115/trunk/fusebox/home/category
+END
+qry_getCategories.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/115/trunk/fusebox/home/category/qry_getCategories.cfm
+END
+circuit.xml.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/115/trunk/fusebox/home/category/circuit.xml.cfm
+END
+act_deleteCategory.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/115/trunk/fusebox/home/category/act_deleteCategory.cfm
+END
+act_updateCategory.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/115/trunk/fusebox/home/category/act_updateCategory.cfm
+END
+dsp_categoryForm.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/115/trunk/fusebox/home/category/dsp_categoryForm.cfm
+END
+act_createCategory.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/113/trunk/fusebox/home/category/act_createCategory.cfm
+END
+qry_getCategory.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/115/trunk/fusebox/home/category/qry_getCategory.cfm
+END

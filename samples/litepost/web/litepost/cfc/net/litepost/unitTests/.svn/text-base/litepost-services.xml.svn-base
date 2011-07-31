@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+	
+	<!-- Session Service -->
+	<bean id="sessionService" class="net.litepost.component.session.SessionService"/>
+	
+	<!-- Security Service -->
+	<bean id="securityService" class="net.litepost.component.security.SecurityService">
+		<property name="sessionService">
+			<ref bean="sessionService"/>
+		</property>
+	</bean>
+	
+	<!-- User Service -->
+	<bean id="userService" class="net.litepost.component.user.UserService">
+		<property name="userDAO">
+			<bean class="net.litepost.component.user.UserDAO">
+         		<property name="dsn">
+					<value>litepost</value>
+				 </property>
+			</bean>
+         </property>
+		<property name="userGateway">
+			<bean class="net.litepost.component.user.UserGateway">
+         		<property name="dsn">
+					<value>litepost</value>
+				 </property>
+			</bean>
+         </property>
+		<property name="sessionService">
+			<ref bean="sessionService"/>
+		</property>
+	</bean>
+	
+	<!-- Blog Entry Service -->
+	<bean id="entryService" class="net.litepost.component.entry.EntryService">
+		<property name="entryDAO">
+			<bean class="net.litepost.component.entry.EntryDAO">
+         		<property name="dsn">
+					<value>litepost</value>
+				 </property>
+			</bean>
+         </property>
+		<property name="entryGateway">
+			<bean class="net.litepost.component.entry.EntryGateway">
+         		<property name="dsn">
+					<value>litepost</value>
+				 </property>
+			</bean>
+         </property>
+		<property name="commentService">
+			<ref bean="commentService"/>
+		</property>
+		<property name="sessionService">
+			<ref bean="sessionService" />
+		</property>
+	</bean>
+	
+	<!-- Comments Service -->
+	<bean id="commentService" class="net.litepost.component.comment.CommentService">
+		<property name="commentDAO">
+			<bean class="net.litepost.component.comment.CommentDAO">
+         		<property name="dsn">
+					<value>litepost</value>
+				 </property>
+			</bean>
+		</property>
+		<property name="commentGateway">
+			<bean class="net.litepost.component.comment.CommentGateway">
+         		<property name="dsn">
+					<value>litepost</value>
+				 </property>
+			</bean>
+		</property>
+	</bean>
+	
+	<!-- Category Service -->
+	<bean id="categoryService" class="net.litepost.component.category.CategoryService">
+		<property name="categoryDAO">
+			<bean class="net.litepost.component.category.CategoryDAO">
+         		<property name="dsn">
+					<value>litepost</value>
+				 </property>
+			</bean>
+		</property>
+		<property name="categoryGateway">
+			<bean class="net.litepost.component.category.CategoryGateway">
+         		<property name="dsn">
+					<value>litepost</value>
+				 </property>
+			</bean>
+		</property>
+		<property name="entryService">
+			<ref bean="entryService" />
+		</property>
+	</bean>
+	
+	<!-- Bookmark Service -->
+	<bean id="bookmarkService" class="net.litepost.component.bookmark.BookmarkService">
+		<property name="bookmarkDAO">
+			<bean class="net.litepost.component.bookmark.BookmarkDAO">
+         		<property name="dsn">
+					<value>litepost</value>
+				 </property>
+			</bean>
+		</property>
+		<property name="bookmarkGateway">
+			<bean class="net.litepost.component.bookmark.BookmarkGateway">
+         		<property name="dsn">
+					<value>litepost</value>
+				 </property>
+			</bean>
+		</property>
+	</bean>
+	
+	<!-- RSS Service -->
+	<bean id="rssService" class="net.litepost.component.rss.RSSService">
+		<property name="entryService">
+			<ref bean="entryService" />
+		</property>
+	</bean>
+
+</beans>

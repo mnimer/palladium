@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/127/trunk/cfc/net/litepost/component/entry
+END
+EntryDAO.cfc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/74/trunk/cfc/net/litepost/component/entry/EntryDAO.cfc
+END
+Entry.cfc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/69/trunk/cfc/net/litepost/component/entry/Entry.cfc
+END
+EntryService.cfc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/127/trunk/cfc/net/litepost/component/entry/EntryService.cfc
+END
+EntryGateway.cfc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/105/trunk/cfc/net/litepost/component/entry/EntryGateway.cfc
+END

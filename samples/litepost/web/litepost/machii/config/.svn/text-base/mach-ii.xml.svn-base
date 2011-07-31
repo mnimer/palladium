@@ -1,0 +1,237 @@
+<!--
+	  
+  Copyright (c) 2006, Chris Scott, Matt Woodward, Adam Wayne Lehman, Dave Ross
+  All rights reserved.
+	
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+       http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+	$Id: $
+-->
+
+<mach-ii version="1.0">
+
+	<!-- PROPERTIES -->
+	<properties>
+		<!-- mach-ii required -->
+		<property name="applicationRoot" value="/litepost/machii" />
+		<property name="defaultEvent" value="showHome" />
+		<property name="eventParameter" value="event" />
+		<property name="parameterPrecedence" value="form" />
+		<property name="maxEvents" value="10" />
+		<property name="exceptionEvent" value="exceptionEvent" />
+		<!-- application specific -->
+		<property name="dsn" value="litepost" />
+		<property name="numEntriesOnHomePage" value="20" />
+		<property name="coldspringConfigFile" value="../config/litepost-services.xml"/>
+		<property name="blogName" value="LitePost - Mach-II Edition" />
+		<property name="blogURL" value="http://localhost/litepost/machii" />
+		<property name="blogDescription" value="The Mach-II Edition of LitePost" />
+		<property name="blogLanguage" value="en_US" />
+		<property name="authorEmail" value="mpwoodward@gmail.com" />
+		<property name="webmasterEmail" value="mpwoodward@gmail.com" />
+	</properties>
+
+	<!-- PLUGINS -->
+	<plugins>
+		<plugin name="coldspringPlugin" type="coldspring.machii.ColdspringPlugin">
+			<parameters>
+				<parameter name="beanFactoryPropertyName" value="serviceFactory"/>
+				<parameter name="configFilePropertyName" value="coldspringConfigFile"/>
+				<parameter name="configFilePathIsRelative" value="true"/>
+				<parameter name="resolveMachiiDependencies" value="true"/>
+			</parameters>
+		</plugin>
+		<plugin name="checkAuthentication" type="litepost.machii.plugins.CheckAuthentication" />
+	</plugins>
+	
+	<!-- EVENT-FILTERS -->
+	<event-filters>
+		<event-filter name="checkLoginFilter" type="litepost.machii.filters.CheckLoginFilter" />
+	</event-filters>
+
+	<!-- LISTENERS -->
+	<listeners>
+		<listener name="bookmarkListener" type="litepost.machii.listeners.BookmarkListener" />
+		<listener name="categoryListener" type="litepost.machii.listeners.CategoryListener" />
+		<listener name="commentListener" type="litepost.machii.listeners.CommentListener" />
+		<listener name="entryListener" type="litepost.machii.listeners.EntryListener" />
+		<listener name="rssListener" type="litepost.machii.listeners.RSSListener" />
+		<listener name="securityListener" type="litepost.machii.listeners.SecurityListener" />
+		<listener name="userListener" type="litepost.machii.listeners.UserListener" />
+	</listeners>
+	
+	<!-- EVENT-HANDLERS -->
+	<event-handlers>
+		<!-- main home page event -->
+		<event-handler event="showHome" access="public">
+			<notify listener="entryListener" method="getEntriesForHomePage" resultArg="entries" />
+			<view-page name="entries" contentArg="content" />
+			<announce event="mainLayout" copyEventArgs="true" />
+		</event-handler>
+		
+		<!-- login-related events -->
+		<event-handler event="showLogin" access="public">
+			<view-page name="login" contentArg="content" />
+			<announce event="mainLayout" copyEventArgs="true" />
+		</event-handler>
+		
+		<event-handler event="processLogin" access="public">
+			<event-mapping event="success" mapping="loginSucceeded" />
+			<event-mapping event="failure" mapping="showLogin" />
+			<notify listener="userListener" method="authenticate" />
+		</event-handler>
+		
+		<event-handler event="loginSucceeded" access="private">
+			<redirect event="showHome" />
+		</event-handler>
+		
+		<event-handler event="logout" access="public">
+			<notify listener="securityListener" method="logoutUser" />
+			<redirect event="showLogin" />
+		</event-handler>
+		
+		<!-- entry-related events -->
+		<event-handler event="showEntry" access="public">
+			<notify listener="entryListener" method="getEntry" resultArg="entry" />
+			<view-page name="entry" contentArg="content" />
+			<announce event="mainLayout" copyEventArgs="true" />
+		</event-handler>
+		
+		<event-handler event="showEntryForm" access="public">
+			<filter name="checkLoginFilter" />
+			<notify listener="categoryListener" method="getCategories" resultArg="categoriesForSelect" />
+			<notify listener="entryListener" method="getEntry" resultArg="entry" />
+			<view-page name="entryForm" contentArg="content" />
+			<announce event="mainLayout" copyEventArgs="true" />
+		</event-handler>
+		
+		<event-handler event="processEntryForm" access="public">
+			<filter name="checkLoginFilter" />
+			<event-mapping event="success" mapping="entryFormSucceeded" />
+			<event-mapping event="failure" mapping="showEntryForm" />
+			<event-bean name="entry" type="net.litepost.component.entry.Entry" />
+			<notify listener="entryListener" method="processEntryForm" />
+		</event-handler>
+		
+		<event-handler event="entryFormSucceeded" access="private">
+			<redirect event="showHome" args="message" />
+		</event-handler>
+		
+		<event-handler event="deleteEntry" access="public">
+			<filter name="checkLoginFilter" />
+			<event-mapping event="success" mapping="entryFormSucceeded" />
+			<event-mapping event="failure" mapping="showEntries" />
+			<notify listener="entryListener" method="deleteEntry" />
+		</event-handler>
+		
+		<!-- category-related events -->
+		<event-handler event="showCategoryForm" access="public">
+			<filter name="checkLoginFilter" />
+			<notify listener="categoryListener" method="getCategory" resultArg="category" />
+			<view-page name="categoryForm" contentArg="content" />
+			<announce event="mainLayout" copyEventArgs="true" />
+		</event-handler>
+		
+		<event-handler event="processCategoryForm" access="public">
+			<filter name="checkLoginFilter" />
+			<event-mapping event="success" mapping="categoryFormSucceeded" />
+			<event-mapping event="failure" mapping="showCategoryForm" />
+			<event-bean name="category" type="net.litepost.component.category.Category" />
+			<notify listener="categoryListener" method="processCategoryForm" />
+		</event-handler>
+		
+		<event-handler event="categoryFormSucceeded" access="private">
+			<redirect event="showHome" args="message" />
+		</event-handler>
+		
+		<event-handler event="deleteCategory" access="public">
+			<filter name="checkLoginFilter" />
+			<notify listener="categoryListener" method="deleteCategory" />
+			<redirect event="showHome" args="message" />
+		</event-handler>
+		
+		<!-- comment-related events -->
+		<event-handler event="processCommentForm" access="public">
+			<event-bean name="comment" type="net.litepost.component.comment.Comment" />
+			<notify listener="commentListener" method="processCommentForm" />
+		</event-handler>
+		
+		<!-- bookmark-related events -->
+		<event-handler event="showBookmarkForm" access="public">
+			<filter name="checkLoginFilter" />
+			<notify listener="bookmarkListener" method="getBookmark" resultArg="bookmark" />
+			<view-page name="bookmarkForm" contentArg="content" />
+			<announce event="mainLayout" copyEventArgs="true" />
+		</event-handler>
+		
+		<event-handler event="processBookmarkForm" access="public">
+			<filter name="checkLoginFilter" />
+			<event-mapping event="success" mapping="bookmarkFormSucceeded" />
+			<event-mapping event="failure" mapping="showBookmarkForm" />
+			<event-bean name="bookmark" type="net.litepost.component.bookmark.Bookmark" />
+			<notify listener="bookmarkListener" method="processBookmarkForm" />
+		</event-handler>
+		
+		<event-handler event="bookmarkFormSucceeded" access="private">
+			<redirect event="showHome" args="message" />
+		</event-handler>
+		
+		<event-handler event="deleteBookmark" access="public">
+			<filter name="checkLoginFilter" />
+			<notify listener="bookmarkListener" method="deleteBookmark" />
+			<redirect event="showHome" args="message" />
+		</event-handler>
+		
+		<!-- rss-related events -->
+		<event-handler event="showBlogRSS" access="public">
+			<notify listener="rssListener" method="getBlogRSS" resultArg="rss" />
+			<view-page name="rss" />
+		</event-handler>
+
+		<event-handler event="showCategoryRSS" access="public">
+			<notify listener="rssListener" method="getCategoryRSS" resultArg="rss" />
+			<view-page name="rss" />
+		</event-handler>
+		
+		<!-- layout events -->
+		<event-handler event="mainLayout" access="private">
+			<notify listener="bookmarkListener" method="getBookmarks" resultArg="bookmarks" />
+			<notify listener="categoryListener" method="getCategoriesWithCounts" resultArg="categories" />
+			<view-page name="categories" contentArg="contentRight" />
+			<view-page name="bookmarks" contentArg="contentRight" append="true" />
+			<view-page name="mainLayout" />
+		</event-handler>
+		
+		<!-- exception event -->
+		<event-handler event="exceptionEvent" access="private">
+			<view-page name="exception" />
+		</event-handler>
+	</event-handlers>
+	
+	<!-- PAGE-VIEWS -->
+	<page-views>
+		<page-view name="adminMenu" page="/views/adminMenu.cfm" />
+		<page-view name="bookmarkForm" page="/views/bookmarkForm.cfm" />
+		<page-view name="bookmarks" page="/views/bookmarks.cfm" />
+		<page-view name="categories" page="/views/categories.cfm" />
+		<page-view name="categoryForm" page="/views/categoryForm.cfm" />
+		<page-view name="entries" page="/views/entries.cfm" />
+		<page-view name="entry" page="/views/entry.cfm" />
+		<page-view name="entryForm" page="/views/entryForm.cfm" />
+		<page-view name="login" page="/views/login.cfm" />
+		<page-view name="mainLayout" page="/views/mainLayout.cfm" />
+		<page-view name="rss" page="/views/rss.cfm" />
+		<page-view name="exception" page="/views/exception.cfm" />
+	</page-views>
+
+</mach-ii>

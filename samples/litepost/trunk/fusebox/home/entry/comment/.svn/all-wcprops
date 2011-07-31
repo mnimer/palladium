@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/51/trunk/fusebox/home/entry/comment
+END
+act_deleteComment.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/51/trunk/fusebox/home/entry/comment/act_deleteComment.cfm
+END
+dsp_commentForm.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/51/trunk/fusebox/home/entry/comment/dsp_commentForm.cfm
+END
+act_createComment.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/51/trunk/fusebox/home/entry/comment/act_createComment.cfm
+END
+qry_getComments.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/51/trunk/fusebox/home/entry/comment/qry_getComments.cfm
+END
+circuit.xml.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/51/trunk/fusebox/home/entry/comment/circuit.xml.cfm
+END

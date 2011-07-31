@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 23
+/svn/!svn/ver/127/trunk
+END
+entrytests.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/44/trunk/entrytests.cfm
+END
+sometests.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/44/trunk/sometests.cfm
+END
+build-tests.xml
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/7/trunk/build-tests.xml
+END

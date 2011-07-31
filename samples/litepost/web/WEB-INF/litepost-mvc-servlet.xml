@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:util="http://www.springframework.org/schema/util"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.0.xsd">
+
+
+	<bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping"></bean>
+
+	<bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter"></bean>
+
+
+	<bean id="litepostDatasource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+		<property name="url" value="jdbc:mysql://localhost:3306/litepost?tinyInt1isBit=false&amp;"/>
+		<property name="username" value="root"/>
+		<property name="password" value="mysql"/>
+	</bean>
+
+
+	<!-- commenting out for now. Need to solve a classloader problem before using hibernate -->
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource" ref="litepostDatasource"/>
+		<property name="mappingResources">
+			<list>
+				<value>com/mikenimer/cfspringmvc/litepost/model/User.hbm.xml</value>
+				<value>com/mikenimer/cfspringmvc/litepost/model/Entry.hbm.xml</value>
+				<value>com/mikenimer/cfspringmvc/litepost/model/Category.hbm.xml</value>
+				<value>com/mikenimer/cfspringmvc/litepost/model/Comment.hbm.xml</value>
+				<value>com/mikenimer/cfspringmvc/litepost/model/Bookmark.hbm.xml</value>
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+				<prop key="hibernate.cache.provider_class">org.hibernate.cache.NoCacheProvider</prop>
+				<prop key="hibernate.current_session_context_class">thread</prop>
+				<prop key="hibernate.show_sql">true</prop>
+			</props>
+		</property>
+	</bean>
+
+
+
+	<bean id="litepostService" class="litepost.controllers.LitepostController">
+		<property name="userDao" ref="userDao"/>
+		<property name="categoryDao" ref="categoryDao"/>
+		<property name="entryDao" ref="entryDao"/>
+		<property name="bookmarkDao" ref="bookmarkDao"/>
+	</bean>
+
+	<!-- jdbc daos
+	<bean id="userDao" class="com.mikenimer.cfspringmvc.litepost.dao.jdbc.UserDao">
+		<property name="dataSource" ref="litepostDatasource"/>
+	</bean>
+
+	<bean id="categoryDao" class="com.mikenimer.cfspringmvc.litepost.dao.jdbc.CategoryDao">
+		<property name="dataSource" ref="litepostDatasource"/>
+	</bean>
+
+	<bean id="entryDao" class="com.mikenimer.cfspringmvc.litepost.dao.jdbc.EntryDao">
+		<property name="dataSource" ref="litepostDatasource"/>
+	</bean>
+	-->
+
+	<!-- hibernate daos -->
+	<bean id="userDao" class="litepost.hibernate.UserDao">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+
+	<bean id="categoryDao" class="litepost.hibernate.CategoryDao">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+
+	<bean id="entryDao" class="litepost.hibernate.EntryDao">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+
+	<bean id="bookmarkDao" class="litepost.hibernate.BookmarkDao">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+
+
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="order" value="1"/>
+		<property name="prefix" value="/litepost/cfspringmvc-inf/views/"/>
+		<property name="suffix" value=".cfm"/>
+		<property name="viewClass" value="com.mikenimer.spring.mvc.views.ColdFusionView"/>
+	</bean>
+
+</beans>

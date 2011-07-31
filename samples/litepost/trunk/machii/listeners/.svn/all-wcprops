@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/124/trunk/machii/listeners
+END
+EntryListener.cfc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/110/trunk/machii/listeners/EntryListener.cfc
+END
+CommentListener.cfc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/75/trunk/machii/listeners/CommentListener.cfc
+END
+BookmarkListener.cfc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/122/trunk/machii/listeners/BookmarkListener.cfc
+END
+RSSListener.cfc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/124/trunk/machii/listeners/RSSListener.cfc
+END
+SecurityListener.cfc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/50/trunk/machii/listeners/SecurityListener.cfc
+END
+CategoryListener.cfc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/107/trunk/machii/listeners/CategoryListener.cfc
+END
+UserListener.cfc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/50/trunk/machii/listeners/UserListener.cfc
+END

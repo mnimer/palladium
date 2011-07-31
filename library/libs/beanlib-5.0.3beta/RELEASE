@@ -1,0 +1,291 @@
+beanlib 5.0.3beta
+-----------------
+* add public method BeanReplicator#populate(V, T)
+* bug fix (of duplicate cloning of the same member objects) when cloning Hibernate enhanced objects in a collection
+
+
+beanlib 5.0.2beta
+-----------------
+* Provide native support of Calendar
+* generify: remove wild card from all return types
+* add convenient constructor to BeanReplicator for specifying custom transformer factories
+* make deepCopy consistent in Hibernate3DtoCopier for collection vs single instance
+* simplify and speed up UnEnhancer#unenhanceObject; thanks to Bruno!
+* fix ProtectedReaderMethodFinder to NOT return package private methods;
+  Thanks to Eric Raymond (ericraymond@gmail.com)
+* optimize performance of ProtectedReaderMethodFinder and PrivateReaderMethodFinder
+* fix the implementation of checking the package name of a given class;
+  Thanks to Andy Davey <as.davey@gmail.com>:
+* Add LazyHibernateCustomBeanTransformer as per David Durham <david.durham.jr@gmail.com>'s request
+* Support global and per thread configuration to enable/disable checking CGLib enhanced classes;
+  Thanks to Eric Raymond <ericraymond@gmail.com>
+* support custom bean transformation for beans in collection; 
+  Thanks to Martin <ove.martin.malm@gmail.com>
+* enhance generic signature of CustomBeanTransformerSpi#isTransformable
+* bug fixes related to handling transformed null objects
+* add unit tests for various custom bean transformations in collections, arrays and maps
+
+
+beanlib 5.0.1beta
+-----------------
+* Support initSetterMethodCollector for HibernateBeanReplicator.{deep,shallow}Copy
+* Default HibernateBeanRelicator.{deep,shallow}Copy to use public instead of protected setters
+
+beanlib 5.0.0beta
+-----------------
+At the API level this is a backward incompatible release, 
+even though the migration from the 3.x version to 5.x should 
+be rather straightforward.
+
+In most cases, it is a simple matter of directly using a 
+constructor instead of a static factory method.
+
+A lot of static singleton instances have been removed, 
+and are now replaced by stateless object construction.
+
+* Handle the replication of Arrays$ArrayList 
+* Favor constructor over factory method whenever possible
+* Replace BeanPopulatable with PropertyFilter
+* Make HibernateBeanReplictor fail fast
+* Simplify ProtectedSetterMethodCollector
+* Remove direct dependency on commons-logging
+* Fix method misnormers
+* Delete ununsed classes
+
+beanlib 3.3.0beta21
+-------------------
+* add support for joda-time classes with beanlib-joda jar
+* add support for chaining multiple custom transformer (factories)
+* add convenient factory method BeanTransformer.newBeanTransformer(CustomBeanTransformerSpi ...)
+* deprecate mis-normer BeanTransformerSpi.initCustomTransformer with initCustomTransformerFactory
+* deprecate mis-normer HibernateBeanReplicator.initCustomTransformer with initCustomTransformerFactory
+* add TrivialCustomBeanTransformerFactories
+* prepare for 3.3.0beta21
+* upgrade junit from 4.1 to 4.4 + hamcrest
+
+beanlib 3.3.0beta20
+-------------------
+* keep Eclipse 3.4 happy
+* Bug fix: Un-enhance object when ReplicatorTemplate.replicate(Object) is used for replicating Hibernate objects.
+  Thanks to Vitaliy Morarian <vmorarian@users.sourceforge.net> for pointing this out.
+
+beanlib 3.3.0beta19
+-------------------
+* get around Class.isEnum problem
+
+beanlib 3.3.0beta18
+-------------------
+* enrich BeanSourceHandler SPI
+
+beanlib 3.3.0beta17
+-------------------
+* fix bug of stack overflow by replacing the unenhanced from-object with the original from-object
+
+beanlib 3.3.0beta16
+-------------------
+* bug fix: more accurate un-enhancing classes and objects when abstract base class is involved
+
+beanlib 3.3.0beta15
+-------------------
+* change UnEnhancer to try to dig out the class of the underlying implementation object whenever possible.
+  Thanks to harris3@users.sourceforget.net for reporting this.
+
+beanlib 3.3.0beta13
+-------------------
+* change ReplicatorTemplate.chooseClass to return toClass if fromClass is abstract
+
+beanlib 3.3.0beta12
+-------------------
+* Fix NPE in Hibernate3DtoCopier when the collection contains null elements
+* Use UnEnhancer.getActualClass to figure out the persistent class
+* Remove unused classes
+
+beanlib 3.3.0beta11
+-------------------
+* Add TextIterable
+
+beanlib 3.3.0beta10
+-------------------
+* Add OrderedMethodCollector
+* Support javassist enhanced proxies in Hibernate
+
+beanlib 3.3.0beta9
+------------------
+* Add convenient constructor to BeanReplicator.
+* Include java.util.Currency in checking for immutability.
+
+beanlib 3.3.0beta8
+------------------
+* Bug fix of byte[] replication.
+  Thanks to smlghst@users.sourceforge.net for reporting this.
+
+beanlib 3.3.0beta7
+------------------
+* Provide information via PropertyInfo about the java bean property 
+  when the property value is transformed.
+  Thanks to Erik Romson (romson@users.sourceforge.net) for requesting it.
+* Add sample replication with BeanReplicator (ie without involving Hibernate)
+* Add sample CustomBeanTransformerSpi impl
+* Add Character and Byte for checking immutability.  
+  Thanks to Bruno (bmarchesson@users.sourceforge.net) for pointing this out.
+
+beanlib 3.3.0beta6
+------------------
+* fix bug in DtoCentricHibernate3Template caused as a side effect since spring upgraded from 1.x to 2.x
+* upgrade 3rd party jars: spring to 2.0.5, etc.
+* remove direct dependency on asm
+* add junit test to demo converting timestamp to date
+* update pom 
+
+beanlib 3.3.0beta5
+------------------
+* Use the new SPI framework for all hibernate bean replication and population
+* support different forms of Dates
+* Add PrivateSetterMethodCollector
+* add DateReplicatorTest
+
+beanlib 3.3.0beta4
+------------------
+* complete the replicator SPI with the Date Replicator
+
+beanlib 3.3.0beta3
+------------------
+* Tidy up factory method methods
+* Add Jaxb2 specific Immutable Replicator support
+
+beanlib 3.3.0beta2
+------------------
+* Better support for immutable objects with better API
+* Better subclass API of ReplicatorTemplate
+* Change the default of BeanPopulator to use a default transformer, 
+  instead of no transformer
+* Improved robustness when there is access privilege exception
+* Simplify with factory methods for BeanPopulator and BeanTransformer
+* Refactor more into the SPI framework
+* More tests
+* More Javadoc
+* Include the jcip annotation jar
+
+beanlib 3.3.0beta1
+------------------
+* Provide a generic transformation/replication SPI framework
+* Move BeanPopulator to the SPI framework
+* Support population via Jaxb2 Fluent API
+* Improved exception reporting
+
+* TODO: yet to convert the existing HibernateBeanTransformer 
+  to share the same SPI framework
+
+beanlib 3.2.10
+--------------
+* Make consistent by returning an empty map instead of null when replicating 
+  an empty persistent map
+
+beanlib 3.2.9
+-------------
+* Tidy up the rourtines for checking immutability and java package.
+* Treat java.util.Map as a kind of collection honored by CollectionPropertyName.
+* Add Boolean to the immutable class set
+
+beanlib 3.2.8
+-------------
+* Native support of Java 5 enum
+* Upgrade spring jar to 2.0 and hibernate jar to 3.1.3
+
+beanlib 3.2.7
+-------------
+Fix to make ConcurrentSkipListSet usable when not loaded via -Xbootclasspath
+
+beanlib 3.2.6
+-------------
+Support custom collection classes
+
+beanlib 3.2.5
+-------------
+ConcurrentLinkedDeque removed as advised by Doug Lea.
+
+beanlib 3.2.4
+-------------
+Updated with Java 6 beta2.
+
+beanlib 3.2.3
+-------------
+Add all classes originally from jsr166x.
+
+beanlib 3.2.2
+-------------
+Add packages
+
+	net.sf.net.beanlib.util 
+	net.sf.net.beanlib.util.concurrent
+
+beanlib 3.2.1
+-------------
+Add package net.sf.net.beanlib.utils.range
+
+beanlib 3.2.0
+-------------
+Supports Hibernate3SequenceGenerator
+
+beanlib 3.1.1
+-------------
+* Supports CriteriaSpecifiable
+
+beanlib 3.1.0
+-------------
+* Drop the support of Hibernate 2 (ie only support Hibernate 3)
+* Simplify the implementation of Hibernate DTO Copier
+* Add JUnit test for Hibernate DTO Copier
+* Further generify
+
+beanlib 3.0.10
+--------------
+* bug fix with auto populating application member class set in Hibernate{2,3}DtoCopier
+
+beanlib 3.0.9
+-------------
+* add IO package.
+
+beanlib 3.0.8
+-------------
+* check if an object has been hibernate-initialized before hibernate-initializing it.
+
+beanlib 3.0.7
+-------------
+* add BeanUtils
+* add support for DTO Centric Hibernate Template, Copier and Populator
+
+beanlib 3.0.6
+-------------
+* bug fixes with cloning a SortedMap or SortedSet when a comparator is specified
+* add byte utils
+
+beanlib 3.0.5
+-------------
+* bug fixes with cloning an empty collection
+* bug fixes with checking Collection properties
+* fix EnumUtils so it will compile under Sun's JDK 1.5
+* further generify
+* support ant builds
+
+beanlib 3.0.4
+-------------
+* add fromOrdinal() to EnumUtils
+
+beanlib 3.0.3
+-------------
+* add utility methods to EnumUtils with lazy initialization
+
+beanlib 3.0.2
+-------------
+* add Subclass for creating dynamic instances similar to dynamic proxy
+
+beanlib 3.0.1
+-------------
+* added enum related utilities
+
+beanlib 3.0
+-----------
+* migrated from JDK1.4 to work only with JDK5+
+* add utilities for using XStream 1.1.2
+* misc refactorings

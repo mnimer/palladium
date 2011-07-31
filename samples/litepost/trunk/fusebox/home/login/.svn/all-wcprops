@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/115/trunk/fusebox/home/login
+END
+act_login.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/51/trunk/fusebox/home/login/act_login.cfm
+END
+act_logout.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/115/trunk/fusebox/home/login/act_logout.cfm
+END
+circuit.xml.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/51/trunk/fusebox/home/login/circuit.xml.cfm
+END
+dsp_loginForm.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/51/trunk/fusebox/home/login/dsp_loginForm.cfm
+END

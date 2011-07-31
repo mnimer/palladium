@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-lazy="false">
+	<class name="litepost.model.Comment" table="comments">
+
+
+		<id name="commentID" type="integer">
+			<column name="commentID"/>
+			<generator class="identity"></generator>
+		</id>
+		
+		<many-to-one name="entry" class="litepost.model.Entry" column="entryID" not-null="true"/>
+		
+		<property name="comment" type="string">
+			<column name="comment"/>
+		</property>
+		<property name="name" type="string">
+			<column name="name"/>
+		</property>
+		<property name="email" type="string">
+			<column name="email"/>
+		</property>
+		<property name="url" type="string">
+			<column name="url"/>
+		</property>
+		<property name="dateCreated" type="date">
+			<column name="dateCreated"/>
+		</property>
+
+
+
+	</class>
+</hibernate-mapping>

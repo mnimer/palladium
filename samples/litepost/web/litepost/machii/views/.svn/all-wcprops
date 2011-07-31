@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/124/trunk/machii/views
+END
+exception.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/6/trunk/machii/views/exception.cfm
+END
+categoryForm.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/118/trunk/machii/views/categoryForm.cfm
+END
+entry.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/79/trunk/machii/views/entry.cfm
+END
+mainLayout.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/124/trunk/machii/views/mainLayout.cfm
+END
+categories.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/124/trunk/machii/views/categories.cfm
+END
+entryForm.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/95/trunk/machii/views/entryForm.cfm
+END
+rss.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/124/trunk/machii/views/rss.cfm
+END
+bookmarks.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/119/trunk/machii/views/bookmarks.cfm
+END
+login.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/66/trunk/machii/views/login.cfm
+END
+entries.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/108/trunk/machii/views/entries.cfm
+END
+bookmarkForm.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/120/trunk/machii/views/bookmarkForm.cfm
+END

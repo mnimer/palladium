@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/!svn/ver/127/trunk/fuseboxCS
+END
+fusebox.init.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/127/trunk/fuseboxCS/fusebox.init.cfm
+END
+fusebox.appinit.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/127/trunk/fuseboxCS/fusebox.appinit.cfm
+END
+Application.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/127/trunk/fuseboxCS/Application.cfm
+END
+index.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/127/trunk/fuseboxCS/index.cfm
+END
+fusebox.xml.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/127/trunk/fuseboxCS/fusebox.xml.cfm
+END

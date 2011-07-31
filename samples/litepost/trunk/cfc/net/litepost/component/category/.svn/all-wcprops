@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/127/trunk/cfc/net/litepost/component/category
+END
+Category.cfc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/117/trunk/cfc/net/litepost/component/category/Category.cfc
+END
+CategoryService.cfc
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/127/trunk/cfc/net/litepost/component/category/CategoryService.cfc
+END
+CategoryGateway.cfc
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/100/trunk/cfc/net/litepost/component/category/CategoryGateway.cfc
+END
+CategoryDAO.cfc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/96/trunk/cfc/net/litepost/component/category/CategoryDAO.cfc
+END

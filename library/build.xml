@@ -1,0 +1,93 @@
+<?xml version="1.0" ?>
+<project name="cfmJ" default="jar">
+
+	<buildnumber file="src/buildnumber.properties"/>
+	<property name="base.dir" value="."/>
+	<property name="library.dir" value="/Users/mike/Development/libraries/java"/>
+	<property name="src.dir" value="${base.dir}/src"/>
+	<property name="lib.dir" location="${base.dir}/libs"/>
+	<property name="spring.dir" location="${library.dir}/libraries/spring-framework-3.0.5.RELEASE/dist/"/>
+	<property name="tomcat.dir" location="${library.dir}/servers/apache-tomcat-6.0.26/lib/"/>
+	<property name="build.dir" location="build/classes"/>
+	<property name="dist.dir" location="dist"/>
+	<property name="project.name" value="com.mikenimer.cfmJ"/>
+
+	<tstamp>
+		<format property="now" pattern="MMddyyyy"/>
+	</tstamp>
+
+	<path id="project.classpath">
+		<fileset dir="${lib.dir}">
+			<include name="**/*.jar"/>
+		</fileset>
+	</path>
+
+	<path id="compile.classpath">
+		<fileset dir="${lib.dir}" includes="**/*.jar"/>
+		<fileset dir="${spring.dir}" includes="**/*.jar"/>
+		<fileset dir="${tomcat.dir}" includes="**/*.jar"/>
+		<fileset dir="${base.dir}/src" includes="**/*.xml"/>
+		<fileset dir="${base.dir}/src" includes="**/*.properties"/>
+	</path>
+
+	<pathconvert property="mf.classpath" pathsep=" ">
+		<path refid="compile.classpath"/>
+		<mapper>
+			<chainedmapper>
+				<flattenmapper/>
+				<globmapper from="*.jar" to="lib/*.jar"/>
+			</chainedmapper>
+		</mapper>
+	</pathconvert>
+
+
+	<target name="init" depends="clean">
+		<mkdir dir="${build.dir}"/>
+		<mkdir dir="${dist.dir}"/>
+	</target>
+
+
+	<target name="clean">
+		<delete dir="${build.dir}"/>
+		<delete dir="${dist.dir}"/>
+		<mkdir dir="${dist.dir}"/>
+	</target>
+
+
+
+	<!-- ================================================================== -->
+	<!-- Compile the java code from ${src.dir} into ${build.classes.dir}   -->
+	<!-- ================================================================== -->
+
+	<target name="compile" depends="init">
+		<javac destdir="${build.dir}" debug="true" srcdir="${src.dir}">
+			<classpath refid="compile.classpath"/>
+		</javac>
+
+		<!-- put all required jars in dist folder
+		<copy todir="${dist.dir}/lib">
+			<fileset dir="${lib.dir}" includes="**/*.jar"/>
+		</copy>                                  -->
+
+		<copy todir="${build.dir}">
+			<fileset dir="${base.dir}/src" includes="**/*.xml"/>
+			<fileset dir="${base.dir}/src" includes="**/*.properties"/>
+		</copy>
+	</target>
+
+
+	<!-- ================================================================== -->
+	<!-- Build the Jar file                                                 -->
+	<!-- ================================================================== -->
+
+	<target name="jar" depends="compile">
+		<jar destfile="${dist.dir}/${project.name}.1.0.${build.number}.jar" basedir="${build.dir}">
+			<manifest>
+				<attribute name="Class-Path" value="${mf.classpath}"/>
+			</manifest>
+		</jar>
+	</target>
+
+
+
+</project>

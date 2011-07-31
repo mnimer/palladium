@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/127/trunk/cfc/net/litepost/component/bookmark
+END
+Bookmark.cfc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/125/trunk/cfc/net/litepost/component/bookmark/Bookmark.cfc
+END
+BookmarkService.cfc
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/127/trunk/cfc/net/litepost/component/bookmark/BookmarkService.cfc
+END
+BookmarkGateway.cfc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/22/trunk/cfc/net/litepost/component/bookmark/BookmarkGateway.cfc
+END
+BookmarkDAO.cfc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/121/trunk/cfc/net/litepost/component/bookmark/BookmarkDAO.cfc
+END

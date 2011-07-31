@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/127/trunk/fuseboxCS/errortemplates
+END
+custom.database.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/127/trunk/fuseboxCS/errortemplates/custom.database.cfm
+END
+fusebox.overloadedFuseaction.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/127/trunk/fuseboxCS/errortemplates/fusebox.overloadedFuseaction.cfm
+END
+fusebox.fuseboxXMLError.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/127/trunk/fuseboxCS/errortemplates/fusebox.fuseboxXMLError.cfm
+END
+fusebox.missingParsedFile.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/127/trunk/fuseboxCS/errortemplates/fusebox.missingParsedFile.cfm
+END
+fusebox.failedAssertion.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/127/trunk/fuseboxCS/errortemplates/fusebox.failedAssertion.cfm
+END
+fusebox.missingCircuitXML.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/127/trunk/fuseboxCS/errortemplates/fusebox.missingCircuitXML.cfm
+END
+genericErrorMessage.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/127/trunk/fuseboxCS/errortemplates/genericErrorMessage.cfm
+END
+fusebox.missingCoreFile.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/127/trunk/fuseboxCS/errortemplates/fusebox.missingCoreFile.cfm
+END
+fusebox.undefinedFuseaction.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/127/trunk/fuseboxCS/errortemplates/fusebox.undefinedFuseaction.cfm
+END
+fusebox.undefinedCircuit.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/127/trunk/fuseboxCS/errortemplates/fusebox.undefinedCircuit.cfm
+END
+fusebox.missingFuseboxXML.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/127/trunk/fuseboxCS/errortemplates/fusebox.missingFuseboxXML.cfm
+END
+fusebox.invalidAccessModifier.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/127/trunk/fuseboxCS/errortemplates/fusebox.invalidAccessModifier.cfm
+END
+fusebox.missingAppPath.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/127/trunk/fuseboxCS/errortemplates/fusebox.missingAppPath.cfm
+END
+fusebox.malformedFuseaction.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/127/trunk/fuseboxCS/errortemplates/fusebox.malformedFuseaction.cfm
+END
+custom.validation.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/127/trunk/fuseboxCS/errortemplates/custom.validation.cfm
+END
+fusebox.errorWritingParsedFile.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/127/trunk/fuseboxCS/errortemplates/fusebox.errorWritingParsedFile.cfm
+END
+fusebox.missingFuse.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/127/trunk/fuseboxCS/errortemplates/fusebox.missingFuse.cfm
+END
+fusebox.circuitXMLError.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/127/trunk/fuseboxCS/errortemplates/fusebox.circuitXMLError.cfm
+END
+fusebox.badGrammar.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/127/trunk/fuseboxCS/errortemplates/fusebox.badGrammar.cfm
+END

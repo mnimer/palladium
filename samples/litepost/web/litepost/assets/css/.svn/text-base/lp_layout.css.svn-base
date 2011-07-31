@@ -1,0 +1,117 @@
+/*********************************
+litePost
+LAYOUT/POSITIONING RULES
+**********************************/ 
+
+/* basic body */
+html,body {
+	margin:0;
+	padding:0;
+	background-color: #443010; /*dark brown*/
+	background-image:url(../images/litePost_bkg.jpg);
+	background-position: right top;
+	background-attachment:fixed;
+	background-repeat: no-repeat;
+	}
+	
+body {
+	font: small Tahoma, Helvetica, Verdana, Arial, sans-serif;
+	text-align:center;
+	color: #e3b75e; /* light golden brown */
+	}
+
+img {
+	border: none;
+}
+	
+	
+/* top and header positioning */
+div#header {
+	position:relative;
+	height: 180px;
+	margin: 60px 0;
+	text-align: left;
+	}
+
+div#bar {
+	background-image:url(../images/iron_rail.gif);
+	background-position: bottom left;
+	background-repeat: repeat-x;
+	height: 240px;
+	width: 70%;
+	min-width: 60em;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* body and content positioning */
+div#container{
+	text-align:left;
+	margin: 0 2em;
+	}
+	
+div#navigation {
+	background:#ab3e09; /*brick red*/
+	padding: 1em;
+	}
+
+div#footer { 
+	background: #000;
+	color: #FFF;
+	}
+	
+div#footer p {
+	margin:0;
+	padding:5px 10px;
+	}
+	
+div#container {
+	width:80em;
+	margin:0 auto;
+	}
+	
+div#content {
+	float:left;
+	width:50em;
+	margin: 0;
+	padding: 2em;
+	background-image:url(../images/50pctDkBrown.gif);
+	}
+
+/* nav/sidebar positioning */
+div#navigation {
+	float:right; 
+	width:20em;
+	}
+
+/* footer positioning */
+div#footer {
+	clear:both;
+	width:100%;
+	}
+
+/* footer at the bottom of every post */
+div.postfooter span {
+	margin: 1em 0 3em 0;
+	padding: .3em 0;
+	display: block;
+	width: 50%;
+	float: left;
+	font-weight: bold;
+	border-top: 1px dashed #000;
+}
+
+/* generic clearing class */
+.clear {
+	clear: both;
+}
+
+
+#loginbutton  {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+

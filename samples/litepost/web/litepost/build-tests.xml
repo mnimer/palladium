@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+
+<project name="cfcUnit Tests" basedir="." default="moveCFML">
+
+    <property name="hostname" value="localhost:8300"/> 
+    <property name="webroot" location="/Applications/JRun4/servers/cfusion/cfusion-ear/cfusion-war/"/>
+
+    <taskdef name="cfcUnit" classname="org.cfcunit.ant.CFCUnitTask" classpath="litepost/ant-cfcunit/ant-cfcunit.jar"/>
+    
+    <target name="moveCFML" description="Moves cfcs, skipping .svn directories">
+        <copy todir="litepost/cfc\net\litepost\unitTests">
+            <fileset dir="litepost/config">
+              <exclude name="**/.svn"/>
+            </fileset>
+         </copy>
+        <copy todir="${webroot}\litepost">
+            <fileset dir="${basedir}"> 
+              <exclude name="**/tools"/>
+              <exclude name="**/build-tests.xml"/>
+              <exclude name="**/db"/>
+              <exclude name="**/ant-cfcunit"/>
+              <exclude name="**/.svn"/>
+            </fileset>
+         </copy>
+    </target>
+
+    <target name="EntriesTest" depends="moveCFML"> 
+        <cfcUnit hostname="${hostname}" testcase="net.litepost.unitTests.EntryCommentsTests"
+                 verbose="true"
+                 haltonfailure="true"
+                 haltonerror="true" 
+                 showstacktrace="true"/>
+    </target>
+
+    <target name="VerboseTest" depends="moveCFML"> 
+        <cfcUnit hostname="${hostname}" testcase="net.litepost.unitTests.AllTests"
+                 verbose="true"
+                 haltonfailure="true"
+                 haltonerror="true" 
+                 showstacktrace="true"/>
+    </target>
+
+    <target name="SimpleTest" depends="moveCFML">
+        <cfcUnit hostname="${hostname}" testcase="net.litepost.unitTests.AllTests" verbose="false"/>
+    </target>
+
+</project>

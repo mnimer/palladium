@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:security="http://www.springframework.org/schema/security"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/security
+       http://www.springframework.org/schema/security/spring-security.xsd">
+  
+    <!-- This is where we configure Spring-Security  -->
+    <security:http auto-config="true" use-expressions="true" access-denied-page="/kitchensink/security/denied">
+  
+        <security:intercept-url pattern="/kitchensink/security/login.html" access="permitAll" />
+        <security:intercept-url pattern="/kitchensink/security/admin.html" access="hasRole('ROLE_ADMIN')" />
+        <security:intercept-url pattern="/kitchensink/security/secured.html" access="hasRole('ROLE_USER')" />
+
+        <security:form-login
+              login-page="/kitchensink/security/login.html"
+              authentication-failure-url="/kitchensink/security/login.html?error=true"
+              default-target-url="/kitchensink/security/index.html" />
+
+        <security:logout
+              invalidate-session="true"
+              logout-success-url="/kitchensink/security/login"
+              logout-url="/kitchensink/security/logout.html" />
+
+    </security:http>
+
+    <!-- Declare an authentication-manager to use a custom userDetailsService -->
+    <security:authentication-manager>
+         <security:authentication-provider user-service-ref="customUserDetailsService">
+           <security:password-encoder ref="passwordEncoder" />
+         </security:authentication-provider>
+    </security:authentication-manager>
+
+    <!-- Use a Md5 encoder since the user's passwords are stored as Md5 in the database -->
+    <bean class="org.springframework.security.authentication.encoding.Md5PasswordEncoder" id="passwordEncoder" />
+
+    <!-- A custom service where Spring will retrieve users and their corresponding access levels  -->
+    <bean id="customUserDetailsService" class="com.mikenimer.palladium.samples.auth.CustomAuthExample" />
+  
+</beans>

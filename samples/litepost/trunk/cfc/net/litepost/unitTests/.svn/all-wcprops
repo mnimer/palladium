@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/125/trunk/cfc/net/litepost/unitTests
+END
+BookmarkCategoryTests.cfc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/4/trunk/cfc/net/litepost/unitTests/BookmarkCategoryTests.cfc
+END
+litepost-services.xml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/125/trunk/cfc/net/litepost/unitTests/litepost-services.xml
+END
+EntryCommentsTests.cfc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/4/trunk/cfc/net/litepost/unitTests/EntryCommentsTests.cfc
+END
+AllTests.cfc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/4/trunk/cfc/net/litepost/unitTests/AllTests.cfc
+END
+litepost-mg-conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/125/trunk/cfc/net/litepost/unitTests/litepost-mg-conf.xml
+END
+SimpleFactoryTest.cfc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/4/trunk/cfc/net/litepost/unitTests/SimpleFactoryTest.cfc
+END

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:security="http://www.springframework.org/schema/security"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/security
+       http://www.springframework.org/schema/security/spring-security-3.1.xsd">
+
+
+    <!--mvc:annotation-driven /-->
+
+    <!-- Enable to request mappings PER METHOD -->
+    <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter"/>
+
+    <!-- Enable annotated POJO @Controller -->
+    <bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping"/>
+
+
+    <!-- Spring MVC - Controller(s) -->
+    <bean id="themeController" class="com.mikenimer.palladium.samples.controllers.SecurityController">
+    </bean>
+
+
+    <!-- Spring Security -->
+
+    <security:global-method-security secured-annotations="enabled" />
+
+    <security:http auto-config='true'>
+        <security:intercept-url pattern="/**" access="ROLE_USER" />
+        <security:intercept-url pattern="/admin/**" access="ROLE_ADMIN" />
+    </security:http>
+
+
+    <!-- Define the view resolver to use jsp files within the jsp folder -->
+    <bean name ="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="viewClass" value="com.mikenimer.palladium.spring.mvc.views.ColdFusionView" />
+        <property name="prefix" value="/kitchensink-inf/views/security-views/" />
+        <property name="suffix" value=".cfm" />
+        <property name="attributesMap">
+            <map>
+                <!-- system properties to make java CF friendly -->
+                <entry key="convertKeys" value="true"/>
+                <entry key="lowerCaseKeys" value="true"/>
+                <entry key="convertCollections" value="true"/>
+                <entry key="convertNulls" value="true"/>
+
+                <!-- a way to pass any java spring beans to CF -->
+                <entry key="beans">
+                    <map>
+                         <entry key="propertyHelper">
+                            <bean class="com.mikenimer.palladium.utils.PropertyHelper"/>
+                        </entry>
+                        <entry key="collectionHelper">
+                            <bean class="com.mikenimer.palladium.utils.CollectionHelper"/>
+                        </entry>
+                    </map>
+                </entry>
+            </map>
+        </property>
+    </bean>
+
+
+</beans>

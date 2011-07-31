@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/115/trunk/fusebox/home/bookmark
+END
+dsp_bookmarkForm.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/115/trunk/fusebox/home/bookmark/dsp_bookmarkForm.cfm
+END
+act_updateBookmark.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/115/trunk/fusebox/home/bookmark/act_updateBookmark.cfm
+END
+act_deleteBookmark.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/115/trunk/fusebox/home/bookmark/act_deleteBookmark.cfm
+END
+qry_getBookmark.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/115/trunk/fusebox/home/bookmark/qry_getBookmark.cfm
+END
+act_createBookmark.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/115/trunk/fusebox/home/bookmark/act_createBookmark.cfm
+END
+circuit.xml.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/115/trunk/fusebox/home/bookmark/circuit.xml.cfm
+END
+qry_getBookmarks.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/115/trunk/fusebox/home/bookmark/qry_getBookmarks.cfm
+END

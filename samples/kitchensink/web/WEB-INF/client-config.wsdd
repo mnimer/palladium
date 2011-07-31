@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deployment xmlns="http://xml.apache.org/axis/wsdd/" xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+ <handler name="log" type="java:coldfusion.xml.rpc.SOAPMonitor"/>
+ <globalConfiguration>
+  <!-- Give ColdFusion the ability to log the request and the response SOAP message -->
+  <!-- Not recommended for production -->
+<!--
+  <requestFlow>
+   <handler type="log"/>
+  </requestFlow>
+  <responseFlow>
+   <handler type="log"/>
+  </responseFlow>
+-->
+
+  <!-- Change for CFMX 7: Turn off multirefs -->
+  <parameter name="sendMultiRefs" value="false"/>
+
+ </globalConfiguration>
+
+ <!-- The type mapping for the CF query object, RPC encoded -->
+ <typeMapping
+        xmlns:query="http://rpc.xml.coldfusion"
+        qname="query:QueryBean"
+        type="java:coldfusion.xml.rpc.QueryBean"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+      />
+
+ <!-- The type mapping for the CF query object in document style (no encoding) -->
+ <typeMapping
+        xmlns:cf="http://rpc.xml.coldfusion"
+        qname="cf:DocumentQueryBean"
+        type="java:coldfusion.xml.rpc.DocumentQueryBean"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+ 
+ <transport name="http" pivot="java:org.apache.axis.transport.http.HTTPSender"/>
+ <transport name="local" pivot="java:org.apache.axis.transport.local.LocalSender"/>
+</deployment>

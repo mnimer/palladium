@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app id="adobe_coldfusion">
+
+
+
+
+<!-- ***************CF/SPRING-MVC *********************-->
+<!--servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class-->
+<!-- The front controller of this Spring Web application, responsible for handling all application requests  -->
+<servlet>
+	<servlet-name>litepost-mvc</servlet-name>
+	<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+
+	<load-on-startup>1</load-on-startup>
+</servlet>
+
+
+<!-- Map all REST request to /requestbroker -->
+<servlet-mapping>
+	<servlet-name>litepost-mvc</servlet-name>
+	<url-pattern>/litepost/cfspringmvc/*</url-pattern>
+</servlet-mapping>
+<!-- ***************CF/SPRING-MVC *********************-->
+
+
+
+</web-app>

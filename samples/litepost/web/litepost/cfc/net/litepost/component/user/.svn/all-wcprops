@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/41/trunk/cfc/net/litepost/component/user
+END
+User.cfc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/41/trunk/cfc/net/litepost/component/user/User.cfc
+END
+UserService.cfc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/41/trunk/cfc/net/litepost/component/user/UserService.cfc
+END
+UserGateway.cfc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/4/trunk/cfc/net/litepost/component/user/UserGateway.cfc
+END
+UserDAO.cfc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/36/trunk/cfc/net/litepost/component/user/UserDAO.cfc
+END

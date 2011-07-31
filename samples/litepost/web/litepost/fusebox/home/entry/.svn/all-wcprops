@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/127/trunk/fusebox/home/entry
+END
+dsp_entryForm.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/115/trunk/fusebox/home/entry/dsp_entryForm.cfm
+END
+act_updateEntry.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/51/trunk/fusebox/home/entry/act_updateEntry.cfm
+END
+act_deleteEntry.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/51/trunk/fusebox/home/entry/act_deleteEntry.cfm
+END
+qry_getEntry.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/127/trunk/fusebox/home/entry/qry_getEntry.cfm
+END
+act_createEntry.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/127/trunk/fusebox/home/entry/act_createEntry.cfm
+END
+qry_getEntriesByCategory.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/113/trunk/fusebox/home/entry/qry_getEntriesByCategory.cfm
+END
+dsp_entries.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/127/trunk/fusebox/home/entry/dsp_entries.cfm
+END
+circuit.xml.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/126/trunk/fusebox/home/entry/circuit.xml.cfm
+END
+qry_getEntries.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/127/trunk/fusebox/home/entry/qry_getEntries.cfm
+END
+dsp_entries_rss.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/126/trunk/fusebox/home/entry/dsp_entries_rss.cfm
+END
+dsp_entry.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/115/trunk/fusebox/home/entry/dsp_entry.cfm
+END

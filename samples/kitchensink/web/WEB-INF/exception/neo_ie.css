@@ -1,0 +1,206 @@
+/*
+Changed BGColor for Arizona
+old color #F5F5DE;
+new color #FFFFF0
+*/
+
+BODY  {
+	font-family: verdana, arial, helvetica, sans-serif;
+	background-color: #FFCCC0; /*#FFF8E5;*/
+	font-size: 12px;
+	margin-top: 14px;
+	margin-left: 48px;
+}
+DIV.navigation {
+	margin-left :  -34px;
+}
+
+DIV.navigation  p{
+	margin-top :  6px;
+}
+
+PRE	{
+	font-size: 12px;
+	font-family: "Courier New", courier, monospace;
+	color: Maroon;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 6px;
+	background-color:  #FFCCC0; /*#FFF8E5;*/
+}
+
+span.codemark {	font-weight: bold;
+								background-color : #D3D3D3;
+								color :  Black;}
+
+code {
+	display: inline;
+	font-size: 12px;
+	font-family: "Courier New", courier, monospace;
+	color: Maroon;
+	background-color:  #FFCCC0; /*#FFF8E5;*/
+}
+
+		
+H1  {
+	font-size: 20px;
+	color: black;
+	background-color:  #FFCCC0; /*#FFF8E5;*/
+	margin-bottom: 5px;
+	font-weight: bold;
+	margin-left: -34px;
+}
+
+	
+H2  {
+	font-size: 18px;
+	margin-left: -24px;
+	color: black;
+	background-color:  #FFCCC0; /*#FFF8E5;*/
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+	
+H3	{
+	font-size: 16px;
+	color: black;
+	background-color:  #FFCCC0; /*#FFF8E5;*/
+	margin-bottom: 5px;
+	font-weight: bold;
+	margin-left: -12px;
+}
+
+	
+H4	{
+	font-size: 12px;
+	font-weight: bold;
+	color: black;
+	background-color:  #FFCCC0; /*#FFF8E5;*/
+	font-family: Verdana, arial, helvetica, sans-serif
+}
+
+H5  {
+	font-size: 12px;
+	font-weight: normal;
+	color: black;
+	background-color:  #FFCCC0; /*#FFF8E5;*/
+}
+
+ /*Parameter list*/
+
+ H5.param  {
+	font-size: 12px;
+	font-weight: bold;
+	color: black;
+	margin-left: 6px;
+	background-color:  #FFCCC0; /*#FFF8E5;*/
+	margin-bottom: 0px;
+}
+	
+p.param
+	{ 
+	margin-left: 6px;
+	margin-top: 3px;
+	 }
+TABLE	{
+	margin-top: 12px; 
+	font-size: 12px;
+	font-family: Verdana, arial, helvetica, sans-serif;
+}
+
+TABLE.proc	{
+	margin-top: 12px; 
+	margin-bottom: -12px;
+	font-size: 12px;
+	font-family: Verdana, arial, helvetica, sans-serif;
+}
+
+th {
+	font-weight: bold;
+	background-color: #CCCCCC;
+}
+
+ul p	   {
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+ul p li	   {
+	margin-top: 6px;
+}
+
+ul li li	{
+	margin-top: 12px;
+}
+
+ol ul { 
+		margin-left: 36px;
+		 }
+		 
+ol ul li{ 
+		margin-left: 0px;
+		list-style-type :  square;
+		}
+
+ul ul { 
+		margin-left: 36px;
+		 }
+		 
+ul ul li{ 
+		margin-left: 0px;
+		list-style-type :  square;
+		}
+		
+ol p		{
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+ol p li		{
+	margin-top: 6px;
+}
+
+ol li li		{
+	margin-top: 12px;
+}
+
+td ul		{
+	margin-top: 6px;
+}
+
+TD.proc {
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+TD.copy {
+	font-size: 10px;
+	color: gray;
+	background-color:  #FFCCC0; 
+}
+
+ol  pre 	{
+	color: Maroon;
+	background-color:  #FFCCC0; /*#FFF8E5;*/
+	margin-top: 3px;
+	margin-bottom: 0px;
+}
+pre br { 
+		display: none;
+ }
+
+ /*===================================
+ This is where I started playing around with the 
+ procedure icon */
+div.proc { margin-left: -18px; }
+ 
+ol li { margin-top: 10px;}
+
+li.first { 	margin-top: -22px;}
+
+/* end of proc icon work
+======================================*/
+
+
