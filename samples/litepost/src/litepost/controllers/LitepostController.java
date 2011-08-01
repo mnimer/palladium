@@ -1,26 +1,12 @@
 package litepost.controllers;
 
-import coldfusion.ColdFusion;
-import coldfusion.runtime.CFPage;
-import coldfusion.runtime.Struct;
-import coldfusion.util.FastHashtable;
+import com.sun.syndication.feed.synd.*;
+import com.sun.syndication.io.SyndFeedOutput;
 import litepost.hibernate.BookmarkDao;
 import litepost.hibernate.CategoryDao;
 import litepost.hibernate.EntryDao;
 import litepost.hibernate.UserDao;
-import litepost.model.Bookmark;
-import litepost.model.Category;
-import litepost.model.Comment;
-import litepost.model.Entry;
-import litepost.model.User;
-import com.sun.syndication.feed.synd.SyndEntry;
-import com.sun.syndication.feed.synd.SyndEntryImpl;
-import com.sun.syndication.feed.synd.SyndFeed;
-import com.sun.syndication.feed.synd.SyndFeedImpl;
-import com.sun.syndication.feed.synd.SyndPerson;
-import com.sun.syndication.feed.synd.SyndPersonImpl;
-import com.sun.syndication.io.SyndFeedOutput;
-import org.apache.commons.collections.CollectionUtils;
+import litepost.model.*;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -29,11 +15,7 @@ import org.springframework.web.servlet.view.RedirectView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Date;
-import java.util.HashSet;
+import java.util.*;
 
 /** User: mikenimer@yahoo.com Date: Jun 16, 2010 Time: 4:36:43 PM */
 @Controller

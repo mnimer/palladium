@@ -24,6 +24,7 @@
           </element>
         </element>
         <element id="javaee-facet-resources" facet="kitchensink/web/Web" />
+        <element id="artifact" artifact-name="ColdFusion 9" />
       </root>
     </artifact>
     <artifact type="exploded-war" name="ColdFusion 9">
@@ -49,6 +50,28 @@
           </element>
         </element>
         <element id="javaee-facet-resources" facet="helloworld/web/Web" />
+        <element id="artifact" artifact-name="ColdFusion 9" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" build-on-make="true" name="litepost:war exploded">
+      <output-path>$PROJECT_DIR$/out/artifacts/litepost_war_exploded</output-path>
+      <root id="root">
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="litepost" />
+            <element id="module-output" name="palladium-library" />
+          </element>
+          <element id="directory" name="lib">
+            <element id="library" level="module" name="local-libs" module-name="palladium-library" />
+            <element id="library" level="application" name="java-Spring-3.1.0.M2" />
+            <element id="library" level="application" name="hibernate 3.6.0" />
+            <element id="library" level="application" name="java-spring-3.0.5" />
+            <element id="library" level="application" name="jUnit 4.8.1" />
+            <element id="library" level="application" name="java-Log4j 1.2.15 " />
+            <element id="library" level="application" name="Rome" />
+          </element>
+        </element>
+        <element id="javaee-facet-resources" facet="litepost/web/Web" />
         <element id="artifact" artifact-name="ColdFusion 9" />
       </root>
     </artifact>
@@ -248,7 +271,7 @@
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="VcsDirectoryMappings">
-    <mapping directory="" vcs="" />
+    <mapping directory="" vcs="Git" />
   </component>
   <component name="WebServicesPlugin" addRequiredLibraries="true" />
   <component name="libraryTable">

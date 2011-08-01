@@ -6,7 +6,294 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad07e440-6aa4-45d4-840b-abc093920f3f" name="Default" comment="" />
+    <list default="true" id="ad07e440-6aa4-45d4-840b-abc093920f3f" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/axis2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cf-wsrp-portlet.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform-gateway-config.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/cache.dep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/flash-unicode-table.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/flex-config.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/frameworks/mx.swc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/global.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/jars/batik-awt-util.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/jars/batik-css.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/jars/batik-ext.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/jars/batik-transcoder.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/jars/batik-util.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/jars/commons-discovery.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/jars/commons-logging.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/jars/commons-logging.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/jars/concurrent.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/jars/flex.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/jars/jakarta-oro-2.0.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/jars/jcert.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/jars/jnet.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/jars/jsse.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/jars/oscache-license.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/jars/oscache.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/logs/flex.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/mxml-manifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/Accessibility.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/Array.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/AsBroadcaster.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/Boolean.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/Button.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/Camera.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/Color.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/ContextMenu.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/ContextMenuItem.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/CustomActions.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/Date.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/Debug.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/Enumeration.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/Error.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/File.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/FileReference.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/FileReferenceList.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/FontName.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/Function.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/FunctionArguments.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/Key.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/LoadVars.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/LocalConnection.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/Math.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/Microphone.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/Mouse.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/MovieClip.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/MovieClipLoader.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/NetConnection.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/NetStream.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/Number.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/Object.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/ObjectID.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/PrintJob.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/Selection.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/SharedObject.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/Sound.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/Stage.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/String.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/System.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/System/Product.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/System/capabilities.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/System/security.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/TextField.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/TextField/StyleSheet.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/TextFormat.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/TextSnapshot.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/URI.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/Video.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/XML.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/XMLNode.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/XMLSocket.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/XMLUI.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/XPath.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/mx/central/Agent.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/mx/central/AgentManager.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/mx/central/Application.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/mx/central/Central.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/mx/central/Console.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/mx/central/Pod.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/mx/central/RegExp.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/mx/central/Shell.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/mx/central/Tracer.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/mx/central/controls/MAccordionTab.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/mx/central/controls/MCalendar.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/mx/central/controls/MCheckBox.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/mx/central/controls/MComboBox.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/mx/central/controls/MDataGrid.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/mx/central/controls/MDialogBox.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/mx/central/controls/MExpandingPod.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/mx/central/controls/MGridColumn.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/mx/central/controls/MIconButton.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/mx/central/controls/MIconMenu.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/mx/central/controls/MListBox.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/mx/central/controls/MProgressBar.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/mx/central/controls/MPushButton.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/mx/central/controls/MRadioButton.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/mx/central/controls/MRadioButtonGroup.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/mx/central/controls/MRoundIconButton.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/mx/central/controls/MScrollBar.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/mx/central/controls/MScrollPane.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/mx/central/controls/MTextInputField.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/mx/central/data/DataProviderClass.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/mx/central/data/LCDataProvider.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/mx/central/data/LCService.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/mx/central/data/SelectedItem.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/mx/central/encryption/MD5.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/mx/central/services/Log.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/mx/central/services/PendingCall.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/mx/central/services/QName.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/mx/central/services/RPC.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/mx/central/services/RPCFactory.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/mx/central/services/SOAPCall.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/mx/central/services/SOAPFault.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/mx/central/services/SOAPHeader.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/mx/central/services/SOAPParameter.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/mx/central/services/WebService.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cfform/system_classes/toplevel.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cftags/META-INF/taglib.cftld" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cftags/cache.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cftags/component.cfc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cftags/dump.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cftags/interface.cfc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cftags/savecontent.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/cftags/trace.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/client-config.wsdd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/debug/classic.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/debug/dockable.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/debug/dreamweaver.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/exception/coldfusion/compiler/ParseException.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/exception/coldfusion/compiler/TagInfoNotFoundException.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/exception/coldfusion/compiler/validation/CFMLValidationException.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/exception/coldfusion/filter/FormValidationException.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/exception/coldfusion/runtime/AbortException.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/exception/coldfusion/runtime/AbortMessageException.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/exception/coldfusion/runtime/ApplicationException.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/exception/coldfusion/runtime/ComplexObjectException.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/exception/coldfusion/runtime/CustomException.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/exception/coldfusion/runtime/DatabaseException.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/exception/coldfusion/runtime/ExpressionException.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/exception/coldfusion/runtime/IllegalNumberFormatArgumentException.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/exception/coldfusion/runtime/IllegalTimeFormatArgumentException.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/exception/coldfusion/runtime/MissingIncludeException.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/exception/coldfusion/runtime/ObjectException.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/exception/coldfusion/runtime/TemplateException.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/exception/coldfusion/runtime/TemplateNotFoundException.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/exception/coldfusion/tagext/lang/LockException.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/exception/detail.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/exception/errorcontext.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/exception/exception_en.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/exception/exception_ja.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/exception/gettemplate.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/exception/java/lang/ClassCastException.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/exception/java/lang/Exception.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/exception/java/lang/NoSuchFieldError.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/exception/java/lang/NullPointerException.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/exception/java/security/AccessControlException.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/exception/neo_ie.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/exception/neo_ns.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/exception/udf.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/flex/jars/cfgatewayadapter.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/flex/jars/concurrent.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/flex/license.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/flex/messaging-config.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/flex/proxy-config.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/flex/remoting-config.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/flex/services-config.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/gateway-config.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/j2ee-web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/jrun-web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/portlet.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/server-config.wsdd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/web-app_2_2.dtd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/web-app_2_3.dtd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/web-jsptaglibrary_1_1.dtd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/web-jsptaglibrary_1_2.dtd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/cf-wsrp-portlet.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/cfclasses/com/mikenimer/cfspringmvc/litepost/controllers/LitepostController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/cfclasses/com/mikenimer/cfspringmvc/litepost/dao/hibernate/BookmarkDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/cfclasses/com/mikenimer/cfspringmvc/litepost/dao/hibernate/CategoryDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/cfclasses/com/mikenimer/cfspringmvc/litepost/dao/hibernate/EntryDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/cfclasses/com/mikenimer/cfspringmvc/litepost/dao/hibernate/UserDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/cfclasses/com/mikenimer/cfspringmvc/litepost/dao/jdbc/CategoryDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/cfclasses/com/mikenimer/cfspringmvc/litepost/dao/jdbc/CategoryRowMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/cfclasses/com/mikenimer/cfspringmvc/litepost/dao/jdbc/EntryDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/cfclasses/com/mikenimer/cfspringmvc/litepost/dao/jdbc/EntryRowMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/cfclasses/com/mikenimer/cfspringmvc/litepost/dao/jdbc/UserDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/cfclasses/com/mikenimer/cfspringmvc/litepost/dao/jdbc/UserRowMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/cfclasses/com/mikenimer/cfspringmvc/litepost/model/Bookmark.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/cfclasses/com/mikenimer/cfspringmvc/litepost/model/Bookmark.hbm.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/cfclasses/com/mikenimer/cfspringmvc/litepost/model/Category.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/cfclasses/com/mikenimer/cfspringmvc/litepost/model/Category.hbm.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/cfclasses/com/mikenimer/cfspringmvc/litepost/model/Comment.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/cfclasses/com/mikenimer/cfspringmvc/litepost/model/Comment.hbm.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/cfclasses/com/mikenimer/cfspringmvc/litepost/model/Entry.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/cfclasses/com/mikenimer/cfspringmvc/litepost/model/Entry.hbm.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/cfclasses/com/mikenimer/cfspringmvc/litepost/model/User.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/cfclasses/com/mikenimer/cfspringmvc/litepost/model/User.hbm.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/cfform-gateway-config.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/cftags/META-INF/taglib.cftld" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/cftags/cache.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/cftags/component.cfc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/cftags/dump.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/cftags/interface.cfc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/cftags/savecontent.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/cftags/trace.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/client-config.wsdd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/debug/classic.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/debug/dockable.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/debug/dreamweaver.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/exception/coldfusion/compiler/ParseException.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/exception/coldfusion/compiler/TagInfoNotFoundException.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/exception/coldfusion/compiler/validation/CFMLValidationException.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/exception/coldfusion/filter/FormValidationException.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/exception/coldfusion/runtime/AbortException.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/exception/coldfusion/runtime/AbortMessageException.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/exception/coldfusion/runtime/ApplicationException.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/exception/coldfusion/runtime/ComplexObjectException.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/exception/coldfusion/runtime/CustomException.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/exception/coldfusion/runtime/DatabaseException.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/exception/coldfusion/runtime/ExpressionException.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/exception/coldfusion/runtime/IllegalNumberFormatArgumentException.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/exception/coldfusion/runtime/IllegalTimeFormatArgumentException.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/exception/coldfusion/runtime/MissingIncludeException.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/exception/coldfusion/runtime/ObjectException.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/exception/coldfusion/runtime/TemplateException.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/exception/coldfusion/runtime/TemplateNotFoundException.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/exception/coldfusion/tagext/lang/LockException.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/exception/detail.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/exception/errorcontext.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/exception/exception_en.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/exception/exception_ja.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/exception/gettemplate.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/exception/java/lang/ClassCastException.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/exception/java/lang/Exception.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/exception/java/lang/NoSuchFieldError.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/exception/java/lang/NullPointerException.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/exception/java/security/AccessControlException.cfm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/exception/neo_ie.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/exception/neo_ns.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/flex/jars/cfgatewayadapter.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/flex/jars/concurrent.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/flex/license.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/flex/messaging-config.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/flex/proxy-config.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/flex/remoting-config.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/flex/services-config.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/gateway-config.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/j2ee-web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/jrun-web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/portlet.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/server-config.wsdd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/web-app_2_2.dtd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/web-app_2_3.dtd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/web-jsptaglibrary_1_1.dtd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/litepost/web/WEB-INF/web-jsptaglibrary_1_2.dtd" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/samples/helloworld/web/helloworld-inf/views/index.cfm" afterPath="$PROJECT_DIR$/samples/helloworld/web/helloworld-inf/views/home.cfm" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/samples/litepost/web/palladium-litepost-inf/views/Application.cfc" afterPath="$PROJECT_DIR$/samples/litepost/web/litepost-inf/views/Application.cfc" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/samples/litepost/web/palladium-litepost-inf/views/_footer.cfm" afterPath="$PROJECT_DIR$/samples/litepost/web/litepost-inf/views/_footer.cfm" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/samples/litepost/web/palladium-litepost-inf/views/_header.cfm" afterPath="$PROJECT_DIR$/samples/litepost/web/litepost-inf/views/_header.cfm" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/samples/litepost/web/palladium-litepost-inf/views/_navigation.cfm" afterPath="$PROJECT_DIR$/samples/litepost/web/litepost-inf/views/_navigation.cfm" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/samples/litepost/web/palladium-litepost-inf/views/editBookmark.cfm" afterPath="$PROJECT_DIR$/samples/litepost/web/litepost-inf/views/editBookmark.cfm" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/samples/litepost/web/palladium-litepost-inf/views/editCategory.cfm" afterPath="$PROJECT_DIR$/samples/litepost/web/litepost-inf/views/editCategory.cfm" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/samples/litepost/web/palladium-litepost-inf/views/editPost.cfm" afterPath="$PROJECT_DIR$/samples/litepost/web/litepost-inf/views/editPost.cfm" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/samples/litepost/web/palladium-litepost-inf/views/error.cfm" afterPath="$PROJECT_DIR$/samples/litepost/web/litepost-inf/views/error.cfm" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/samples/litepost/web/palladium-litepost-inf/views/login.cfm" afterPath="$PROJECT_DIR$/samples/litepost/web/litepost-inf/views/login.cfm" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/samples/litepost/web/palladium-litepost-inf/views/main.cfm" afterPath="$PROJECT_DIR$/samples/litepost/web/litepost-inf/views/main.cfm" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/samples/litepost/web/palladium-litepost-inf/views/rss.cfm" afterPath="$PROJECT_DIR$/samples/litepost/web/litepost-inf/views/rss.cfm" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/samples/litepost/web/palladium-litepost-inf/views/viewPost.cfm" afterPath="$PROJECT_DIR$/samples/litepost/web/litepost-inf/views/viewPost.cfm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/src/com/mikenimer/palladium/spring/mvc/views/ColdFusionView.java" afterPath="$PROJECT_DIR$/library/src/com/mikenimer/palladium/spring/mvc/views/ColdFusionView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/palladium.ipr" afterPath="$PROJECT_DIR$/palladium.ipr" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/palladium.iws" afterPath="$PROJECT_DIR$/palladium.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/helloworld/helloworld.iml" afterPath="$PROJECT_DIR$/samples/helloworld/helloworld.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/helloworld/src/com/mikenimer/palladium/samples/controllers/HelloWorldController.java" afterPath="$PROJECT_DIR$/samples/helloworld/src/com/mikenimer/palladium/samples/controllers/HelloWorldController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/kitchensink/kitchensink.iml" afterPath="$PROJECT_DIR$/samples/kitchensink/kitchensink.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/kitchensink/web/kitchensink-inf/views/propertytest-views/arrayview.cfm" afterPath="$PROJECT_DIR$/samples/kitchensink/web/kitchensink-inf/views/propertytest-views/arrayview.cfm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/kitchensink/web/kitchensink-inf/views/propertytest-views/home.cfm" afterPath="$PROJECT_DIR$/samples/kitchensink/web/kitchensink-inf/views/propertytest-views/home.cfm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/kitchensink/web/kitchensink-inf/views/propertytest-views/structview.cfm" afterPath="$PROJECT_DIR$/samples/kitchensink/web/kitchensink-inf/views/propertytest-views/structview.cfm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/litepost/litepost.iml" afterPath="$PROJECT_DIR$/samples/litepost/litepost.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/litepost/src/litepost/controllers/LitepostController.java" afterPath="$PROJECT_DIR$/samples/litepost/src/litepost/controllers/LitepostController.java" />
+    </list>
     <ignored path="palladium.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -63,106 +350,7 @@
     <favorites_list name="palladium" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="web.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/samples/helloworld/web/WEB-INF/web.xml">
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-            <state />
-          </provider>
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="152" column="7" selection-start="5708" selection-end="5708" vertical-scroll-proportion="0.2755102">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="log4j.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/samples/helloworld/src/log4j.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="31" selection-end="31" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HelloWorldController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/samples/helloworld/src/com/mikenimer/palladium/samples/controllers/HelloWorldController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="52" selection-start="569" selection-end="569" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.cfm" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/samples/helloworld/web/helloworld-inf/views/index.cfm">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="39" selection-start="43" selection-end="119" vertical-scroll-proportion="-5.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EntryDao.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/samples/litepost/src/litepost/hibernate/EntryDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="20" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ColdFusionView.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/library/src/com/mikenimer/palladium/spring/mvc/views/ColdFusionView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="198" column="82" selection-start="5756" selection-end="5756" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ColdFusionSerializer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/library/src/com/mikenimer/palladium/spring/mvc/views/ColdFusionSerializer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="126" column="21" selection-start="2449" selection-end="2449" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="applicationContext.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/samples/helloworld/web/WEB-INF/applicationContext.xml">
-          <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="473" selection-end="473" vertical-scroll-proportion="-3.409091">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HelloWorld-mvc-servlet.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/samples/helloworld/web/WEB-INF/HelloWorld-mvc-servlet.xml">
-          <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="67" selection-start="351" selection-end="351" vertical-scroll-proportion="3.409091">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -176,22 +364,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/kitchensink-propertytest-mvc-servlet.xml" />
-        <option value="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/kitchensink-mvc-servlet.xml" />
-        <option value="$PROJECT_DIR$/samples/kitchensink/src/com/mikenimer/palladium/samples/resolvers/ThemeResolver.java" />
         <option value="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/kitchensink-security-mvc-servlet.xml" />
         <option value="$PROJECT_DIR$/samples/litepost/cfmj-litepost/WEB-INF-Config/litepost-mvc-servlet.xml" />
         <option value="$PROJECT_DIR$/samples/litepost/palladium-litepost/WEB-INF-Config/litepost-mvc-servlet.xml" />
         <option value="$PROJECT_DIR$/../../1158labs-git/gitprojects/applications/augustHillWinery2/website/src/com/augusthill/models/beans/RegisteredUserDao.java" />
         <option value="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/kitchensink-hibernate-mvc-servlet.xml" />
-        <option value="$PROJECT_DIR$/samples/helloworld/web/WEB-INF/applicationContext.xml" />
         <option value="$PROJECT_DIR$/samples/helloworld/web/WEB-INF/HelloWorld-mvc-servlet.xml" />
         <option value="$PROJECT_DIR$/samples/helloworld/src/log4j.properties" />
-        <option value="$PROJECT_DIR$/samples/helloworld/src/com/mikenimer/palladium/samples/controllers/HelloWorldController.java" />
         <option value="$PROJECT_DIR$/samples/helloworld/web/helloworld-inf/views/index.cfm" />
-        <option value="$PROJECT_DIR$/library/src/com/mikenimer/palladium/spring/mvc/views/ColdFusionView.java" />
         <option value="$PROJECT_DIR$/samples/helloworld/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/samples/helloworld/web/WEB-INF/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/samples/kitchensink/web/kitchensink-inf/views/propertytest-views/arrayview.cfm" />
+        <option value="$PROJECT_DIR$/samples/kitchensink/web/kitchensink-inf/views/propertytest-views/home.cfm" />
+        <option value="$PROJECT_DIR$/samples/helloworld/src/com/mikenimer/palladium/samples/controllers/HelloWorldController.java" />
+        <option value="$PROJECT_DIR$/library/src/com/mikenimer/palladium/spring/mvc/views/ColdFusionView.java" />
+        <option value="$PROJECT_DIR$/samples/kitchensink/web/kitchensink-inf/views/propertytest-views/structview.cfm" />
+        <option value="$PROJECT_DIR$/samples/litepost/src/litepost/controllers/LitepostController.java" />
       </list>
     </option>
   </component>
@@ -206,7 +394,7 @@
     <option name="LAST_EDITED_MODULE_NAME" />
     <option name="LAST_EDITED_TAB_NAME" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -248,6 +436,16 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="palladium" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="samples" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleGroupNode" />
             </PATH_ELEMENT>
@@ -280,7 +478,7 @@
       <recent name="$PROJECT_DIR$/samples/helloworld/web/WEB-INF" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Hello World">
+  <component name="RunManager" selected="Tomcat Server.KitchenSink">
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -444,62 +642,6 @@
         </option>
       </method>
     </configuration>
-    <configuration default="false" name="AugustHillWinery" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 6">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/" />
-      <option name="UPDATING_POLICY" value="restart-server" />
-      <deployment>
-        <artifact name="AugustHillWinery:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="DEPLOY_TOMCAT_APPS" value="false" />
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_palladium_3" />
-      </server-settings>
-      <predefined_log_file id="TOMCAT_LOCALHOST_LOG_ID" enabled="true" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="50134" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="%IDEA_RUN:TOMCAT_HOME%/bin/catalina.sh" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value=" run" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="%IDEA_RUN:TOMCAT_HOME%/bin/catalina.sh" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value=" stop" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="%IDEA_RUN:TOMCAT_HOME%/bin/catalina.sh" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value=" run" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="%IDEA_RUN:TOMCAT_HOME%/bin/catalina.sh" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value=" stop" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method>
-        <option name="BuildArtifacts" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="false" name="Hello World" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/index.html" />
       <deployment>
@@ -557,10 +699,9 @@
         </option>
       </method>
     </configuration>
-    <list size="3">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.KitchenSink" />
-      <item index="1" class="java.lang.String" itemvalue="Tomcat Server.AugustHillWinery" />
-      <item index="2" class="java.lang.String" itemvalue="Tomcat Server.Hello World" />
+      <item index="1" class="java.lang.String" itemvalue="Tomcat Server.Hello World" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -623,7 +764,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32920536" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42105263" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33023736" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -634,7 +775,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2486631" sideWeight="0.57894737" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2486631" sideWeight="0.6697627" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -690,104 +831,23 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../1158labs-git/gitprojects/applications/augustHillWinery2/website/src/com/augusthill/models/beans/RegisteredUser.java">
+    <entry file="jar://$PROJECT_DIR$/../../libraries/java/libraries/spring-framework-3.1.0.M2/dist/org.springframework.context-3.1.0.M2.jar!/org/springframework/ui/ModelMap.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="91" selection-end="91" vertical-scroll-proportion="0.0">
+        <state line="5" column="50" selection-start="197" selection-end="197" vertical-scroll-proportion="0.13020833">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../1158labs-git/gitprojects/applications/augustHillWinery2/website/src/com/augusthill/models/beans/RegisteredUserDao.java">
+    <entry file="jar://$PROJECT_DIR$/../../libraries/java/libraries/spring-framework-3.1.0.M2/dist/org.springframework.web.portlet-3.1.0.M2.jar!/org/springframework/web/portlet/ModelAndView.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="22" selection-start="845" selection-end="845" vertical-scroll-proportion="0.942029">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../1158labs-git/gitprojects/applications/augustHillWinery2/website/web/WEB-INF/applicationContext.xml">
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="103" selection-start="3295" selection-end="3295" vertical-scroll-proportion="0.7935154">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/kitchensink-mvc-servlet.xml">
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="817" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/gateway-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/kitchensink-hibernate-mvc-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="2" selection-start="1726" selection-end="1726" vertical-scroll-proportion="1.2597656">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples/helloworld/web/WEB-INF/HelloWorld-mvc-servlet.xml">
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="67" selection-start="351" selection-end="351" vertical-scroll-proportion="3.409091">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../libraries/java/libraries/spring-framework-3.1.0.M2/dist/org.springframework.web.servlet-3.1.0.M2.jar!/org/springframework/web/servlet/view/AbstractView.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="19" selection-start="2952" selection-end="2952" vertical-scroll-proportion="0.6980462">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples/helloworld/web/helloworld-inf/views/index.cfm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="39" selection-start="43" selection-end="119" vertical-scroll-proportion="-5.0">
+        <state line="7" column="40" selection-start="260" selection-end="260" vertical-scroll-proportion="0.18229167">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/samples/litepost/src/litepost/hibernate/EntryDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="20" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples/helloworld/src/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="31" selection-end="31" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/src/com/mikenimer/palladium/spring/mvc/views/ColdFusionSerializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="21" selection-start="2449" selection-end="2449" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples/helloworld/src/com/mikenimer/palladium/samples/controllers/HelloWorldController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="52" selection-start="569" selection-end="569" vertical-scroll-proportion="0.0">
+        <state line="22" column="27" selection-start="526" selection-end="526" vertical-scroll-proportion="0.5322581">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -796,22 +856,100 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/library/src/com/mikenimer/palladium/spring/mvc/views/ColdFusionView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="198" column="82" selection-start="5756" selection-end="5756" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="211" column="25" selection-start="5962" selection-end="5962" vertical-scroll-proportion="1.032258">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/samples/helloworld/web/WEB-INF/applicationContext.xml">
+    <entry file="file://$PROJECT_DIR$/samples/helloworld/web/WEB-INF/HelloWorld-mvc-servlet.xml">
       <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="473" selection-end="473" vertical-scroll-proportion="-3.409091">
+        <state line="49" column="74" selection-start="2454" selection-end="2454" vertical-scroll-proportion="0.74916387">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/samples/helloworld/web/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/samples/helloworld/src/com/mikenimer/palladium/samples/controllers/HelloWorldController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="38" selection-start="205" selection-end="205" vertical-scroll-proportion="0.09677419">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/kitchensink/web/kitchensink-inf/views/propertytest-views/structview.cfm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="29" selection-start="372" selection-end="372" vertical-scroll-proportion="0.35234898">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/src/com/mikenimer/palladium/spring/mvc/views/ColdFusionSerializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="128" column="0" selection-start="2476" selection-end="2476" vertical-scroll-proportion="-0.7419355">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/kitchensink/src/com/mikenimer/palladium/samples/controllers/PropertyTestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="0" selection-start="1723" selection-end="1723" vertical-scroll-proportion="1.2096775">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/litepost/web/WEB-INF/litepost-mvc-servlet.xml">
+      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/litepost/src/litepost/controllers/LitepostController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="18" selection-start="688" selection-end="688" vertical-scroll-proportion="-2.5453048">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/litepost/web/litepost/config/litepost-mg-conf.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/litepost/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/litepost/palladium-litepost/WEB-INF-Config/litepost-mvc-servlet.xml">
+      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/litepost/palladium-litepost/WEB-INF-Config/required-jars.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.09677419">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/litepost/palladium-litepost/WEB-INF-Config/web.xml">
       <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
         <state />
       </provider>
@@ -819,7 +957,7 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="152" column="7" selection-start="5708" selection-end="5708" vertical-scroll-proportion="0.2755102">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -882,7 +1020,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>helloworld|samples</last-edited>
+          <last-edited>litepost|samples</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

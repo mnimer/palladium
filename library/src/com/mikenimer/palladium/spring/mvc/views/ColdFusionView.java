@@ -1,6 +1,5 @@
 package com.mikenimer.palladium.spring.mvc.views;
 
-import org.springframework.web.portlet.ModelAndView;
 import org.springframework.web.servlet.view.InternalResourceView;
 
 import javax.servlet.http.HttpServletRequest;
@@ -194,39 +193,33 @@ public class ColdFusionView extends InternalResourceView
         }
 
 
-        if( model instanceof Map && model.containsKey("modelAndView") )
+        // Handle the auto conversion features to make the java more CF friendly
+        model = (Map)serializer.serialize( model );
+
+        // init system scope
+        setupSystemScope(model);
+
+
+        // put java model in CF REQUEST SCOPE
+        exposeModelAsRequestAttributes(model, request);
+        // Render view
+        super.renderMergedOutputModel(model, request, response);
+
+
+
+    }
+
+    protected void setupSystemScope(Map<String, Object> model) {
+        // Properties to pass back to CF, under the "palladium" node.
+        Map properties = new HashMap();
+        properties.put( "version",   "1.0." +buildNumber );
+
+        if( getBeans() != null )
         {
-            ModelAndView modelAndView = ((ModelAndView)model.get("modelAndView"));
-            Map propertyModel = modelAndView.getModel();
-            // Handle the auto conversion features to make the java more CF friendly
-            propertyModel = (Map)serializer.serialize( propertyModel );
-
-            // Properties to pass back to CF, under the "palladium" node.
-            Map properties = new HashMap();
-            properties.put( "version",   "1.0." +buildNumber );
-
-            if( getBeans() != null )
-            {
-                properties.put( "beans",  getBeans() );
-            }
-
-            // create palladium node to pass properties back to cf
-            propertyModel.put("palladium", properties );
-
-            // put java model in CF REQUEST SCOPE
-            exposeModelAsRequestAttributes(propertyModel, request);
-            // Render view
-            super.renderMergedOutputModel(propertyModel, request, response);
-
-        }
-        else
-        {
-            // put java model in CF REQUEST SCOPE
-            exposeModelAsRequestAttributes(model, request);
-            // Render view
-            super.renderMergedOutputModel(model, request, response);
+            properties.put( "beans",  getBeans() );
         }
 
-
+        // create palladium node to pass properties back to cf
+        model.put("palladium", properties );
     }
 }

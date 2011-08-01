@@ -25,8 +25,8 @@
     <orderEntry type="module" module-name="palladium-library" />
     <orderEntry type="library" name="java-spring-3.0.5" level="application" />
     <orderEntry type="library" name="java-apache-commons" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Tomcat 7" level="application_server_libraries" />
     <orderEntry type="library" name="java-Log4j 1.2.15 " level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="Tomcat 6" level="application_server_libraries" />
   </component>
 </module>
 
