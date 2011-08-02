@@ -1,7 +1,7 @@
 Property Test Examples: "Arrayview.cfm"
 <br/><br/>
 
-<a href="../">Back</a><br/>
+<a href="/kitchensink/propertyTests/index.cfm">Back</a><br/>
 
 <cfdump var="#request#" expand="false"/>
 

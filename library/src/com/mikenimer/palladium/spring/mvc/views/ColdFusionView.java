@@ -1,5 +1,6 @@
 package com.mikenimer.palladium.spring.mvc.views;
 
+import org.springframework.web.servlet.View;
 import org.springframework.web.servlet.view.InternalResourceView;
 
 import javax.servlet.http.HttpServletRequest;
@@ -13,7 +14,7 @@ import java.util.logging.Logger;
 /**
  * @author: mikenimer@yahoo.com
  */
-public class ColdFusionView extends InternalResourceView
+public class ColdFusionView extends InternalResourceView implements View
 {
     private static Logger log = Logger.getLogger(ColdFusionView.class.getName());
     private static Properties buildProperties;
@@ -128,6 +129,11 @@ public class ColdFusionView extends InternalResourceView
         this.lowerCaseKeys=lowerCaseKeys;
     }
 
+
+    @Override
+    public String getContentType() {
+        return "text/html";
+    }
 
     /**
      * Set static attributes for this view from a Map. This allows to set

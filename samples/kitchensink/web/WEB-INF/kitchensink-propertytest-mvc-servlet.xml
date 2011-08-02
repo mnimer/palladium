@@ -15,9 +15,39 @@
 
 
 
+    <bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
+        <property name="mediaTypes">
+            <map>
+                <entry key="json" value="application/json" />
+                <entry key="xml" value="application/xml" />
+            </map>
+        </property>
+        <property name="defaultViews">
+            <list>
+                <bean class="org.springframework.web.servlet.view.json.MappingJacksonJsonView">
+                </bean>
+
+                <bean class="org.springframework.web.servlet.view.xml.MarshallingView">
+                    <property name="marshaller">
+                        <bean class="org.springframework.oxm.xstream.XStreamMarshaller">
+                            <property name="autodetectAnnotations" value="true"/>
+                            <property name="supportedClasses">
+                                <list>
+                                    <value>java.util.Collection</value>
+                                    <value>java.util.HashMap</value>
+                                </list>
+                            </property>
+                        </bean>
+                    </property>
+                </bean>
+            </list>
+        </property>
+    </bean>
+
+
 
     <!-- Define the view resolver to use jsp files within the jsp folder -->
-    <bean name ="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="viewClass" value="com.mikenimer.palladium.spring.mvc.views.ColdFusionView" />
         <property name="prefix" value="/kitchensink-inf/views/propertytest-views/" />
         <property name="suffix" value=".cfm" />
