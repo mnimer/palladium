@@ -46,7 +46,7 @@
 
 
 
-    <!-- Define the view resolver to use jsp files within the jsp folder -->
+    <!-- Define the view resolver to use cfml files within the views folder -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="viewClass" value="com.mikenimer.palladium.spring.mvc.views.ColdFusionView" />
         <property name="prefix" value="/kitchensink-inf/views/propertytest-views/" />

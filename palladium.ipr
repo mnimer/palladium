@@ -29,7 +29,7 @@
         <element id="artifact" artifact-name="ColdFusion 9" />
       </root>
     </artifact>
-    <artifact type="exploded-war" name="ColdFusion 9">
+    <artifact type="exploded-war" build-on-make="true" name="ColdFusion 9">
       <output-path>$PROJECT_DIR$/out/artifacts/ColdFusion_9</output-path>
       <root id="root">
         <element id="dir-copy" path="$PROJECT_DIR$/../../libraries/java/servers/ColdFusion9/web" />

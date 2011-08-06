@@ -1,0 +1,45 @@
+<b>What is Palladium?</b>
+Palladium is a Spring MVC View Helper enabling you to use ColdFusion as the View Layer in Spring MVC. 
+
+For the latest information on Palladium follow my blog: http://www.mikenimer.com
+
+<b>Requirements</b>
+1. Spring MVC
+2. ColdFusion Enterprise
+
+<b>How to Install</b>
+1. Run the ColdFusion installer and choose the j2ee "war" option. 
+2. Unzip the war and add it to your project (you will rebuild the project as a war for production deployment)
+3. Open the WEB-INF/web.xml file and a Spring MVC DispatcherServlet
+4. Create the Spring XML config file for this servlet. See the Spring MVC documentation for the complete instructions.
+5. Add the Palladium ColdFusion View Helper.
+
+
+<b>How to Configure The View Helper</b>
+1. Add this bean to your Spring xml configuration. (adjust the properties as needed)
+
+<!-- Define the view resolver to use cfml files within the views folder -->
+<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+    <property name="viewClass" value="com.mikenimer.palladium.spring.mvc.views.ColdFusionView" />
+    <property name="prefix" value="/<project>-inf/views/" />
+    <property name="suffix" value=".cfm" />
+    <property name="attributesMap">
+        <map>
+            <!-- properties to make java CF friendly -->
+            <entry key="convertKeys" value="true"/>
+            <entry key="lowerCaseKeys" value="true"/>
+            <entry key="convertCollections" value="true"/>
+            <entry key="convertNulls" value="true"/>
+            <entry key="beans">
+                <map>
+                     <entry key="propertyHelper">
+                        <bean class="com.mikenimer.palladium.utils.PropertyHelper"/>
+                    </entry>
+                    <entry key="collectionHelper">
+                        <bean class="com.mikenimer.palladium.utils.CollectionHelper"/>
+                    </entry>
+                </map>
+            </entry>
+        </map>
+    </property>
+</bean>
