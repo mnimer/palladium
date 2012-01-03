@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<project name="cfmJ" default="jar">
+<project name="Palladium" default="jar">
 
 	<buildnumber file="src/buildnumber.properties"/>
 	<property name="base.dir" value="."/>
