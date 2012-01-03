@@ -23,6 +23,15 @@
         <jarDirectory url="file://$MODULE_DIR$/libs/beanlib-5.0.3beta" recursive="false" />
       </library>
     </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../libraries/java/libraries/json_simple-1.1-all/lib/json_simple-1.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
     <orderEntry type="library" name="java-Spring-3.1.0.M2" level="application" />
   </component>
 </module>
