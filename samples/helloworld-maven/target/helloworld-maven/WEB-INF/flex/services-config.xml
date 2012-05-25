@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<services-config>
+
+    <services>
+        <service-include file-path="remoting-config.xml" />
+        <service-include file-path="proxy-config.xml" />
+        <service-include file-path="messaging-config.xml" />
+    </services>
+
+    <security>
+        <login-command class="flex.messaging.security.JRunLoginCommand" server="JRun"/>
+        <!-- Uncomment the correct app server
+        <login-command class="flex.messaging.security.TomcatLoginCommand" server="Tomcat"/>
+        <login-command class="flex.messaging.security.WeblogicLoginCommand" server="Weblogic"/>
+        <login-command class="flex.messaging.security.WebSphereLoginCommand" server="WebSphere"/>
+        -->
+        <!--
+        <security-constraint id="basic-read-access">
+            <auth-method>Basic</auth-method>
+            <roles>
+                <role>guests</role>
+                <role>accountants</role>
+                <role>employees</role>
+                <role>managers</role>
+            </roles>
+        </security-constraint>
+        -->
+    </security>
+
+    <channels>
+
+        <!--  CF Based Endpoints -->
+        <channel-definition id="my-cfamf" class="mx.messaging.channels.AMFChannel">
+            <endpoint uri="http://{server.name}:{server.port}{context.root}/flex2gateway/" class="coldfusion.flash.messaging.CFAMFEndPoint"/>
+            <properties>
+                <polling-enabled>false</polling-enabled>
+				<serialization>
+					<enable-small-messages>false</enable-small-messages>
+				</serialization>
+				<coldfusion>
+				    <!-- define the resolution rules and access level of the cfc being invoked -->
+					<access>
+						<!-- Use the ColdFusion mappings to find CFCs-->
+						<use-mappings>true</use-mappings>
+						<!-- allow "public and remote" or just "remote" methods to be invoked -->
+						<method-access-level>remote</method-access-level>
+					</access>
+					
+					<!-- Whether the Value Object CFC has getters and setters. Set the value of use-accessors to true if there are getters and setters in the Value Object CFC. -->
+					<use-accessors>true</use-accessors>
+					<!--Set the value of use-structs to true if you don't require any translation of ActionScript to CFCs. The assembler can still return structures to Flex, even if the value is false. The default value is false.-->
+					<use-structs>false</use-structs>
+
+					<!--Set the value of serialize-arrays-to-arraycollection to true if you require ColdFusion arrays to be converted to ArrayCollection on the ActionScript side. The default value is false. A false value
+					will convert ColdFusion Array to ActionScript Array-->
+					<serialize-array-to-arraycollection>false
+					</serialize-array-to-arraycollection>
+					
+					<!--Set the value of proxy-load-method to change the user defined load function that gets invoked on the service cfc. Two parameters are passed to this function. The first one in the key of the proxy and the second one is the fully qualified name of the proxy cfc. This function returns the actual entity instance.-->
+					<proxy-load-method>loadProxy</proxy-load-method>
+
+                    <property-case>
+                        <!-- cfc property names -->
+                        <force-cfc-lowercase>false</force-cfc-lowercase>
+                        <!-- Query column names -->
+                        <force-query-lowercase>false</force-query-lowercase>
+                        <!-- struct keys -->
+                        <force-struct-lowercase>false</force-struct-lowercase>
+                    </property-case>
+				</coldfusion>
+            </properties>
+        </channel-definition>
+
+        <channel-definition id="cf-polling-amf" class="mx.messaging.channels.AMFChannel">
+            <endpoint uri="http://{server.name}:{server.port}{context.root}/flex2gateway/cfamfpolling" class="coldfusion.flash.messaging.CFAMFEndPoint"/>
+            <properties>
+                <polling-enabled>true</polling-enabled>
+                <polling-interval-seconds>8</polling-interval-seconds>
+				<serialization>
+					<enable-small-messages>false</enable-small-messages>
+				</serialization>
+				<coldfusion>
+				    <!-- define the resolution rules and access level of the cfc being invoked -->
+					<access>
+						<!-- Use the ColdFusion mappings to find CFCs-->
+						<use-mappings>true</use-mappings>
+						<!-- allow "public and remote" or just "remote" methods to be invoked -->
+						<method-access-level>remote</method-access-level>
+					</access>
+					
+					<!-- Whether the Value Object CFC has getters and setters. Set the value of use-accessors to true if there are getters and setters in the Value Object CFC. -->
+					<use-accessors>true</use-accessors>
+					<!--Set the value of use-structs to true if you don't require any translation of ActionScript to CFCs. The assembler can still return structures to Flex, even if the value is false. The default value is false.-->
+					<use-structs>false</use-structs>
+
+					<!--Set the value of serialize-arrays-to-arraycollection to true if you require ColdFusion arrays to be converted to ArrayCollection on the ActionScript side. The default value is false. A false value
+					will convert ColdFusion Array to ActionScript Array-->
+					<serialize-array-to-arraycollection>false
+					</serialize-array-to-arraycollection>
+
+					<!--Set the value of proxy-load-method to change the user defined load function that gets invoked on the service cfc. Two parameters are passed to this function. The first one in the key of the proxy and the second one is the fully qualified name of the proxy cfc. This function returns the actual entity instance.-->
+					<proxy-load-method>loadProxy</proxy-load-method>
+
+                    <property-case>
+                        <!-- cfc property names -->
+                        <force-cfc-lowercase>false</force-cfc-lowercase>
+                        <!-- Query column names -->
+                        <force-query-lowercase>false</force-query-lowercase>
+                        <!-- struct keys -->
+                        <force-struct-lowercase>false</force-struct-lowercase>
+                    </property-case>
+				</coldfusion>
+            </properties>
+        </channel-definition>
+
+        <channel-definition id="my-cfamf-secure" class="mx.messaging.channels.SecureAMFChannel">
+            <endpoint uri="https://{server.name}:{server.port}{context.root}/flex2gateway/cfamfsecure" class="coldfusion.flash.messaging.SecureCFAMFEndPoint"/>
+            <properties>
+                <polling-enabled>false</polling-enabled>
+				<add-no-cache-headers>false</add-no-cache-headers>
+				<serialization>
+					<enable-small-messages>false</enable-small-messages>
+				</serialization>
+				<coldfusion>
+				    <!-- define the resolution rules and access level of the cfc being invoked -->
+					<access>
+						<!-- Use the ColdFusion mappings to find CFCs-->
+						<use-mappings>true</use-mappings>
+						<!-- allow "public and remote" or just "remote" methods to be invoked -->
+						<method-access-level>remote</method-access-level>
+					</access>
+
+					<!-- Whether the Value Object CFC has getters and setters. Set the value of use-accessors to true if there are getters and setters in the Value Object CFC. -->
+					<use-accessors>true</use-accessors>
+					<!--Set the value of use-structs to true if you don't require any translation of ActionScript to CFCs. The assembler can still return structures to Flex, even if the value is false. The default value is false.-->
+					<use-structs>false</use-structs>
+
+					<!--Set the value of serialize-arrays-to-arraycollection to true if you require ColdFusion arrays to be converted to ArrayCollection on the ActionScript side. The default value is false. A false value
+					will convert ColdFusion Array to ActionScript Array-->
+					<serialize-array-to-arraycollection>false
+					</serialize-array-to-arraycollection>
+
+					<!--Set the value of proxy-load-method to change the user defined load function that gets invoked on the service cfc. Two parameters are passed to this function. The first one in the key of the proxy and the second one is the fully qualified name of the proxy cfc. This function returns the actual entity instance.-->
+					<proxy-load-method>loadProxy</proxy-load-method>
+
+					<property-case>
+                        <!-- cfc property names -->
+                        <force-cfc-lowercase>false</force-cfc-lowercase>
+                        <!-- Query column names -->
+                        <force-query-lowercase>false</force-query-lowercase>
+                        <!-- struct keys -->
+                        <force-struct-lowercase>false</force-struct-lowercase>
+                    </property-case>
+				</coldfusion>
+            </properties>
+        </channel-definition>
+       
+        <!--  Java Based Endpoints -->
+        <channel-definition id="java-amf" class="mx.messaging.channels.AMFChannel">
+            <endpoint uri="http://{server.name}:{server.port}{context.root}/flex2gateway/amf" class="flex.messaging.endpoints.AMFEndpoint"/>
+        </channel-definition>
+
+        <channel-definition id="java-secure-amf" class="mx.messaging.channels.SecureAMFChannel">
+            <endpoint uri="https://{server.name}:{server.port}{context.root}/flex2gateway/amfsecure" class="flex.messaging.endpoints.SecureAMFEndpoint"/>
+        </channel-definition>
+
+        <channel-definition id="java-polling-amf" class="mx.messaging.channels.AMFChannel">
+            <endpoint uri="http://{server.name}:{server.port}{context.root}/flex2gateway/amfpolling" class="flex.messaging.endpoints.AMFEndpoint"/>
+            <properties>
+                <polling-enabled>true</polling-enabled>
+                <polling-interval-seconds>8</polling-interval-seconds>
+            </properties>
+        </channel-definition>
+
+        <!--
+        <channel-definition id="java-http" class="mx.messaging.channels.HTTPChannel">
+            <endpoint uri="http://{server.name}:{server.port}{context.root}/flex2gateway/http" class="flex.messaging.endpoints.HTTPEndpoint"/>
+        </channel-definition>
+
+        <channel-definition id="java-secure-http" class="mx.messaging.channels.SecureHTTPChannel">
+            <endpoint uri="https://{server.name}:{server.port}{context.root}/flex2gateway/httpsecure" class="flex.messaging.endpoints.SecureHTTPEndpoint"/>
+        </channel-definition>
+        -->
+    </channels>
+
+    <logging>
+        <target class="flex.messaging.log.ConsoleTarget" level="Error">
+            <properties>
+                <prefix>[BlazeDS] </prefix>
+                <includeDate>false</includeDate>
+                <includeTime>false</includeTime>
+                <includeLevel>false</includeLevel>
+                <includeCategory>false</includeCategory>
+            </properties>
+            <filters>
+                <pattern>Endpoint.*</pattern>
+                <pattern>Service.*</pattern>
+                <pattern>Configuration</pattern>
+                <pattern>Message.*</pattern>
+            </filters>
+        </target>
+    </logging>
+
+    <system>
+        <manageable>false</manageable>
+        <!-- 
+        <redeploy>
+            <enabled>true</enabled>
+            <watch-interval>20</watch-interval>
+            <watch-file>{context.root}/WEB-INF/flex/services-config.xml</watch-file>
+            <watch-file>{context.root}/WEB-INF/flex/proxy-config.xml</watch-file>
+            <watch-file>{context.root}/WEB-INF/flex/remoting-config.xml</watch-file>
+            <watch-file>{context.root}/WEB-INF/flex/messaging-config.xml</watch-file>
+            <watch-file>{context.root}/WEB-INF/flex/data-management-config.xml</watch-file>
+            <touch-file>{context.root}/WEB-INF/web.xml</touch-file>
+        </redeploy>
+         -->
+    </system>
+
+</services-config>

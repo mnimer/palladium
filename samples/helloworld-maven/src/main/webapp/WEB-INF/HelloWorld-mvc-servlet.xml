@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--mvc:annotation-driven /-->
+
+    <!-- Enable to request mappings PER METHOD -->
+    <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter"/>
+
+    <!-- Enable annotated POJO @Controller -->
+    <bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping"/>
+
+    <bean id="websiteController" class="controllers.WebsiteController"/>
+
+
+    <!-- special mapping for static resources
+    <mvc:resources mapping="/scripts/**" location="/helloworld-inf/scripts/" cache-period="31556926" />
+    <mvc:resources mapping="/images/**" location="/helloworld-inf/scripts/" cache-period="31556926" />
+    -->
+    <!-- Forwards requests to the "/" resource to the "home" view
+    <mvc:view-controller path="/" view-name="index" />
+     -->
+
+
+    <!-- Define the view resolver to use jsp files within the jsp folder -->
+    <bean name ="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="viewClass" value="com.mikenimer.palladium.spring.mvc.views.ColdFusionView" />
+        <property name="prefix" value="/helloworld-inf/views/" />
+        <property name="suffix" value=".cfm" />
+        <property name="attributesMap">
+            <map>
+                <!-- properties to make java CF friendly -->
+                <entry key="convertKeys" value="false"/>
+                <entry key="lowerCaseKeys" value="false"/>
+                <entry key="convertCollections" value="false"/>
+                <entry key="convertNulls" value="false"/>
+                <entry key="beans">
+                    <map>
+                         <entry key="propertyHelper">
+                            <bean class="com.mikenimer.palladium.utils.PropertyHelper"/>
+                        </entry>
+                        <entry key="collectionHelper">
+                            <bean class="com.mikenimer.palladium.utils.CollectionHelper"/>
+                        </entry>
+                    </map>
+                </entry>
+            </map>
+        </property>
+    </bean>
+
+</beans>

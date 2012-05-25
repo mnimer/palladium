@@ -12,7 +12,10 @@
       </configuration>
     </facet>
     <facet type="Spring" name="Spring">
-      <configuration />
+      <configuration>
+        <fileset id="web: application context" profiles="" autodetected="true" />
+        <fileset id="web: HelloWorld-mvc servlet context" profiles="" autodetected="true" />
+      </configuration>
     </facet>
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">

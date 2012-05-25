@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portlet-app xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd"
+             version="1.0">
+<!--
+	<portlet>
+		<portlet-name>HelloPortlet</portlet-name>
+		<display-name xml:lang="en">Hello Portlet</display-name>
+		<portlet-class>portlets.hello.HelloPortlet</portlet-class>		
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
+			<portlet-mode>HELP</portlet-mode>
+		</supports>
+		<supported-locale>en</supported-locale>
+		<portlet-info>
+			<title>Hello ColdFusion Portlet</title>
+			<short-title>CF Hello</short-title>
+			<keywords>hello, portlet</keywords>
+		</portlet-info>
+
+	</portlet>
+-->
+</portlet-app>

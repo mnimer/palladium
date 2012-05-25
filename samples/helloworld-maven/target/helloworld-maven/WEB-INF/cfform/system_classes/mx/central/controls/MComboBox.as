@@ -1,0 +1,31 @@
+﻿intrinsic class mx.central.controls.MComboBox extends MovieClip {
+	function addItem (label:String, data:Object):Void;
+	function addItemAt (index:Number, label:String, data:Object):Void;
+	function clearDisabled (Void):Void;
+	function getDisabledIndices (Void):Array;
+	function getEditable (Void):Boolean;
+	function getEnabled (Void):Boolean;
+	function getItemAt (index:Number):Object;
+	function getItemID (index:Number):String;
+	function getLength (Void):Number;
+	function getRowCount (Void):Number;
+	function getScrollPosition (Void):Number;
+	function getSelectedIndex (Void):Number;
+	function getSelectedItem (Void):Object;
+	function getValue (Void):Object;
+	function isDisabled (index:Number):Boolean;
+	function removeAll (Void):Void;
+	function removeItemAt (index:Number):Object;
+	function replaceAllItems (items:Object):Void;
+	function replaceItemAt (index:Number, label:String, data:Object):Void;
+	function setChangeHandler (functionName:String, location:Object):Void;
+	function setDataProvider (dataprovider:Object):Void;
+	function setEditable (editable:Boolean):Void;
+	function setEnabled (enable:Boolean):Void;
+	function setEnabledIndices (itemsArray:Array, state:Boolean):Void;
+	function setItemSymbol (symbolID:String):Void;
+	function setRowCount (rows:Number):Void;
+	function setSelectedIndex (index:Number):Void;
+	function setSize (width:Number):Void;
+	function setValue (editableText:String):Void;
+}
