@@ -441,7 +441,11 @@
 
     <servlet>
         <servlet-name>kitchensink-mvc</servlet-name>
-        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<servlet-class>coldfusion.bootstrap.BootstrapServlet</servlet-class>
+		<init-param>
+			<param-name>servlet.class</param-name>
+			<param-value>org.springframework.web.servlet.DispatcherServlet</param-value>
+		</init-param>
 
         <load-on-startup>1</load-on-startup>
     </servlet>
