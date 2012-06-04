@@ -21,13 +21,24 @@
 
 
 	<dependencies>
-		<!--  -->
+		<!--
+		* Add ColdFusion jars to your local repository
+		  todo this: run this command (edit the path first)
+mvn install:install-file
+-Dfile=<your path>/ColdFusion10/cfusion/WEB-INF/cfusion/lib/cfusion.jar
+-DgroupId=com.adobe -DartifactId=ColdFusion
+-Dversion=10
+-Dpackaging=jar
+-DlocalRepositoryPath=/Users/mnimer/.m2/repository/
+		  -->
 		<dependency>
 			<groupId>com.adobe</groupId>
 			<artifactId>ColdFusion</artifactId>
 			<version>10</version>
 		</dependency>
 
+
+		<!-- like above, until I get palladium uploaded to a central repository add the palladium jar too -->
 		<dependency>
 			<groupId>com.mikenimer</groupId>
 			<artifactId>Palladium</artifactId>
