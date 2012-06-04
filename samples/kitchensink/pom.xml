@@ -23,13 +23,13 @@
 	<dependencies>
 		<!--
 		* Add ColdFusion jars to your local repository
-		  todo this: run this command (edit the path first)
+		  todo this: run this command (edit the path(s) first)
 mvn install:install-file
 -Dfile=<your path>/ColdFusion10/cfusion/WEB-INF/cfusion/lib/cfusion.jar
 -DgroupId=com.adobe -DartifactId=ColdFusion
 -Dversion=10
 -Dpackaging=jar
--DlocalRepositoryPath=/Users/mnimer/.m2/repository/
+-DlocalRepositoryPath=/Users/<user>/.m2/repository/
 		  -->
 		<dependency>
 			<groupId>com.adobe</groupId>
@@ -38,12 +38,20 @@ mvn install:install-file
 		</dependency>
 
 
-		<!-- like above, until I get palladium uploaded to a central repository add the palladium jar too -->
+		<!-- like above, until I get palladium uploaded to a central repository add the palladium jar too
+		  todo this: run this command (edit the path(s) first)
+-Dfile=<your path to palladium jar>
+-DgroupId=com.adobe -DartifactId=Palladium
+-Dversion=1.0.71 <match the jar you download>
+-Dpackaging=jar
+-DlocalRepositoryPath=/Users/<user>/.m2/repository/
+		-->
 		<dependency>
 			<groupId>com.mikenimer</groupId>
 			<artifactId>Palladium</artifactId>
 			<version>1.0.71</version>
 		</dependency>
+
 
 
 		<dependency>
