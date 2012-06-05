@@ -8,6 +8,9 @@
        http://www.springframework.org/schema/security/spring-security-3.1.xsd">
 
 
+	<import resource="spring-security.xml" />
+
+
     <!--mvc:annotation-driven /-->
 
     <!-- Enable to request mappings PER METHOD -->

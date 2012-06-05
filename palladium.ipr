@@ -333,6 +333,17 @@
         <root url="jar://$MAVEN_REPOSITORY$/aopalliance/aopalliance/1.0/aopalliance-1.0-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: com.adobe:ColdFusion-bootstrap:10">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/adobe/ColdFusion-bootstrap/10/ColdFusion-bootstrap-10.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/com/adobe/ColdFusion-bootstrap/10/ColdFusion-bootstrap-10-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/adobe/ColdFusion-bootstrap/10/ColdFusion-bootstrap-10-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: com.adobe:ColdFusion:10">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/com/adobe/ColdFusion/10/ColdFusion-10.jar!/" />
@@ -365,6 +376,17 @@
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/com/mikenimer/Palladium/1.0.71/Palladium-1.0.71-sources.jar!/" />
         <root url="file://$PROJECT_DIR$/library/src" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.mikenimer:Palladium:1.0.74">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/mikenimer/Palladium/1.0.74/Palladium-1.0.74.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/com/mikenimer/Palladium/1.0.74/Palladium-1.0.74-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/mikenimer/Palladium/1.0.74/Palladium-1.0.74-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: com.thoughtworks.xstream:xstream:1.4.2">

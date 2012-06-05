@@ -30,6 +30,8 @@ mvn install:install-file
 -Dversion=10
 -Dpackaging=jar
 -DlocalRepositoryPath=/Users/<user>/.m2/repository/
+
+mvn install:install-file -Dfile=/Users/mnimer/Development/libraries/java/servers/ColdFusion10/cfusion/WEB-INF/lib/cfmx_bootstrap.jar -DgroupId=com.adobe -DartifactId=ColdFusion-bootstrap -Dversion=10 -Dpackaging=jar -DlocalRepositoryPath=/Users/mnimer/.m2/repository/
 		  -->
 		<dependency>
 			<groupId>com.adobe</groupId>
@@ -37,20 +39,23 @@ mvn install:install-file
 			<version>10</version>
 			<scope>provided</scope>
 		</dependency>
+		<dependency>
+			<groupId>com.adobe</groupId>
+			<artifactId>ColdFusion-bootstrap</artifactId>
+			<version>10</version>
+			<scope>provided</scope>
+		</dependency>
 
 
 		<!-- like above, until I get palladium uploaded to a central repository add the palladium jar too
 		  todo this: run this command (edit the path(s) first)
--Dfile=<your path to palladium jar>
--DgroupId=com.adobe -DartifactId=Palladium
--Dversion=1.0.71 <match the jar you download>
--Dpackaging=jar
--DlocalRepositoryPath=/Users/<user>/.m2/repository/
+
+		 mvn install:install-file -Dfile=/Users/mnimer/Development/github/palladium/library/dist/com.mikenimer.palladium.1.0.74.jar -DgroupId=com.mikenimer -DartifactId=Palladium -Dversion=1.0.74 -Dpackaging=jar -DlocalRepositoryPath=/Users/mnimer/.m2/repository/
 		-->
 		<dependency>
 			<groupId>com.mikenimer</groupId>
 			<artifactId>Palladium</artifactId>
-			<version>1.0.71</version>
+			<version>1.0.74</version>
 			<scope>provided</scope>
 		</dependency>
 

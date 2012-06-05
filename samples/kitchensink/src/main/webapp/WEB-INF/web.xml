@@ -113,17 +113,21 @@
 		</init-param>
 	</filter>
 
-	<!-- SPRING SECURITY
+	<!-- SPRING SECURITY -->
 	<filter>
 		<filter-name>springSecurityFilterChain</filter-name>
-		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+		<filter-class>coldfusion.bootstrap.BootstrapFilter</filter-class>
+		<init-param>
+			<param-name>filter.class</param-name>
+			<param-value>org.springframework.web.filter.DelegatingFilterProxy</param-value>
+		</init-param>
 	</filter>
 
 
 	<filter-mapping>
 		<filter-name>springSecurityFilterChain</filter-name>
 		<url-pattern>/kitchensink/*</url-pattern>
-	</filter-mapping>  -->
+	</filter-mapping>
 	<!-- SPRING SECURITY -->
 
 	<!-- CF ClickJacking Filter mapppings starts. For ColdFusion Administrator we are allowing sameorigiin frames. Use Deny or some other mode of this filter as appropriate for the application and add required url pattern
@@ -186,11 +190,9 @@
 
 
 
-	<!--listener>
-		<listener-class>
-			org.springframework.web.context.ContextLoaderListener
-		</listener-class>
-	</listener-->
+	<listener>
+		<listener-class>com.mikenimer.palladium.bootstrap.SpringContextLoaderListener</listener-class>
+	</listener>
 
 	<listener>
 		<listener-class>coldfusion.bootstrap.HttpFlexSessionBootstrap</listener-class>

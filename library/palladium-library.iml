@@ -33,6 +33,15 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="Spring Framework 3.1.0.M2" level="application" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../libraries/java/servers/ColdFusion10/cfusion/WEB-INF/lib/cfmx_bootstrap.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>
 
