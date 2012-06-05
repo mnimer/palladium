@@ -79,6 +79,8 @@ public class SecurityController
     @RequestMapping("/logout")
     public ModelAndView handleLogout( HttpServletRequest request, HttpServletResponse response )
     {
+        String currentUser = SecurityContextHolder.getContext().getAuthentication().getName();
+
         return new ModelAndView( "home" );
     }
 

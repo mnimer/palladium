@@ -29,7 +29,8 @@
     <security:http auto-config='true'>
         <security:intercept-url pattern="/**" access="ROLE_USER" />
         <security:intercept-url pattern="/admin/**" access="ROLE_ADMIN" />
-    </security:http>
+		<security:logout logout-success-url="/logoff" />
+	</security:http>
 
 
     <!-- Define the view resolver to use jsp files within the jsp folder -->

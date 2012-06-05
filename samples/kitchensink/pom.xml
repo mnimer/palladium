@@ -35,6 +35,7 @@ mvn install:install-file
 			<groupId>com.adobe</groupId>
 			<artifactId>ColdFusion</artifactId>
 			<version>10</version>
+			<scope>provided</scope>
 		</dependency>
 
 
@@ -50,6 +51,7 @@ mvn install:install-file
 			<groupId>com.mikenimer</groupId>
 			<artifactId>Palladium</artifactId>
 			<version>1.0.71</version>
+			<scope>provided</scope>
 		</dependency>
 
 
@@ -58,6 +60,14 @@ mvn install:install-file
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
 			<version>1.2.16</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>jstl</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+			<scope>provided</scope>
 		</dependency>
 
 		<!--   -->
@@ -65,36 +75,42 @@ mvn install:install-file
 			<groupId>javax.xml</groupId>
 			<artifactId>jaxb-api</artifactId>
 			<version>2.0</version>
+			<scope>provided</scope>
 		</dependency>
 
 		<dependency>
 			<groupId>xerces</groupId>
 			<artifactId>xercesImpl</artifactId>
 			<version>2.10.0</version>
+			<scope>provided</scope>
 		</dependency>
 
 		<dependency>
 			<groupId>xerces</groupId>
 			<artifactId>xmlParserAPIs</artifactId>
 			<version>2.6.2</version>
+			<scope>provided</scope>
 		</dependency>
 
 		<dependency>
 			<groupId>xalan</groupId>
 			<artifactId>serializer</artifactId>
 			<version>2.7.1</version>
+			<scope>provided</scope>
 		</dependency>
 
 		<dependency>
 			<groupId>xalan</groupId>
 			<artifactId>xalan</artifactId>
 			<version>2.7.1</version>
+			<scope>provided</scope>
 		</dependency>
 
 		<dependency>
 			<groupId>com.thoughtworks.xstream</groupId>
 			<artifactId>xstream</artifactId>
 			<version>1.4.2</version>
+			<scope>provided</scope>
 		</dependency>
 
 
@@ -105,6 +121,7 @@ mvn install:install-file
 			<groupId>org.apache.tomcat</groupId>
 			<artifactId>servlet-api</artifactId>
 			<version>6.0.33</version>
+			<scope>provided</scope>
 		</dependency>
 
 
@@ -113,8 +130,16 @@ mvn install:install-file
 		-->
 		<dependency>
 			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-core-asl</artifactId>
+			<version>1.9.4</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
 			<artifactId>jackson-mapper-asl</artifactId>
 			<version>1.9.4</version>
+			<scope>provided</scope>
 		</dependency>
 
 
@@ -126,6 +151,7 @@ mvn install:install-file
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
 			<version>${org.springframework.version}</version>
+			<scope>provided</scope>
 		</dependency>
 
 
@@ -133,6 +159,7 @@ mvn install:install-file
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-asm</artifactId>
 			<version>${org.springframework.version}</version>
+			<scope>provided</scope>
 		</dependency>
 
 
@@ -140,6 +167,7 @@ mvn install:install-file
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-expression</artifactId>
 			<version>${org.springframework.version}</version>
+			<scope>provided</scope>
 		</dependency>
 
 		<!--
@@ -150,6 +178,7 @@ mvn install:install-file
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-beans</artifactId>
 			<version>${org.springframework.version}</version>
+			<scope>provided</scope>
 		</dependency>
 
 		<!--
@@ -160,6 +189,7 @@ mvn install:install-file
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-aop</artifactId>
 			<version>${org.springframework.version}</version>
+			<scope>provided</scope>
 		</dependency>
 
 		<!--
@@ -170,6 +200,7 @@ mvn install:install-file
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
 			<version>${org.springframework.version}</version>
+			<scope>provided</scope>
 		</dependency>
 
 		<!--
@@ -180,6 +211,7 @@ mvn install:install-file
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context-support</artifactId>
 			<version>${org.springframework.version}</version>
+			<scope>provided</scope>
 		</dependency>
 
 		<!--
@@ -191,6 +223,7 @@ mvn install:install-file
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-tx</artifactId>
 			<version>${org.springframework.version}</version>
+			<scope>provided</scope>
 		</dependency>
 
 		<!--
@@ -201,6 +234,7 @@ mvn install:install-file
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-jdbc</artifactId>
 			<version>${org.springframework.version}</version>
+			<scope>provided</scope>
 		</dependency>
 
 		<!--
@@ -212,6 +246,7 @@ mvn install:install-file
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-orm</artifactId>
 			<version>${org.springframework.version}</version>
+			<scope>provided</scope>
 		</dependency>
 
 		<!--
@@ -223,6 +258,7 @@ mvn install:install-file
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-oxm</artifactId>
 			<version>${org.springframework.version}</version>
+			<scope>provided</scope>
 		</dependency>
 
 		<!--
@@ -234,6 +270,7 @@ mvn install:install-file
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-web</artifactId>
 			<version>${org.springframework.version}</version>
+			<scope>provided</scope>
 		</dependency>
 
 		<!--
@@ -244,6 +281,7 @@ mvn install:install-file
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
 			<version>${org.springframework.version}</version>
+			<scope>provided</scope>
 		</dependency>
 
 
@@ -266,6 +304,7 @@ mvn install:install-file
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-acl</artifactId>
 			<version>${org.springframework.security.version}</version>
+			<scope>provided</scope>
 		</dependency>
 
 
@@ -273,37 +312,42 @@ mvn install:install-file
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-core</artifactId>
 			<version>${org.springframework.security.version}</version>
+			<scope>provided</scope>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-crypto</artifactId>
 			<version>${org.springframework.security.version}</version>
+			<scope>provided</scope>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-openid</artifactId>
 			<version>${org.springframework.security.version}</version>
+			<scope>provided</scope>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-taglibs</artifactId>
 			<version>${org.springframework.security.version}</version>
+			<scope>provided</scope>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-web</artifactId>
 			<version>${org.springframework.security.version}</version>
+			<scope>provided</scope>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-config</artifactId>
 			<version>${org.springframework.security.version}</version>
-			<scope>runtime</scope>
+			<scope>provided</scope>
 		</dependency>
 
 
@@ -435,7 +479,6 @@ mvn install:install-file
 		<finalName>kitchensink-maven</finalName>
 
 		<plugins>
-
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
@@ -455,6 +498,247 @@ mvn install:install-file
 				</configuration>
 			</plugin>
 
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<executions>
+					<!--
+					<execution>
+						<id>copy-to-lib</id>
+						<phase>prepare-package</phase>
+						<goals>
+							<goal>copy-dependencies</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${project.build.directory}/${project.build.finalName}/WEB-INF/cfusion/lib</outputDirectory>
+						</configuration>
+					</execution>
+					-->
+
+					<execution>
+						<goals>
+							<goal>copy</goal>
+						</goals>
+						<configuration>
+							<artifactItems>
+								<artifactItem>
+									<groupId>com.mikenimer</groupId>
+									<artifactId>Palladium</artifactId>
+									<version>1.0.71</version>
+									<type>jar</type>
+									<outputDirectory>${project.build.directory}/${project.artifactId}/WEB-INF/cfusion/lib</outputDirectory>
+								</artifactItem>
+								<artifactItem>
+									<groupId>jstl</groupId>
+									<artifactId>jstl</artifactId>
+									<version>1.2</version>
+									<type>jar</type>
+									<outputDirectory>${project.build.directory}/${project.artifactId}/WEB-INF/cfusion/lib</outputDirectory>
+								</artifactItem>
+								<artifactItem>
+									<groupId>javax.xml</groupId>
+									<artifactId>jaxb-api</artifactId>
+									<version>2.0</version>
+									<type>jar</type>
+									<outputDirectory>${project.build.directory}/${project.artifactId}/WEB-INF/cfusion/lib</outputDirectory>
+								</artifactItem>
+								<!-- ship with CF
+								<artifactItem>
+									<groupId>xerces</groupId>
+									<artifactId>xercesImpl</artifactId>
+									<version>2.10.0</version>
+									<type>jar</type>
+									<outputDirectory>${project.build.directory}/${project.artifactId}/WEB-INF/cfusion/lib</outputDirectory>
+								</artifactItem>
+								<artifactItem>
+									<groupId>xerces</groupId>
+									<artifactId>xmlParserAPIs</artifactId>
+									<version>2.6.2</version>
+									<type>jar</type>
+									<outputDirectory>${project.build.directory}/${project.artifactId}/WEB-INF/cfusion/lib</outputDirectory>
+								</artifactItem>
+								<artifactItem>
+									<groupId>xalan</groupId>
+									<artifactId>serializer</artifactId>
+									<version>2.7.1</version>
+									<type>jar</type>
+									<outputDirectory>${project.build.directory}/${project.artifactId}/WEB-INF/cfusion/lib</outputDirectory>
+								</artifactItem>
+								<artifactItem>
+									<groupId>xalan</groupId>
+									<artifactId>xalan</artifactId>
+									<version>2.7.1</version>
+									<type>jar</type>
+									<outputDirectory>${project.build.directory}/${project.artifactId}/WEB-INF/cfusion/lib</outputDirectory>
+								</artifactItem>
+								-->
+								<artifactItem>
+									<groupId>com.thoughtworks.xstream</groupId>
+									<artifactId>xstream</artifactId>
+									<version>1.4.2</version>
+									<type>jar</type>
+									<outputDirectory>${project.build.directory}/${project.artifactId}/WEB-INF/cfusion/lib</outputDirectory>
+								</artifactItem>
+								<artifactItem>
+									<groupId>org.codehaus.jackson</groupId>
+									<artifactId>jackson-core-asl</artifactId>
+									<version>1.9.4</version>
+									<type>jar</type>
+									<outputDirectory>${project.build.directory}/${project.artifactId}/WEB-INF/cfusion/lib</outputDirectory>
+								</artifactItem>
+								<artifactItem>
+									<groupId>org.codehaus.jackson</groupId>
+									<artifactId>jackson-mapper-asl</artifactId>
+									<version>1.9.4</version>
+									<type>jar</type>
+									<outputDirectory>${project.build.directory}/${project.artifactId}/WEB-INF/cfusion/lib</outputDirectory>
+								</artifactItem>
+								<artifactItem>
+									<groupId>org.springframework</groupId>
+									<artifactId>spring-core</artifactId>
+									<version>${org.springframework.version}</version>
+									<type>jar</type>
+									<outputDirectory>${project.build.directory}/${project.artifactId}/WEB-INF/cfusion/lib</outputDirectory>
+								</artifactItem>
+								<artifactItem>
+									<groupId>org.springframework</groupId>
+									<artifactId>spring-asm</artifactId>
+									<version>${org.springframework.version}</version>
+									<type>jar</type>
+									<outputDirectory>${project.build.directory}/${project.artifactId}/WEB-INF/cfusion/lib</outputDirectory>
+								</artifactItem>
+								<artifactItem>
+									<groupId>org.springframework</groupId>
+									<artifactId>spring-expression</artifactId>
+									<version>${org.springframework.version}</version>
+									<type>jar</type>
+									<outputDirectory>${project.build.directory}/${project.artifactId}/WEB-INF/cfusion/lib</outputDirectory>
+								</artifactItem>
+								<artifactItem>
+									<groupId>org.springframework</groupId>
+									<artifactId>spring-beans</artifactId>
+									<version>${org.springframework.version}</version>
+									<type>jar</type>
+									<outputDirectory>${project.build.directory}/${project.artifactId}/WEB-INF/cfusion/lib</outputDirectory>
+								</artifactItem>
+								<artifactItem>
+									<groupId>org.springframework</groupId>
+									<artifactId>spring-aop</artifactId>
+									<version>${org.springframework.version}</version>
+									<type>jar</type>
+									<outputDirectory>${project.build.directory}/${project.artifactId}/WEB-INF/cfusion/lib</outputDirectory>
+								</artifactItem>
+								<artifactItem>
+									<groupId>org.springframework</groupId>
+									<artifactId>spring-context</artifactId>
+									<version>${org.springframework.version}</version>
+									<type>jar</type>
+									<outputDirectory>${project.build.directory}/${project.artifactId}/WEB-INF/cfusion/lib</outputDirectory>
+								</artifactItem>
+								<artifactItem>
+									<groupId>org.springframework</groupId>
+									<artifactId>spring-context-support</artifactId>
+									<version>${org.springframework.version}</version>
+									<type>jar</type>
+									<outputDirectory>${project.build.directory}/${project.artifactId}/WEB-INF/cfusion/lib</outputDirectory>
+								</artifactItem>
+								<artifactItem>
+									<groupId>org.springframework</groupId>
+									<artifactId>spring-tx</artifactId>
+									<version>${org.springframework.version}</version>
+									<type>jar</type>
+									<outputDirectory>${project.build.directory}/${project.artifactId}/WEB-INF/cfusion/lib</outputDirectory>
+								</artifactItem>
+								<artifactItem>
+									<groupId>org.springframework</groupId>
+									<artifactId>spring-jdbc</artifactId>
+									<version>${org.springframework.version}</version>
+									<type>jar</type>
+									<outputDirectory>${project.build.directory}/${project.artifactId}/WEB-INF/cfusion/lib</outputDirectory>
+								</artifactItem>
+								<artifactItem>
+									<groupId>org.springframework</groupId>
+									<artifactId>spring-orm</artifactId>
+									<version>${org.springframework.version}</version>
+									<type>jar</type>
+									<outputDirectory>${project.build.directory}/${project.artifactId}/WEB-INF/cfusion/lib</outputDirectory>
+								</artifactItem>
+								<artifactItem>
+									<groupId>org.springframework</groupId>
+									<artifactId>spring-oxm</artifactId>
+									<version>${org.springframework.version}</version>
+									<type>jar</type>
+									<outputDirectory>${project.build.directory}/${project.artifactId}/WEB-INF/cfusion/lib</outputDirectory>
+								</artifactItem>
+								<artifactItem>
+									<groupId>org.springframework</groupId>
+									<artifactId>spring-web</artifactId>
+									<version>${org.springframework.version}</version>
+									<type>jar</type>
+									<outputDirectory>${project.build.directory}/${project.artifactId}/WEB-INF/cfusion/lib</outputDirectory>
+								</artifactItem>
+								<artifactItem>
+									<groupId>org.springframework</groupId>
+									<artifactId>spring-webmvc</artifactId>
+									<version>${org.springframework.version}</version>
+									<type>jar</type>
+									<outputDirectory>${project.build.directory}/${project.artifactId}/WEB-INF/cfusion/lib</outputDirectory>
+								</artifactItem>
+								<artifactItem>
+									<groupId>org.springframework.security</groupId>
+									<artifactId>spring-security-acl</artifactId>
+									<version>${org.springframework.security.version}</version>
+									<type>jar</type>
+									<outputDirectory>${project.build.directory}/${project.artifactId}/WEB-INF/cfusion/lib</outputDirectory>
+								</artifactItem>
+								<artifactItem>
+									<groupId>org.springframework.security</groupId>
+									<artifactId>spring-security-core</artifactId>
+									<version>${org.springframework.security.version}</version>
+									<type>jar</type>
+									<outputDirectory>${project.build.directory}/${project.artifactId}/WEB-INF/cfusion/lib</outputDirectory>
+								</artifactItem>
+								<artifactItem>
+									<groupId>org.springframework.security</groupId>
+									<artifactId>spring-security-crypto</artifactId>
+									<version>${org.springframework.security.version}</version>
+									<type>jar</type>
+									<outputDirectory>${project.build.directory}/${project.artifactId}/WEB-INF/cfusion/lib</outputDirectory>
+								</artifactItem>
+								<artifactItem>
+									<groupId>org.springframework.security</groupId>
+									<artifactId>spring-security-openid</artifactId>
+									<version>${org.springframework.security.version}</version>
+									<type>jar</type>
+									<outputDirectory>${project.build.directory}/${project.artifactId}/WEB-INF/cfusion/lib</outputDirectory>
+								</artifactItem>
+								<artifactItem>
+									<groupId>org.springframework.security</groupId>
+									<artifactId>spring-security-taglibs</artifactId>
+									<version>${org.springframework.security.version}</version>
+									<type>jar</type>
+									<outputDirectory>${project.build.directory}/${project.artifactId}/WEB-INF/cfusion/lib</outputDirectory>
+								</artifactItem>
+								<artifactItem>
+									<groupId>org.springframework.security</groupId>
+									<artifactId>spring-security-web</artifactId>
+									<version>${org.springframework.security.version}</version>
+									<type>jar</type>
+									<outputDirectory>${project.build.directory}/${project.artifactId}/WEB-INF/cfusion/lib</outputDirectory>
+								</artifactItem>
+								<artifactItem>
+									<groupId>org.springframework.security</groupId>
+									<artifactId>spring-security-config</artifactId>
+									<version>${org.springframework.security.version}</version>
+									<type>jar</type>
+									<outputDirectory>${project.build.directory}/${project.artifactId}/WEB-INF/cfusion/lib</outputDirectory>
+								</artifactItem>
+							</artifactItems>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 
 		</plugins>
 	</build>

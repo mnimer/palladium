@@ -7,11 +7,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad07e440-6aa4-45d4-840b-abc093920f3f" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/kitchensink-inf/views/Application-renameme.cfc" afterPath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/kitchensink-inf/views/Application.cfc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/kitchensink-inf/components/JavaProxyExamples.cfc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/kitchensink-inf/views/dump.cfm" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/lib/cf-bootstrap-for-flex.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/lib/cfmx_bootstrap.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/lib/cfx.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/lib/commons-beanutils-1.8.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/lib/commons-collections-2.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/lib/empty.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/lib/js.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/lib/jsafeFIPS.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/lib/jsafeJCEFIPS.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/lib/jstl-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/lib/portlet-proxy.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/log4j.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/kitchensink-inf/views/security-views/admin.cfm" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/web.broken.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/kitchensink-inf/views/Application.cfc" afterPath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/kitchensink-inf/views/Application.broken.cfc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/palladium.ipr" afterPath="$PROJECT_DIR$/palladium.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/palladium.iws" afterPath="$PROJECT_DIR$/palladium.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/helloworld-maven/pom.xml" afterPath="$PROJECT_DIR$/samples/helloworld-maven/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/helloworld-maven/helloworld-maven.iml" afterPath="$PROJECT_DIR$/samples/helloworld-maven/helloworld-maven.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/kitchensink/kitchensink.iml" afterPath="$PROJECT_DIR$/samples/kitchensink/kitchensink.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/kitchensink/pom.xml" afterPath="$PROJECT_DIR$/samples/kitchensink/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/kitchensink/src/main/java/com/mikenimer/palladium/samples/controllers/SecurityController.java" afterPath="$PROJECT_DIR$/samples/kitchensink/src/main/java/com/mikenimer/palladium/samples/controllers/SecurityController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/kitchensink/src/main/java/com/mikenimer/palladium/samples/controllers/WebsiteController.java" afterPath="$PROJECT_DIR$/samples/kitchensink/src/main/java/com/mikenimer/palladium/samples/controllers/WebsiteController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/kitchensink/src/main/resources/log4j.properties" afterPath="$PROJECT_DIR$/samples/kitchensink/src/main/resources/log4j.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/applicationContext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/kitchensink-security-mvc-servlet.xml" afterPath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/kitchensink-security-mvc-servlet.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/spring-security.xml" afterPath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/spring-security.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/kitchensink-inf/views/home.cfm" afterPath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/kitchensink-inf/views/home.cfm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/kitchensink-inf/views/security-views/home.cfm" afterPath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/kitchensink-inf/views/security-views/home.cfm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/kitchensink-inf/views/security-views/login.cfm" afterPath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/kitchensink-inf/views/security-views/login.cfm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/kitchensink-inf/views/security-views/public.cfm" afterPath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/kitchensink-inf/views/security-views/public.cfm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/kitchensink-inf/views/security-views/secured.cfm" afterPath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/kitchensink-inf/views/security-views/secured.cfm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/kitchensink-inf/views/theme-views/home.cfm" afterPath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/kitchensink-inf/views/theme-views/home.cfm" />
     </list>
     <ignored path="palladium.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,7 +60,7 @@
   </component>
   <component name="DebuggerManager">
     <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/samples/helloworld-maven/src/main/java/controllers/WebsiteController.java" line="27" class="controllers.WebsiteController" package="controllers">
+      <breakpoint url="file://$PROJECT_DIR$/samples/kitchensink/src/main/java/com/mikenimer/palladium/samples/controllers/SecurityController.java" line="83" class="com.mikenimer.palladium.samples.controllers.SecurityController" package="com.mikenimer.palladium.samples.controllers">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -84,111 +114,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="spring-security.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/spring-security.xml">
+      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/samples/kitchensink/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="71" selection-start="501" selection-end="501" vertical-scroll-proportion="0.0">
+            <state line="597" column="24" selection-start="18608" selection-end="18608" vertical-scroll-proportion="0.3792049">
               <folding />
             </state>
-          </provider>
-          <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/samples/kitchensink/src/main/java/com/mikenimer/palladium/samples/model/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="13" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SecurityController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/samples/kitchensink/src/main/java/com/mikenimer/palladium/samples/controllers/SecurityController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="0" selection-start="1462" selection-end="1462" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/web.xml">
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="465" column="52" selection-start="19000" selection-end="19000" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-            <state />
-          </provider>
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="kitchensink-security-mvc-servlet.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/kitchensink-security-mvc-servlet.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="kitchensink-propertytest-mvc-servlet.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/kitchensink-propertytest-mvc-servlet.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="applicationContext.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/applicationContext.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="kitchensink-hibernate-mvc-servlet.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/kitchensink-hibernate-mvc-servlet.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="kitchensink-mvc-servlet.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/kitchensink-mvc-servlet.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-            <state />
           </provider>
         </entry>
       </file>
@@ -206,21 +137,21 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/samples/kitchensink/web/kitchensink-inf/views/Application.cfc" />
-        <option value="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF/kitchensink-mvc-servlet.xml" />
-        <option value="$PROJECT_DIR$/samples/helloworld-maven/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/samples/helloworld-maven/src/main/java/model/User.java" />
-        <option value="$PROJECT_DIR$/samples/helloworld-maven/src/main/webapp/WEB-INF/HelloWorld-mvc-servlet.xml" />
-        <option value="$PROJECT_DIR$/samples/helloworld-maven/src/main/webapp/helloworld-inf/Application.cfc" />
-        <option value="$PROJECT_DIR$/samples/helloworld-maven/src/main/webapp/helloworld-inf/views/index.cfm" />
+        <option value="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/kitchensink-inf/views/security-views/public.cfm" />
+        <option value="$PROJECT_DIR$/samples/kitchensink/src/main/java/com/mikenimer/palladium/samples/controllers/SecurityController.java" />
+        <option value="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/kitchensink-security-mvc-servlet.xml" />
+        <option value="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/kitchensink-inf/views/security-views/secured.cfm" />
+        <option value="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/kitchensink-inf/views/theme-views/home.cfm" />
+        <option value="$PROJECT_DIR$/samples/kitchensink/src/main/java/com/mikenimer/palladium/samples/controllers/WebsiteController.java" />
+        <option value="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/kitchensink-inf/views/home.cfm" />
         <option value="$PROJECT_DIR$/samples/helloworld-maven/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/samples/helloworld-maven/src/main/webapp/helloworld-inf/views/test/ping.cfm" />
-        <option value="$PROJECT_DIR$/samples/helloworld-maven/src/main/webapp/helloworld-inf/Application.cfm" />
-        <option value="$PROJECT_DIR$/samples/helloworld-maven/src/main/webapp/helloworld-inf/components/JavaProxyExamples.cfc" />
-        <option value="$PROJECT_DIR$/samples/helloworld-maven/src/main/webapp/helloworld-inf/views/dump.cfm" />
-        <option value="$PROJECT_DIR$/samples/helloworld-maven/src/main/java/controllers/WebsiteController.java" />
-        <option value="$PROJECT_DIR$/samples/helloworld-maven/pom.xml" />
-        <option value="$PROJECT_DIR$/samples/kitchensink/src/main/java/com/mikenimer/palladium/samples/auth/CustomAuthExample.java" />
+        <option value="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/log4j.properties" />
+        <option value="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/web.works.xml" />
+        <option value="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/kitchensink-inf/views/dump.cfm" />
+        <option value="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/spring-security.xml" />
+        <option value="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/samples/kitchensink/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/samples/kitchensink/pom.xml" />
       </list>
     </option>
@@ -233,8 +164,15 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="printErrorStackTraces" value="true" />
+      </MavenGeneralSettings>
+    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
+        <option name="downloadDocsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
         <option name="importAutomatically" value="true" />
         <option name="keepSourceFolders" value="false" />
       </MavenImportingSettings>
@@ -385,6 +323,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="palladium" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="samples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleGroupNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kitchensink" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="kitchensink-inf" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -444,6 +412,10 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -466,8 +438,18 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
+              <option name="myItemId" value="palladium" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="samples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleGroupNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld-maven" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -482,6 +464,48 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="helloworld-maven" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="palladium" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="samples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleGroupNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld-maven" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -530,29 +554,37 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="net.stevechaloner.intellijad.config.ApplicationConfigComponent" />
+    <property name="options.lastSelected" value="MavenSettings" />
     <property name="project.structure.side.proportion" value="0.24835165" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="DefaultCfmlFileTemplate" value="ColdFusion Tag Component" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF" />
+      <recent name="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/kitchensink-inf/views" />
+      <recent name="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/kitchensink-inf" />
       <recent name="$PROJECT_DIR$/samples/kitchensink/web/WEB-INF" />
       <recent name="$PROJECT_DIR$/samples/kitchensink" />
-      <recent name="$PROJECT_DIR$/samples/helloworld-maven/src/main/webapp/WEB-INF/libs" />
-      <recent name="$PROJECT_DIR$/samples/helloworld-maven/src/main/webapp/WEB-INF" />
-      <recent name="$PROJECT_DIR$/samples/helloworld/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.KitchenSink">
+  <component name="RunManager" selected="Tomcat Server.KitchenSink-maven">
+    <configuration default="true" type="HandyEdit.AntRun" factoryName="Ant build" debug-port="25000" max-memory="256" logging-level="0">
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
     <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings">
@@ -597,14 +629,6 @@
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="false" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="HandyEdit.AntRun" factoryName="Ant build" debug-port="25000" max-memory="256" logging-level="0">
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -721,8 +745,9 @@
         <option name="PhingTarget" enabled="false" />
       </method>
     </configuration>
-    <configuration default="false" name="KitchenSink" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7">
+    <configuration default="false" name="KitchenSink-maven" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/kitchensink/index.html" />
+      <option name="COMMON_VM_ARGUMENTS" value="-XX:MaxPermSize=256m" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <deployment>
@@ -774,9 +799,11 @@
         </SHUTDOWN>
       </ConfigurationWrapper>
       <method>
-        <option name="BuildArtifacts" enabled="true">
+        <option name="BuildArtifacts" enabled="false">
           <artifact name="kitchensink:war exploded" />
         </option>
+        <option name="Make" enabled="false" />
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/samples/kitchensink/pom.xml" goal="compile" />
       </method>
     </configuration>
     <configuration default="false" name="Hello World" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7">
@@ -892,7 +919,7 @@
       </method>
     </configuration>
     <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.KitchenSink" />
+      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.KitchenSink-maven" />
       <item index="1" class="java.lang.String" itemvalue="Tomcat Server.Hello World" />
       <item index="2" class="java.lang.String" itemvalue="Tomcat Server.Hello World -maven" />
     </list>
@@ -950,36 +977,36 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1920" height="1174" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890996" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24946581" sideWeight="0.6707946" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985783" sideWeight="0.0" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32985783" sideWeight="0.64903843" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32985783" sideWeight="0.3472222" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890996" sideWeight="0.48504272" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32920536" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18643162" sideWeight="0.36872038" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32959402" sideWeight="0.0" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.114850424" sideWeight="0.6701422" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="JSON Formatter" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32959402" sideWeight="0.0" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985783" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18589744" sideWeight="0.6701422" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985783" sideWeight="0.48290598" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890996" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="IntelliJad Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985783" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32890996" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1034,7 +1061,14 @@
     <MESSAGE value="make project a maven project, and update config to CF10" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="ant-line">
+          <url>file://$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/applicationContext.xml</url>
+          <line>4</line>
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1050,128 +1084,141 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/samples/kitchensink/src/main/webapp/kitchensink-inf/views/Application.broken.cfc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/adobe/ColdFusion/10/ColdFusion-10.jar!/coldfusion/cfc/CFCProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="0" selection-start="4737" selection-end="4737" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/kitchensink/src/main/webapp/kitchensink-inf/components/JavaProxyExamples.cfc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="12" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/kitchensink/src/main/webapp/kitchensink-inf/views/home.cfm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="40" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/kitchensink/src/main/java/com/mikenimer/palladium/samples/controllers/WebsiteController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="12" selection-start="647" selection-end="647" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/samples/helloworld-maven/src/main/java/controllers/WebsiteController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="0" selection-start="697" selection-end="697" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/samples/helloworld-maven/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="54" selection-start="998" selection-end="998" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples/kitchensink/src/main/java/com/mikenimer/palladium/samples/auth/CustomAuthExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="22" selection-start="686" selection-end="686" vertical-scroll-proportion="0.022488756">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples/kitchensink/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="7" selection-start="1281" selection-end="1281" vertical-scroll-proportion="0.7646177" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples/kitchensink/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="8" selection-start="1641" selection-end="1641" vertical-scroll-proportion="0.19966722">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/spring-security.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="71" selection-start="501" selection-end="501" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+    <entry file="file://$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/web.broken.xml">
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples/kitchensink/src/main/java/com/mikenimer/palladium/samples/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples/kitchensink/src/main/java/com/mikenimer/palladium/samples/controllers/SecurityController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="0" selection-start="1462" selection-end="1462" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/web.xml">
       <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="465" column="52" selection-start="19000" selection-end="19000" vertical-scroll-proportion="0.0">
+        <state line="61" column="0" selection-start="2494" selection-end="2494" vertical-scroll-proportion="0.33333334">
           <folding />
         </state>
       </provider>
       <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
         <state />
       </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-        <state />
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/kitchensink-security-mvc-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/spring-security.xml">
       <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/kitchensink-propertytest-mvc-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="31" column="12" selection-start="1665" selection-end="1665" vertical-scroll-proportion="-19.0">
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/kitchensink-hibernate-mvc-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="3" column="27" selection-start="186" selection-end="186" vertical-scroll-proportion="-2.0454545">
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/kitchensink-mvc-servlet.xml">
+      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/kitchensink/src/main/webapp/kitchensink-inf/views/dump.cfm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="0" selection-start="633" selection-end="761" vertical-scroll-proportion="-11.25">
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/kitchensink/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="83" selection-end="83" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/kitchensink-security-mvc-servlet.xml">
       <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="9" selection-start="1282" selection-end="1282" vertical-scroll-proportion="-2.6363637">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/helloworld-maven/src/main/webapp/WEB-INF/web.xml">
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="535" column="51" selection-start="19186" selection-end="19186" vertical-scroll-proportion="-259.77274">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/web.xml">
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="213" column="117" selection-start="7497" selection-end="7497" vertical-scroll-proportion="-20.454546">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/kitchensink/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="597" column="24" selection-start="18608" selection-end="18608" vertical-scroll-proportion="0.3792049">
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>

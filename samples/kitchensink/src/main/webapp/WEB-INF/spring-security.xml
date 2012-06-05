@@ -29,12 +29,12 @@
     <!-- Declare an authentication-manager to use a custom userDetailsService -->
     <security:authentication-manager>
          <security:authentication-provider user-service-ref="customUserDetailsService">
-           <security:password-encoder ref="passwordEncoder" />
+			 <!--security:password-encoder ref="passwordEncoder" /-->
          </security:authentication-provider>
     </security:authentication-manager>
 
     <!-- Use a Md5 encoder since the user's passwords are stored as Md5 in the database -->
-    <bean class="org.springframework.security.authentication.encoding.Md5PasswordEncoder" id="passwordEncoder" />
+    <bean id="passwordEncoder"  class="org.springframework.security.authentication.encoding.Md5PasswordEncoder" />
 
     <!-- A custom service where Spring will retrieve users and their corresponding access levels  -->
     <bean id="customUserDetailsService" class="com.mikenimer.palladium.samples.auth.CustomAuthExample" />
