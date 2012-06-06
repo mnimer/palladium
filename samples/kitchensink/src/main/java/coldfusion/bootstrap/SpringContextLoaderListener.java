@@ -1,7 +1,4 @@
-package com.mikenimer.palladium.bootstrap;
-
-import coldfusion.bootstrap.BootstrapClassLoader;
-import coldfusion.bootstrap.ClassloaderHelper;
+package coldfusion.bootstrap;
 
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;

@@ -55,7 +55,7 @@ mvn install:install-file -Dfile=/Users/mnimer/Development/libraries/java/servers
 		<dependency>
 			<groupId>com.mikenimer</groupId>
 			<artifactId>Palladium</artifactId>
-			<version>1.0.74</version>
+			<version>1.0.75</version>
 			<scope>provided</scope>
 		</dependency>
 
@@ -530,7 +530,7 @@ mvn install:install-file -Dfile=/Users/mnimer/Development/libraries/java/servers
 								<artifactItem>
 									<groupId>com.mikenimer</groupId>
 									<artifactId>Palladium</artifactId>
-									<version>1.0.71</version>
+									<version>1.0.75</version>
 									<type>jar</type>
 									<outputDirectory>${project.build.directory}/${project.artifactId}/WEB-INF/cfusion/lib</outputDirectory>
 								</artifactItem>

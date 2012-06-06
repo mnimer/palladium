@@ -191,7 +191,7 @@
 
 
 	<listener>
-		<listener-class>com.mikenimer.palladium.bootstrap.SpringContextLoaderListener</listener-class>
+		<listener-class>coldfusion.bootstrap.SpringContextLoaderListener</listener-class>
 	</listener>
 
 	<listener>

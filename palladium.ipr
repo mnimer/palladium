@@ -378,15 +378,15 @@
         <root url="file://$PROJECT_DIR$/library/src" />
       </SOURCES>
     </library>
-    <library name="Maven: com.mikenimer:Palladium:1.0.74">
+    <library name="Maven: com.mikenimer:Palladium:1.0.75">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/mikenimer/Palladium/1.0.74/Palladium-1.0.74.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/mikenimer/Palladium/1.0.75/Palladium-1.0.75.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/com/mikenimer/Palladium/1.0.74/Palladium-1.0.74-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/mikenimer/Palladium/1.0.75/Palladium-1.0.75-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/mikenimer/Palladium/1.0.74/Palladium-1.0.74-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/mikenimer/Palladium/1.0.75/Palladium-1.0.75-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: com.thoughtworks.xstream:xstream:1.4.2">
