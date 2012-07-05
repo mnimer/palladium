@@ -26,7 +26,6 @@
           <file>file://$MODULE_DIR$/src/main/webapp/WEB-INF/kitchensink-mvc-servlet.xml</file>
           <file>file://$MODULE_DIR$/src/main/webapp/WEB-INF/spring-security.xml</file>
         </fileset>
-        <fileset id="web: application context" profiles="" autodetected="true" />
       </configuration>
     </facet>
   </component>

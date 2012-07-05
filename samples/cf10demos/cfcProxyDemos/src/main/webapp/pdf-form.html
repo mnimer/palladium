@@ -1,49 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/bootstrap/css/docs.css" rel="stylesheet">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/bootstrap/js/bootstrap.js"></script>
+
+    <style>
+        input
+        {
+            width:200px;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="well">
+    Populate PDF Form
+</div>
+
 <form method="post" action="/demos/pdfform">
 
-    <label>
-        Policy Number
-        <input type="text" name="PolicyNum" value="PY-343434343-01">
-    </label><br/>
-    <label>
-        Insured Name
-        <input type="text" name="strInsuredName" value="Matt Gifford Esq">
-    </label><br/>
-    <label>
-        address1
-        <input type="text" name="address1" value="454 Groovy Street">
-    </label><br/>
-    <label>
-        state
-        <input type="text" name="State" value="GA">
-    </label><br/>
-    <label>
-        Zip
-        <input type="text" name="Zip" value="31443">
-    </label><br/>
-    <label>
-        city
-        <input type="text" name="city" value="St Albans">
-    </label><br/>
-    <label>
-        phone
-        <input type="text" name="phone" value="(555) 555-5555">
-    </label><br/>
-    <label>
-        Bank Name
-        <input type="text" name="bankName" value="Dewey Cheatem & Howe">
-    </label><br/>
-    <label>
-        Payment Name
-        <input type="text" name="PaymentName" value="Matt Gifford">
-    </label><br/>
-    <label>
-        Bank Account Number
-        <input type="text" name="bankAcctNum" value="45454545">
-    </label><br/>
-    <label>
-        Bank Account City
-        <input type="text" name="bankCity" value="St Albans">
-    </label><br/>
+    <div class="row">
+        <div class="span2" style="text-align: right;">Policy Number</div>
+        <div class="span4">
+            <input type="text"
+                   name="PolicyNum"
+                   value="PY-343434343-01">
+        </div>
+    </div>
 
-    <input type="submit" value="Populate PDF">
+    <div class="row">
+        <div class="span2" style="text-align: right;">Insured Name</div>
+        <div class="span4">
+            <input type="text"
+                   name="strInsuredName"
+                   value="Matt Gifford Esq">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="span2" style="text-align: right;">Address1</div>
+        <div class="span4">
+            <input type="text" name="address1" value="454 Groovy Street">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="span2" style="text-align: right;">State</div>
+        <div class="span4">
+            <input type="text" name="State" value="GA">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="span2" style="text-align: right;">Zip</div>
+        <div class="span4">
+            <input type="text" name="Zip" value="31443">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="span2" style="text-align: right;">City</div>
+        <div class="span4">
+            <input type="text" name="city" value="St Albans">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="span2" style="text-align: right;">Phone</div>
+        <div class="span4">
+            <input type="text" name="phone" value="(555) 555-5555">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="span2" style="text-align: right;">Bank Name</div>
+        <div class="span4">
+            <input type="text" name="bankName" value="Dewey Cheatem & Howe">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="span2" style="text-align: right;">Payment Name</div>
+        <div class="span4">
+            <input type="text" name="PaymentName" value="Matt Gifford">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="span2" style="text-align: right;">Bank Account Number</div>
+        <div class="span4">
+            <input type="text" name="bankAcctNum" value="45454545">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="span2" style="text-align: right;">Bank Account City</div>
+        <div class="span4">
+            <input type="text" name="bankCity" value="St Albans">
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="span2">&nbsp;</div>
+        <div class="span4">
+            <input type="submit" value="Populate PDF" class="btn btn-large">
+        </div>
+    </div>
+
+
 </form>
+
+
+</body>
+</html>

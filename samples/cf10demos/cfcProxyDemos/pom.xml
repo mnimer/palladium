@@ -1,0 +1,97 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.adobe.ColdFusion.demos</groupId>
+	<artifactId>com.adobe.ColdFusion.demos</artifactId>
+	<packaging>war</packaging>
+	<version>1.0</version>
+	<name>com.adobe.ColdFusion.demos Maven Webapp</name>
+	<url>http://maven.apache.org</url>
+
+
+	<properties>
+		<java-version>1.6</java-version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+		<!-- path to extracted war file -->
+		<extracted.cfusion.war>/Users/mnimer/Development/libraries/java/servers/ColdFusion10/cfusion</extracted.cfusion.war>
+	</properties>
+
+
+	<dependencies>
+		<!--
+		   * Add ColdFusion jars to your local repository
+			 todo this: run this command (edit the path(s) first)
+   mvn install:install-file
+   -Dfile=<your path>/ColdFusion10/cfusion/WEB-INF/cfusion/lib/cfusion.jar
+   -DgroupId=com.adobe -DartifactId=ColdFusion
+   -Dversion=10
+   -Dpackaging=jar
+   -DlocalRepositoryPath=/Users/<user>/.m2/repository/
+			 -->
+		<dependency>
+			<groupId>com.adobe</groupId>
+			<artifactId>ColdFusion</artifactId>
+			<version>10</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.xerial</groupId>
+			<artifactId>sqlite-jdbc</artifactId>
+			<version>3.7.2</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>xerces</groupId>
+			<artifactId>xercesImpl</artifactId>
+			<version>2.10.0</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>xerces</groupId>
+			<artifactId>xmlParserAPIs</artifactId>
+			<version>2.6.2</version>
+			<scope>provided</scope>
+		</dependency>
+
+
+		<!-- link to tomcat to get reference to servlet api -->
+		<dependency>
+			<groupId>org.apache.tomcat</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>6.0.33</version>
+		</dependency>
+
+
+	</dependencies>
+
+
+	<build>
+		<finalName>cfcProxyDemos-maven</finalName>
+
+		<plugins>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.1.1</version>
+				<configuration>
+					<webResources>
+						<resource>
+							<directory>${extracted.cfusion.war}</directory>
+							<includes>
+								<include>**</include>
+							</includes>
+							<excludes>
+								<exlude>**/web.xml</exlude>
+							</excludes>
+						</resource>
+					</webResources>
+				</configuration>
+			</plugin>
+
+
+		</plugins>
+	</build>
+</project>

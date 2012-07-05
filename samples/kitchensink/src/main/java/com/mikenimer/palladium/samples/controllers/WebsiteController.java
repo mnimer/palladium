@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.OutputStream;
 import java.io.PrintWriter;
+import java.util.Date;
 
 /**
  * @author: mikenimer@yahoo.com
@@ -70,7 +71,7 @@ public class WebsiteController
         try
         {
             CFCProxy myCFC = new CFCProxy(cfcPath, false);
-            Object[] myArgs = {"<b>Hello World</b>"};
+            Object[] myArgs = {"<b>Hello World</b><br>Current Time:  " +new Date().toLocaleString()};
             cfcResult = (Struct)myCFC.invoke("createPDF", myArgs);
 
 

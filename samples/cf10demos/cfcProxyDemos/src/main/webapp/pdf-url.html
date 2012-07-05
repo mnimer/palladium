@@ -1,8 +1,49 @@
-<form action="/demos/pdfurl" method="post">
-    <input name="url"
-           type="text"
-           value="http://www.mikenimer.com"
-           style="width:250px;"/>
-        <br/>
-    <input type="submit" value="Create Pdf">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/bootstrap/css/docs.css" rel="stylesheet">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/bootstrap/js/bootstrap.js"></script>
+
+    <style>
+        input
+        {
+            width:200px;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="well">
+    Convert URL to PDF
+</div>
+
+<form method="post" action="/demos/pdfurl">
+
+    <div class="row">
+        <div class="span2" style="text-align: right;">Policy Number</div>
+        <div class="span4">
+            <input type="text"
+                   name="url"
+                   value="http://www.mikenimer.com">
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="span2">&nbsp;</div>
+        <div class="span4">
+            <input type="submit" value="Create PDF" class="btn btn-large">
+        </div>
+    </div>
+
+
 </form>
+
+</body>
+</html>
+

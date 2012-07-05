@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?><component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Chinook" product="SQLite" version="3.7.2" jdbc-version="2.1" driver-version="native" uuid="45360e8f-0aa9-4acd-94d4-1aa1bea1dcd8">
+    <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+    <jdbc-url>jdbc:sqlite:/Users/mnimer/Dropbox/CF10Demos/cfcProxyDemos/src/main/resources/Chinook_Sqlite.sqlite</jdbc-url>
+    <libraries>
+      <library>
+        <url>jar://$USER_HOME$/Development/libraries/java/libraries/sqlite-jdbc-3.7.2.jar!/</url>
+      </library>
+      <library>
+        <url>file://$USER_HOME$/Development/libraries/java/libraries/xerial-sqlite-license.txt</url>
+      </library>
+    </libraries>
+    <table name="Album" schema="" catalog="" type="TABLE">
+      <column name="AlbumId" sqlType="INTEGER" length="2000000000" precision="10" nullable="false" jdbcType="4" />
+      <column name="Title" sqlType="NVARCHAR(160)" length="2000000000" precision="10" nullable="false" jdbcType="12" />
+      <column name="ArtistId" sqlType="INTEGER" length="2000000000" precision="10" nullable="false" jdbcType="4" />
+      <primary-key columns="albumid" />
+      <foreign-key columns="ArtistId" ref-table="Artist" ref-schema="" ref-catalog="" ref-columns="ArtistId" />
+      <index name="IFK_AlbumArtistId" unique="false" columns="ArtistId" />
+      <index name="IPK_Album" unique="true" columns="AlbumId" />
+    </table>
+    <table name="Artist" schema="" catalog="" type="TABLE">
+      <column name="ArtistId" sqlType="INTEGER" length="2000000000" precision="10" nullable="false" jdbcType="4" />
+      <column name="Name" sqlType="NVARCHAR(120)" length="2000000000" precision="10" nullable="true" jdbcType="12" />
+      <primary-key columns="artistid" />
+      <index name="IPK_Artist" unique="true" columns="ArtistId" />
+    </table>
+    <table name="Customer" schema="" catalog="" type="TABLE">
+      <column name="CustomerId" sqlType="INTEGER" length="2000000000" precision="10" nullable="false" jdbcType="4" />
+      <column name="FirstName" sqlType="NVARCHAR(40)" length="2000000000" precision="10" nullable="false" jdbcType="12" />
+      <column name="LastName" sqlType="NVARCHAR(20)" length="2000000000" precision="10" nullable="false" jdbcType="12" />
+      <column name="Company" sqlType="NVARCHAR(80)" length="2000000000" precision="10" nullable="true" jdbcType="12" />
+      <column name="Address" sqlType="NVARCHAR(70)" length="2000000000" precision="10" nullable="true" jdbcType="12" />
+      <column name="City" sqlType="NVARCHAR(40)" length="2000000000" precision="10" nullable="true" jdbcType="12" />
+      <column name="State" sqlType="NVARCHAR(40)" length="2000000000" precision="10" nullable="true" jdbcType="12" />
+      <column name="Country" sqlType="NVARCHAR(40)" length="2000000000" precision="10" nullable="true" jdbcType="12" />
+      <column name="PostalCode" sqlType="NVARCHAR(10)" length="2000000000" precision="10" nullable="true" jdbcType="12" />
+      <column name="Phone" sqlType="NVARCHAR(24)" length="2000000000" precision="10" nullable="true" jdbcType="12" />
+      <column name="Fax" sqlType="NVARCHAR(24)" length="2000000000" precision="10" nullable="true" jdbcType="12" />
+      <column name="Email" sqlType="NVARCHAR(60)" length="2000000000" precision="10" nullable="false" jdbcType="12" />
+      <column name="SupportRepId" sqlType="INTEGER" length="2000000000" precision="10" nullable="true" jdbcType="4" />
+      <primary-key columns="customerid" />
+      <foreign-key columns="SupportRepId" ref-table="Employee" ref-schema="" ref-catalog="" ref-columns="EmployeeId" />
+      <index name="IFK_CustomerSupportRepId" unique="false" columns="SupportRepId" />
+      <index name="IPK_Customer" unique="true" columns="CustomerId" />
+    </table>
+    <table name="Employee" schema="" catalog="" type="TABLE">
+      <column name="EmployeeId" sqlType="INTEGER" length="2000000000" precision="10" nullable="false" jdbcType="4" />
+      <column name="LastName" sqlType="NVARCHAR(20)" length="2000000000" precision="10" nullable="false" jdbcType="12" />
+      <column name="FirstName" sqlType="NVARCHAR(20)" length="2000000000" precision="10" nullable="false" jdbcType="12" />
+      <column name="Title" sqlType="NVARCHAR(30)" length="2000000000" precision="10" nullable="true" jdbcType="12" />
+      <column name="ReportsTo" sqlType="INTEGER" length="2000000000" precision="10" nullable="true" jdbcType="4" />
+      <column name="BirthDate" sqlType="DATETIME" length="2000000000" precision="10" nullable="true" jdbcType="12" />
+      <column name="HireDate" sqlType="DATETIME" length="2000000000" precision="10" nullable="true" jdbcType="12" />
+      <column name="Address" sqlType="NVARCHAR(70)" length="2000000000" precision="10" nullable="true" jdbcType="12" />
+      <column name="City" sqlType="NVARCHAR(40)" length="2000000000" precision="10" nullable="true" jdbcType="12" />
+      <column name="State" sqlType="NVARCHAR(40)" length="2000000000" precision="10" nullable="true" jdbcType="12" />
+      <column name="Country" sqlType="NVARCHAR(40)" length="2000000000" precision="10" nullable="true" jdbcType="12" />
+      <column name="PostalCode" sqlType="NVARCHAR(10)" length="2000000000" precision="10" nullable="true" jdbcType="12" />
+      <column name="Phone" sqlType="NVARCHAR(24)" length="2000000000" precision="10" nullable="true" jdbcType="12" />
+      <column name="Fax" sqlType="NVARCHAR(24)" length="2000000000" precision="10" nullable="true" jdbcType="12" />
+      <column name="Email" sqlType="NVARCHAR(60)" length="2000000000" precision="10" nullable="true" jdbcType="12" />
+      <primary-key columns="employeeid" />
+      <foreign-key columns="ReportsTo" ref-table="Employee" ref-schema="" ref-catalog="" ref-columns="EmployeeId" />
+      <index name="IFK_EmployeeReportsTo" unique="false" columns="ReportsTo" />
+      <index name="IPK_Employee" unique="true" columns="EmployeeId" />
+    </table>
+    <table name="Genre" schema="" catalog="" type="TABLE">
+      <column name="GenreId" sqlType="INTEGER" length="2000000000" precision="10" nullable="false" jdbcType="4" />
+      <column name="Name" sqlType="NVARCHAR(120)" length="2000000000" precision="10" nullable="true" jdbcType="12" />
+      <primary-key columns="genreid" />
+      <index name="IPK_Genre" unique="true" columns="GenreId" />
+    </table>
+    <table name="Invoice" schema="" catalog="" type="TABLE">
+      <column name="InvoiceId" sqlType="INTEGER" length="2000000000" precision="10" nullable="false" jdbcType="4" />
+      <column name="CustomerId" sqlType="INTEGER" length="2000000000" precision="10" nullable="false" jdbcType="4" />
+      <column name="InvoiceDate" sqlType="DATETIME" length="2000000000" precision="10" nullable="false" jdbcType="12" />
+      <column name="BillingAddress" sqlType="NVARCHAR(70)" length="2000000000" precision="10" nullable="true" jdbcType="12" />
+      <column name="BillingCity" sqlType="NVARCHAR(40)" length="2000000000" precision="10" nullable="true" jdbcType="12" />
+      <column name="BillingState" sqlType="NVARCHAR(40)" length="2000000000" precision="10" nullable="true" jdbcType="12" />
+      <column name="BillingCountry" sqlType="NVARCHAR(40)" length="2000000000" precision="10" nullable="true" jdbcType="12" />
+      <column name="BillingPostalCode" sqlType="NVARCHAR(10)" length="2000000000" precision="10" nullable="true" jdbcType="12" />
+      <column name="Total" sqlType="NUMERIC(10,2)" length="2000000000" precision="10" nullable="false" jdbcType="12" />
+      <primary-key columns="invoiceid" />
+      <foreign-key columns="CustomerId" ref-table="Customer" ref-schema="" ref-catalog="" ref-columns="CustomerId" />
+      <index name="IFK_InvoiceCustomerId" unique="false" columns="CustomerId" />
+      <index name="IPK_Invoice" unique="true" columns="InvoiceId" />
+    </table>
+    <table name="InvoiceLine" schema="" catalog="" type="TABLE">
+      <column name="InvoiceLineId" sqlType="INTEGER" length="2000000000" precision="10" nullable="false" jdbcType="4" />
+      <column name="InvoiceId" sqlType="INTEGER" length="2000000000" precision="10" nullable="false" jdbcType="4" />
+      <column name="TrackId" sqlType="INTEGER" length="2000000000" precision="10" nullable="false" jdbcType="4" />
+      <column name="UnitPrice" sqlType="NUMERIC(10,2)" length="2000000000" precision="10" nullable="false" jdbcType="12" />
+      <column name="Quantity" sqlType="INTEGER" length="2000000000" precision="10" nullable="false" jdbcType="4" />
+      <primary-key columns="invoicelineid" />
+      <foreign-key columns="TrackId,InvoiceId" ref-table="Track" ref-schema="" ref-catalog="" ref-columns="TrackId,InvoiceId" />
+      <index name="IFK_InvoiceLineTrackId" unique="false" columns="TrackId" />
+      <index name="IFK_InvoiceLineInvoiceId" unique="false" columns="InvoiceId" />
+      <index name="IPK_InvoiceLine" unique="true" columns="InvoiceLineId" />
+    </table>
+    <table name="MediaType" schema="" catalog="" type="TABLE">
+      <column name="MediaTypeId" sqlType="INTEGER" length="2000000000" precision="10" nullable="false" jdbcType="4" />
+      <column name="Name" sqlType="NVARCHAR(120)" length="2000000000" precision="10" nullable="true" jdbcType="12" />
+      <primary-key columns="mediatypeid" />
+      <index name="IPK_MediaType" unique="true" columns="MediaTypeId" />
+    </table>
+    <table name="Playlist" schema="" catalog="" type="TABLE">
+      <column name="PlaylistId" sqlType="INTEGER" length="2000000000" precision="10" nullable="false" jdbcType="4" />
+      <column name="Name" sqlType="NVARCHAR(120)" length="2000000000" precision="10" nullable="true" jdbcType="12" />
+      <primary-key columns="playlistid" />
+      <index name="IPK_Playlist" unique="true" columns="PlaylistId" />
+    </table>
+    <table name="PlaylistTrack" schema="" catalog="" type="TABLE">
+      <column name="PlaylistId" sqlType="INTEGER" length="2000000000" precision="10" nullable="false" jdbcType="4" />
+      <column name="TrackId" sqlType="INTEGER" length="2000000000" precision="10" nullable="false" jdbcType="4" />
+      <primary-key columns="trackid" />
+      <foreign-key columns="TrackId,PlaylistId" ref-table="Track" ref-schema="" ref-catalog="" ref-columns="TrackId,PlaylistId" />
+      <index name="IFK_PlaylistTrackTrackId" unique="false" columns="TrackId" />
+      <index name="IPK_PlaylistTrack" unique="true" columns="PlaylistId,TrackId" />
+      <index name="sqlite_autoindex_PlaylistTrack_1" unique="true" columns="PlaylistId,TrackId" />
+    </table>
+    <table name="Track" schema="" catalog="" type="TABLE">
+      <column name="TrackId" sqlType="INTEGER" length="2000000000" precision="10" nullable="false" jdbcType="4" />
+      <column name="Name" sqlType="NVARCHAR(200)" length="2000000000" precision="10" nullable="false" jdbcType="12" />
+      <column name="AlbumId" sqlType="INTEGER" length="2000000000" precision="10" nullable="true" jdbcType="4" />
+      <column name="MediaTypeId" sqlType="INTEGER" length="2000000000" precision="10" nullable="false" jdbcType="4" />
+      <column name="GenreId" sqlType="INTEGER" length="2000000000" precision="10" nullable="true" jdbcType="4" />
+      <column name="Composer" sqlType="NVARCHAR(220)" length="2000000000" precision="10" nullable="true" jdbcType="12" />
+      <column name="Milliseconds" sqlType="INTEGER" length="2000000000" precision="10" nullable="false" jdbcType="4" />
+      <column name="Bytes" sqlType="INTEGER" length="2000000000" precision="10" nullable="true" jdbcType="4" />
+      <column name="UnitPrice" sqlType="NUMERIC(10,2)" length="2000000000" precision="10" nullable="false" jdbcType="12" />
+      <primary-key columns="trackid" />
+      <foreign-key columns="MediaTypeId,GenreId,AlbumId" ref-table="MediaType" ref-schema="" ref-catalog="" ref-columns="MediaTypeId,GenreId,AlbumId" />
+      <index name="IFK_TrackMediaTypeId" unique="false" columns="MediaTypeId" />
+      <index name="IFK_TrackGenreId" unique="false" columns="GenreId" />
+      <index name="IFK_TrackAlbumId" unique="false" columns="AlbumId" />
+      <index name="IPK_Track" unique="true" columns="TrackId" />
+    </table>
+  </data-source>
+</component>

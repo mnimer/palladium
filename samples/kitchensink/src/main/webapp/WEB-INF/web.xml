@@ -495,7 +495,6 @@ end flex2 -->
 
 
 	<!-- ********************* CFMJ ************************ -->
-
 	<servlet>
 		<servlet-name>kitchensink-mvc</servlet-name>
 		<servlet-class>coldfusion.bootstrap.BootstrapServlet</servlet-class>

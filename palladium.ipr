@@ -69,6 +69,53 @@
         <element id="artifact" artifact-name="kitchensink:war exploded" />
       </root>
     </artifact>
+    <artifact type="war" name="techweek:war">
+      <output-path>$USER_HOME$/Dropbox/CF10Demos/cfcProxyDemos/target</output-path>
+      <root id="archive" name="com.adobe.ColdFusion.demos.war">
+        <element id="artifact" artifact-name="techweek:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="techweek:war exploded">
+      <output-path>$USER_HOME$/Dropbox/CF10Demos/cfcProxyDemos/target/com.adobe.ColdFusion.demos</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="techweek/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="cfcProxyDemos" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="cfcProxyDemos:war">
+      <output-path>$USER_HOME$/Dropbox/CF10Demos/cfcProxyDemos/target</output-path>
+      <root id="archive" name="cfcProxyDemos-maven.war">
+        <element id="artifact" artifact-name="cfcProxyDemos:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="cfcProxyDemos:war exploded">
+      <output-path>$USER_HOME$/Dropbox/CF10Demos/cfcProxyDemos/target/cfcProxyDemos-maven</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="cfcProxyDemos/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="cfcProxyDemos" />
+          </element>
+          <element id="directory" name="lib">
+            <element id="library" level="project" name="Maven: com.adobe:ColdFusion:10" />
+            <element id="library" level="project" name="Maven: org.xerial:sqlite-jdbc:3.7.2" />
+            <element id="library" level="project" name="Maven: org.apache.tomcat:servlet-api:6.0.33" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+  </component>
+  <component name="CfmlProjectConfiguration">
+    <mappings2>
+      <CfmlMappingsConfig />
+    </mappings2>
+    <mappings>
+      <CfmlMappingsConfig />
+    </mappings>
   </component>
   <component name="CompilerConfiguration">
     <option name="DEFAULT_COMPILER" value="Javac" />
@@ -101,6 +148,7 @@
     <file type="web" url="file://$PROJECT_DIR$/samples/helloworld-maven" />
     <file type="web" url="file://$PROJECT_DIR$/samples/kitchensink" />
     <file type="web" url="file://$PROJECT_DIR$/samples/litepost" />
+    <file type="web" url="file://$USER_HOME$/Dropbox/CF10Demos/cfcProxyDemos" />
     <file type="WebBeans" url="file://$PROJECT_DIR$/samples/litepost" />
   </component>
   <component name="IdProvider" IDEtalkID="274BB29517C6BB38083D395F8146F909" />
@@ -126,7 +174,13 @@
       <list>
         <option value="$PROJECT_DIR$/samples/helloworld-maven/pom.xml" />
         <option value="$PROJECT_DIR$/samples/kitchensink/pom.xml" />
+        <option value="$USER_HOME$/Dropbox/CF10Demos/cfcProxyDemos/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$USER_HOME$/Dropbox/CF10Demos/cfcProxyDemos/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="NullableNotNullManager">
@@ -794,6 +848,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/3.1.0.RELEASE/spring-webmvc-3.1.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.xerial:sqlite-jdbc:3.7.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/xerial/sqlite-jdbc/3.7.2/sqlite-jdbc-3.7.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/xerial/sqlite-jdbc/3.7.2/sqlite-jdbc-3.7.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/xerial/sqlite-jdbc/3.7.2/sqlite-jdbc-3.7.2-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: xalan:serializer:2.7.1">

@@ -1,7 +1,49 @@
-<form action="/demos/pdfhtml" method="post">
-    <textarea
-            name="html"
-            style="width: 200px; height: 300px;">Hello <b>World</b>!</textarea>
-        <br/>
-    <input type="submit" value="Create Pdf">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/bootstrap/css/docs.css" rel="stylesheet">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/bootstrap/js/bootstrap.js"></script>
+
+    <style>
+        input
+        {
+            width:200px;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="well">
+    Convert HTML to PDF
+</div>
+
+<form method="post" action="/demos/pdfhtml">
+
+    <div class="row">
+        <div class="span2" style="text-align: right;">Policy Number</div>
+        <div class="span4">
+            <textarea
+                name="html"
+                style="width: 400px; height: 200px;">Hello <b>World</b>!</textarea>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="span2">&nbsp;</div>
+        <div class="span4">
+            <input type="submit" value="Create PDF" class="btn btn-large">
+        </div>
+    </div>
+
+
 </form>
+
+</body>
+</html>
+
