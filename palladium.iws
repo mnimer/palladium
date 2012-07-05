@@ -6,21 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad07e440-6aa4-45d4-840b-abc093920f3f" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/kitchensink-inf/views/Application.broken.cfc" afterPath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/kitchensink-inf/views/Application.old.cfc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/palladium.ipr" afterPath="$PROJECT_DIR$/palladium.ipr" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/palladium.iws" afterPath="$PROJECT_DIR$/palladium.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/helloworld-maven/helloworld-maven.iml" afterPath="$PROJECT_DIR$/samples/helloworld-maven/helloworld-maven.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/helloworld/helloworld.iml" afterPath="$PROJECT_DIR$/samples/helloworld/helloworld.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/kitchensink/kitchensink.iml" afterPath="$PROJECT_DIR$/samples/kitchensink/kitchensink.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/kitchensink/src/main/java/com/mikenimer/palladium/samples/controllers/WebsiteController.java" afterPath="$PROJECT_DIR$/samples/kitchensink/src/main/java/com/mikenimer/palladium/samples/controllers/WebsiteController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/META-INF/MANIFEST.MF" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/kitchensink-mvc-servlet.xml" afterPath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/kitchensink-mvc-servlet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/kitchensink-inf/l18n/messages_en_US.properties" afterPath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/kitchensink-inf/l18n/messages_en_US.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/kitchensink-inf/views/home.cfm" afterPath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/kitchensink-inf/views/home.cfm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/kitchensink-inf/views/propertytest-views/home.cfm" afterPath="$PROJECT_DIR$/samples/kitchensink/src/main/webapp/kitchensink-inf/views/propertytest-views/home.cfm" />
-    </list>
+    <list default="true" id="ad07e440-6aa4-45d4-840b-abc093920f3f" name="Default" comment="" />
     <ignored path="palladium.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />

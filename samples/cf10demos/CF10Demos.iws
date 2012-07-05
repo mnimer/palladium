@@ -2,24 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52261549-53ce-461f-b4c8-551ac3698d98" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cfcProxyDemos/src/main/java/demos/servlet/PingServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cfcProxyDemos/src/main/java/demos/servlet/QofQServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../kitchensink/src/main/webapp/kitchensink-inf/views/Application.broken.cfc" afterPath="$PROJECT_DIR$/../kitchensink/src/main/webapp/kitchensink-inf/views/Application.old.cfc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../palladium.ipr" afterPath="$PROJECT_DIR$/../../palladium.ipr" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../palladium.iws" afterPath="$PROJECT_DIR$/../../palladium.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cfcProxyDemos/src/main/webapp/pdf-form.html" afterPath="$PROJECT_DIR$/cfcProxyDemos/src/main/webapp/pdf-form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cfcProxyDemos/src/main/webapp/pdf-html.html" afterPath="$PROJECT_DIR$/cfcProxyDemos/src/main/webapp/pdf-html.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cfcProxyDemos/src/main/webapp/pdf-url.html" afterPath="$PROJECT_DIR$/cfcProxyDemos/src/main/webapp/pdf-url.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../helloworld-maven/helloworld-maven.iml" afterPath="$PROJECT_DIR$/../helloworld-maven/helloworld-maven.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../helloworld/helloworld.iml" afterPath="$PROJECT_DIR$/../helloworld/helloworld.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../kitchensink/kitchensink.iml" afterPath="$PROJECT_DIR$/../kitchensink/kitchensink.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../kitchensink/src/main/java/com/mikenimer/palladium/samples/controllers/WebsiteController.java" afterPath="$PROJECT_DIR$/../kitchensink/src/main/java/com/mikenimer/palladium/samples/controllers/WebsiteController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../kitchensink/src/main/webapp/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/../kitchensink/src/main/webapp/META-INF/MANIFEST.MF" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../kitchensink/src/main/webapp/WEB-INF/kitchensink-mvc-servlet.xml" afterPath="$PROJECT_DIR$/../kitchensink/src/main/webapp/WEB-INF/kitchensink-mvc-servlet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../kitchensink/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/../kitchensink/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../kitchensink/src/main/webapp/kitchensink-inf/l18n/messages_en_US.properties" afterPath="$PROJECT_DIR$/../kitchensink/src/main/webapp/kitchensink-inf/l18n/messages_en_US.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../kitchensink/src/main/webapp/kitchensink-inf/views/home.cfm" afterPath="$PROJECT_DIR$/../kitchensink/src/main/webapp/kitchensink-inf/views/home.cfm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../kitchensink/src/main/webapp/kitchensink-inf/views/propertytest-views/home.cfm" afterPath="$PROJECT_DIR$/../kitchensink/src/main/webapp/kitchensink-inf/views/propertytest-views/home.cfm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cfcProxyDemos/src/main/java/demos/servlet/PdfFormExampleServlet.java" afterPath="$PROJECT_DIR$/cfcProxyDemos/src/main/java/demos/servlet/PdfFormExampleServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cfcProxyDemos/src/main/java/demos/servlet/PingServlet.java" afterPath="$PROJECT_DIR$/cfcProxyDemos/src/main/java/demos/servlet/PingServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cfcProxyDemos/src/main/webapp/demos-inf/components/pdfFormExample.cfc" afterPath="$PROJECT_DIR$/cfcProxyDemos/src/main/webapp/demos-inf/components/pdfFormExample.cfc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cfcProxyDemos/src/main/webapp/index.html" afterPath="$PROJECT_DIR$/cfcProxyDemos/src/main/webapp/index.html" />
     </list>
     <ignored path="CF10Demos.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -81,10 +67,66 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="QofQServlet.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="QofQServlet.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cfcProxyDemos/src/main/java/demos/servlet/QofQServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="11" selection-start="1594" selection-end="1594" vertical-scroll-proportion="0.022522522">
+            <state line="66" column="61" selection-start="1932" selection-end="2127" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PingServlet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cfcProxyDemos/src/main/java/demos/servlet/PingServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="27" selection-start="1188" selection-end="1188" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pdf-form.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cfcProxyDemos/src/main/webapp/pdf-form.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="0" selection-start="535" selection-end="890" vertical-scroll-proportion="-0.625">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cfcProxyDemos/src/main/webapp/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="50" column="35" selection-start="1286" selection-end="1286" vertical-scroll-proportion="-11.04">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PdfFormExampleServlet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cfcProxyDemos/src/main/java/demos/servlet/PdfFormExampleServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="13" selection-start="400" selection-end="400" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Struct.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/adobe/ColdFusion/10/ColdFusion-10.jar!/coldfusion/runtime/Struct.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="41" selection-start="768" selection-end="768" vertical-scroll-proportion="-9.36">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pdfFormExample.cfc" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cfcProxyDemos/src/main/webapp/demos-inf/components/pdfFormExample.cfc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="72" selection-start="1627" selection-end="1627" vertical-scroll-proportion="0.73221755">
               <folding />
             </state>
           </provider>
@@ -104,22 +146,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/cfcProxyDemos/src/main/webapp/demos-inf/components/PdfExample.cfc" />
         <option value="$PROJECT_DIR$/cfcProxyDemos/src/main/java/demos/servlet/PdfHtmlExampleServlet.java" />
         <option value="$PROJECT_DIR$/cfcProxyDemos/src/main/webapp/demos-inf/components/PdfHtmlExample.cfc" />
         <option value="$PROJECT_DIR$/cfcProxyDemos/src/main/webapp/application.cfc" />
         <option value="$PROJECT_DIR$/cfcProxyDemos/src/main/webapp/demos-inf/components/PdfUrlExample.cfc" />
         <option value="$PROJECT_DIR$/cfcProxyDemos/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/cfcProxyDemos/src/main/webapp/demos-inf/pdfs/index.html" />
-        <option value="$PROJECT_DIR$/cfcProxyDemos/src/main/webapp/demos-inf/components/pdfFormExample.cfc" />
-        <option value="$PROJECT_DIR$/cfcProxyDemos/src/main/java/demos/servlet/PdfFormExampleServlet.java" />
         <option value="$PROJECT_DIR$/cfcProxyDemos/src/main/webapp/pdf-form.html" />
         <option value="$PROJECT_DIR$/cfcProxyDemos/src/main/webapp/pdf-html.html" />
         <option value="$PROJECT_DIR$/cfcProxyDemos/src/main/webapp/pdf-url.html" />
-        <option value="$PROJECT_DIR$/cfcProxyDemos/src/main/webapp/index.html" />
         <option value="$PROJECT_DIR$/cfcProxyDemos/src/main/webapp/filterArtist.jsp" />
         <option value="$PROJECT_DIR$/cfcProxyDemos/pom.xml" />
         <option value="$PROJECT_DIR$/cfcProxyDemos/src/main/java/demos/servlet/QofQServlet.java" />
+        <option value="$PROJECT_DIR$/cfcProxyDemos/src/main/java/demos/servlet/PingServlet.java" />
+        <option value="$PROJECT_DIR$/cfcProxyDemos/src/main/java/demos/servlet/PdfFormExampleServlet.java" />
+        <option value="$PROJECT_DIR$/cfcProxyDemos/src/main/webapp/index.html" />
+        <option value="$PROJECT_DIR$/cfcProxyDemos/src/main/webapp/demos-inf/components/pdfFormExample.cfc" />
       </list>
     </option>
   </component>
@@ -293,32 +335,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CF10Demos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cfcProxyDemos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demos-inf" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -722,21 +738,21 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IntelliJad Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953465" sideWeight="0.4957265" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27065527" sideWeight="0.5673077" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27065527" sideWeight="0.5673077" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27065527" sideWeight="0.428953" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32953465" sideWeight="0.48076922" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953465" sideWeight="0.48076922" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23557693" sideWeight="0.2697056" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23557693" sideWeight="0.19563153" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16773504" sideWeight="0.67046535" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16773504" sideWeight="0.7293447" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="JSON Formatter" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23557693" sideWeight="0.67046535" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23557693" sideWeight="0.7293447" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985783" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -807,50 +823,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cfcProxyDemos/src/main/webapp/WEB-INF/web.xml">
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="529" column="0" selection-start="18749" selection-end="18749" vertical-scroll-proportion="0.42492917">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cfcProxyDemos/src/main/java/demos/servlet/PdfUrlExampleServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="151" selection-start="1108" selection-end="1108" vertical-scroll-proportion="0.42857143">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cfcProxyDemos/src/main/webapp/bootstrap/css/bootstrap-responsive.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.2503477">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cfcProxyDemos/src/main/java/demos/servlet/PdfFormExampleServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="0" selection-start="1466" selection-end="1466" vertical-scroll-proportion="0.65587044">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cfcProxyDemos/src/main/webapp/demos-inf/components/pdfFormExample.cfc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="47" selection-end="463" vertical-scroll-proportion="0.06276151">
           <folding />
         </state>
       </provider>
@@ -897,20 +872,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cfcProxyDemos/src/main/webapp/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="45" selection-start="1233" selection-end="1233" vertical-scroll-proportion="0.89312977">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cfcProxyDemos/src/main/webapp/pdf-form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="535" selection-end="890" vertical-scroll-proportion="-12.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cfcProxyDemos/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="49" column="58" selection-start="1574" selection-end="1574" vertical-scroll-proportion="0.6848306">
@@ -918,9 +879,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cfcProxyDemos/src/main/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="35" selection-start="1286" selection-end="1286" vertical-scroll-proportion="-11.04">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cfcProxyDemos/src/main/webapp/pdf-form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="535" selection-end="890" vertical-scroll-proportion="-0.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cfcProxyDemos/src/main/java/demos/servlet/QofQServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="11" selection-start="1594" selection-end="1594" vertical-scroll-proportion="0.022522522">
+        <state line="66" column="61" selection-start="1932" selection-end="2127" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cfcProxyDemos/src/main/java/demos/servlet/PingServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="27" selection-start="1188" selection-end="1188" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/adobe/ColdFusion/10/ColdFusion-10.jar!/coldfusion/runtime/Struct.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="41" selection-start="768" selection-end="768" vertical-scroll-proportion="-9.36">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cfcProxyDemos/src/main/webapp/demos-inf/components/qofqExample.cfc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="26" selection-start="610" selection-end="878" vertical-scroll-proportion="0.5827338">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cfcProxyDemos/src/main/java/demos/servlet/PdfFormExampleServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="13" selection-start="400" selection-end="400" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cfcProxyDemos/src/main/webapp/demos-inf/components/pdfFormExample.cfc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="72" selection-start="1627" selection-end="1627" vertical-scroll-proportion="0.73221755">
           <folding />
         </state>
       </provider>

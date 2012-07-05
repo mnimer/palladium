@@ -18,6 +18,36 @@ import java.sql.ResultSet;
 public class PdfFormExampleServlet extends HttpServlet
 {
     @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
+    {
+        Struct cfcResult = null;
+        String cfcPath = req.getRealPath("/demos-inf/components/" + "PdfFormExample.cfc"); //cache this lookup for performance
+
+
+        long start = System.currentTimeMillis();
+        try
+        {
+            CFCProxy myCFC = new CFCProxy(cfcPath, false);
+            Object[] myArgs = {};
+            cfcResult = (Struct)myCFC.invoke("readPdf", myArgs);
+        }
+        catch (Throwable e)
+        {
+            e.printStackTrace();
+            throw new RuntimeException(e);
+        }
+        long end = System.currentTimeMillis();
+
+
+
+        //result += "Full Query:<br/>";
+        String result = dump(cfcPath, cfcResult.get("pdf"));
+        resp.setContentType("text/html");
+        resp.getOutputStream().write(result.getBytes());
+    }
+
+
+    @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
     {
         Struct cfcResult = null;
@@ -53,6 +83,24 @@ public class PdfFormExampleServlet extends HttpServlet
 
         // send pdf bytes back to browser
         outputPdf(resp, cfcResult, "htmlExample.pdf");
+    }
+
+
+
+    private String dump(String cfcPath, Object arg)
+    {
+        String dumpResult = "[ERROR]";
+        try
+        {
+            CFCProxy myCFC = new CFCProxy(cfcPath, false);
+            Object[] myArgs = {arg};
+            dumpResult = (String)myCFC.invoke("dump", myArgs);
+        }
+        catch (Throwable e)
+        {
+            //throw new RuntimeException(e);
+        }
+        return dumpResult;
     }
 
 

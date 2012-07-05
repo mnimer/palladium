@@ -37,9 +37,9 @@ public class PingServlet extends HttpServlet
         long end = System.currentTimeMillis();
 
         
-        String result = "Output<br/>";
-        result += "status:" +cfcResult.get("status") +"<br/>";
-        result += "date:" +cfcResult.get("data") +"<br/>";
+        String result = "<br/>";
+        result += "Status: " +cfcResult.get("status") +"<br/>";
+        result += "Date: " +cfcResult.get("data") +"<br/>";
         response.setContentType("text/html");
         response.getOutputStream().write(result.getBytes());
     }
