@@ -1,8 +1,8 @@
 package demos.servlet;
 
 import coldfusion.cfc.CFCProxy;
-import coldfusion.runtime.Struct;
 import coldfusion.sql.QueryTable;
+import com.sun.deploy.net.HttpResponse;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -16,35 +16,40 @@ import java.sql.Statement;
 
 /**
  * User: mnimer
- * Date: 6/25/12
+ * Date: 7/6/12
  */
-public class QofQServlet extends HttpServlet
+public class excelServlet extends HttpServlet
 {
-    private static ResultSet cachedResultSet = null;
 
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
     {
-        Struct cfcResult = null;
-        String cfcPath = request.getRealPath("/demos-inf/components/" + "qofqExample.cfc"); //cache this lookup for performance
+        String action = req.getParameter("action");
+        Object cfcResult = null;
+        String cfcPath = req.getRealPath("/demos-inf/components/" + "spreadsheetExample.cfc"); //cache this lookup for performance
 
-        String keyword = request.getParameter("q");
-        if( keyword == null )
-        {
-            keyword = "Led Zeppelin";
-        }
-        
+        String dir = "/demos-inf/presentations";
         long start = System.currentTimeMillis();
         try
         {
-            if( cachedResultSet == null )
+            if( action.equalsIgnoreCase("write"))
             {
-                cachedResultSet = runQuery(request);
+                ResultSet query = runQuery(req);
+                dir = dir +"/spreadsheetExample";
+                CFCProxy myCFC = new CFCProxy(cfcPath, false);
+                Object[] myArgs = {dir, "spreadsheet1.xls", query};
+                cfcResult = myCFC.invoke("queryToExcel", myArgs);
+                resp.sendRedirect(dir +"/spreadsheet1.xls");
             }
-
-            CFCProxy myCFC = new CFCProxy(cfcPath, false);
-            Object[] myArgs = {keyword, cachedResultSet};
-            cfcResult = (Struct)myCFC.invoke("findArtist", myArgs);
+            if( action.equalsIgnoreCase("readQuery"))
+            {
+                dir = dir +"/spreadsheetExample";
+                CFCProxy myCFC = new CFCProxy(cfcPath, false);
+                Object[] myArgs = {dir, "spreadsheet1.xls", req.getParameter("rows")};
+                cfcResult = myCFC.invoke("readExcelQuery", myArgs);
+                // output results
+                dump(resp, cfcPath, cfcResult);
+            }
         }
         catch (Throwable e)
         {
@@ -53,19 +58,8 @@ public class QofQServlet extends HttpServlet
         }
         long end = System.currentTimeMillis();
 
-
-
-        String result = "<strong>Query of Query Example</strong>";
-        result += "<form method='get'>Search For: <input type='text' name='q' value='" +keyword +"'><input type='submit' value='search'></form><br/>";
-        result += "Output (cf: " +(end-start) +"ms)<br/>";
-        result += "Filtered Query:<br/>";
-        result += dump(cfcPath, cfcResult.get("filteredQuery"));
-
-        //result += "Full Query:<br/>";
-
-        response.setContentType("text/html");
-        response.getOutputStream().write(result.getBytes());
     }
+
 
 
     private ResultSet runQuery(HttpServletRequest request)
@@ -78,12 +72,9 @@ public class QofQServlet extends HttpServlet
         try {
             Class.forName("org.sqlite.JDBC");
             String dbPath = request.getRealPath("/WEB-INF/classes/Chinook_Sqlite.sqlite");
-            connection = DriverManager.getConnection("jdbc:sqlite:" +dbPath);
+            connection = DriverManager.getConnection("jdbc:sqlite:" + dbPath);
             statement = connection.createStatement();
-            resultSet = statement.executeQuery("SELECT " +
-                    " ifnull(ArtistId, '0') as ArtistId," +
-                    " ifnull(Name, '---') as Name" +
-                    " FROM Artist");
+            resultSet = statement.executeQuery("SELECT * FROM Invoice");
 
             //debug
             //while (resultSet.next()){System.out.println("artist:"+ resultSet.getString("Name"));}
@@ -106,9 +97,9 @@ public class QofQServlet extends HttpServlet
 
         return cfquery;
     }
-    
-    
-    private String dump(String cfcPath, Object arg)
+
+
+    private String dump(HttpServletResponse response, String cfcPath, Object arg)
     {
         String dumpResult = "[ERROR DUMPING VALUE]";
         try
@@ -116,6 +107,10 @@ public class QofQServlet extends HttpServlet
             CFCProxy myCFC = new CFCProxy(cfcPath, false);
             Object[] myArgs = {arg};
             dumpResult = (String)myCFC.invoke("dump", myArgs);
+
+            // output
+            response.setContentType("text/html");
+            response.getOutputStream().write(dumpResult.getBytes());
         }
         catch (Throwable e)
         {

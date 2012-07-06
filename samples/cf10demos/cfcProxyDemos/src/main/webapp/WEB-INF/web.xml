@@ -518,6 +518,35 @@ end flex2 -->
 		<load-on-startup>100</load-on-startup>
 	</servlet>
 
+	<servlet>
+		<servlet-name>imageServlet</servlet-name>
+		<servlet-class>coldfusion.bootstrap.BootstrapServlet</servlet-class>
+		<init-param>
+			<param-name>servlet.class</param-name>
+			<param-value>demos.servlet.ImageServlet</param-value>
+		</init-param>
+		<load-on-startup>100</load-on-startup>
+	</servlet>
+
+	<servlet>
+		<servlet-name>presentationServlet</servlet-name>
+		<servlet-class>coldfusion.bootstrap.BootstrapServlet</servlet-class>
+		<init-param>
+			<param-name>servlet.class</param-name>
+			<param-value>demos.servlet.presentationServlet</param-value>
+		</init-param>
+		<load-on-startup>100</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>excelServlet</servlet-name>
+		<servlet-class>coldfusion.bootstrap.BootstrapServlet</servlet-class>
+		<init-param>
+			<param-name>servlet.class</param-name>
+			<param-value>demos.servlet.excelServlet</param-value>
+		</init-param>
+		<load-on-startup>100</load-on-startup>
+	</servlet>
+
 	<servlet-mapping>
 		<servlet-name>pingServlet</servlet-name>
 		<url-pattern>/demos/ping</url-pattern>
@@ -541,6 +570,21 @@ end flex2 -->
 	<servlet-mapping>
 		<servlet-name>pdfFormServlet</servlet-name>
 		<url-pattern>/demos/pdfform</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>imageServlet</servlet-name>
+		<url-pattern>/demos/images</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>presentationServlet</servlet-name>
+		<url-pattern>/demos/preso</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>excelServlet</servlet-name>
+		<url-pattern>/demos/excel</url-pattern>
 	</servlet-mapping>
 
 

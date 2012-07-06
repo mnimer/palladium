@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/bootstrap/css/docs.css" rel="stylesheet">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/bootstrap/js/bootstrap.js"></script>
+
+    <style>
+        input
+        {
+            width : 200px;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="well">
+    Image Manipulation
+</div>
+
+
+<div class="row">
+    <div class="span2">
+
+        <ul class="nav nav-list">
+            <li class="nav-header">
+                Info
+            </li>
+            <ul class="nav nav-list">
+                <li><a href="/demos/images?action=info">Image Info</a></li>
+            </ul>
+
+            <li class="nav-header">
+                Rotation
+            </li>
+            <ul class="nav nav-list">
+                <li><a href="/demos/images?action=rotate&angle=90">Rotate 90</a></li>
+                <li><a href="/demos/images?action=rotate&angle=135">Rotate 135</a></li>
+            </ul>
+
+            <li class="nav-header">
+                Resize
+            </li>
+            <ul class="nav nav-list">
+                <li><a href="/demos/images?action=resize&width=150&height=150">Resize to 150x150</a></li>
+                <li><a href="/demos/images?action=resize&width=300&height=200">Resize to 300x200</a></li>
+                <li><a href="/demos/images?action=resize&width=50%25&height=50%25">Resize by 50%</a></li>
+                <li><a href="/demos/images?action=resize&width=200%25&height=200%25">Resize by 200%</a></li>
+            </ul>
+
+            <li class="nav-header">
+                Border
+            </li>
+            <ul class="nav nav-list">
+                <li><a href="/demos/images?action=border&color=black&thickness=10">Add black 10px Border</a></li>
+                <li><a href="/demos/images?action=border&color=red&thickness=20">Add red 20px Border</a></li>
+            </ul>
+
+            <li class="nav-header">
+                Watermark
+            </li>
+            <ul class="nav nav-list">
+                <li><a href="/demos/images?action=watermark&message=(c)Mike+Nimer">Add Watermark</a></li>
+            </ul>
+
+            <li class="nav-header">
+                Misc
+            </li>
+            <ul class="nav nav-list">
+                <li><a href="/demos/images?action=captcha&difficulty=low&width=300&height=100&text=hello">Generate Captcha (low)</a></li>
+                <li><a href="/demos/images?action=captcha&difficulty=medium&width=300&height=100&text=hello">Generate Captcha (med)</a></li>
+                <li><a href="/demos/images?action=captcha&difficulty=high&width=300&height=100&text=hello">Generate Captcha (high)</a></li>
+            </ul>
+        </ul>
+
+
+    </div>
+    <div class="span10">
+        <img src="/demos-inf/images/kids.jpg">
+    </div>
+</div>
+</body>
+</html>

@@ -6,7 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad07e440-6aa4-45d4-840b-abc093920f3f" name="Default" comment="" />
+    <list default="true" id="ad07e440-6aa4-45d4-840b-abc093920f3f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/palladium.iws" afterPath="$PROJECT_DIR$/palladium.iws" />
+    </list>
     <ignored path="palladium.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -166,7 +168,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/samples/kitchensink/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="23" selection-start="3110" selection-end="3267" vertical-scroll-proportion="0.453958">
+            <state line="91" column="0" selection-start="3110" selection-end="3267" vertical-scroll-proportion="0.453958">
               <folding />
             </state>
           </provider>
@@ -1306,7 +1308,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1920" height="1174" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1531,7 +1533,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/samples/kitchensink/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="23" selection-start="3110" selection-end="3267" vertical-scroll-proportion="0.453958">
+        <state line="91" column="0" selection-start="3110" selection-end="3267" vertical-scroll-proportion="0.453958">
           <folding />
         </state>
       </provider>
